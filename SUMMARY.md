@@ -9,4 +9,6 @@
 * [開發與正式版本發布 F T](kai-fa-yu-zheng-shi-ban-ben-fa-bu.md)
 * [效能優化 F](xiao-neng-you-hua-f.md)
 * [常見問題 F](chang-jian-wen-ti.md)
+* 安裝 Laravel 開發框架
+* 安裝 webpack 開發環境
 
