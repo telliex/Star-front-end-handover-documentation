@@ -34,7 +34,7 @@
 * [Susy 2.2 中文文檔](https://www.w3cplus.com/preprocessor/susy-docs.html) 
 * [Webpack 中文文檔](https://www.webpackjs.com/)
 * [Webpack 中文教學](http://zhaoda.net/webpack-> handbook/index.html)
-* [Laravel 中文文檔](https://docs.golaravel.com/docs/5.0/installation/)
+
 
 
 
