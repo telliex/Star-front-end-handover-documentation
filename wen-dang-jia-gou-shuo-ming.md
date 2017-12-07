@@ -21,6 +21,17 @@ Laravel 的目錄結構
 ## Resources 資料夾文檔說明
 
 ## Src 資料夾文檔說明
+.env
 
+#### babel
+.babelrc
 
+#### glup
+glupfile.js
+
+#### webpack
+webpack.config.js
+webpack.dev.config.js
+webpack.devserver.config.js
+webpack.prod.config.js
 
