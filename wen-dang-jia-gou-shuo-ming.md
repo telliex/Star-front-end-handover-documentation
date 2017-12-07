@@ -17,12 +17,27 @@ Laravel 的目錄結構
 | vendor | 此目錄由 Composer 建立，所有透過 Composer 安裝的元件皆放於此。 |
 
 ## Public 資料夾文檔說明
+網站根目錄指向此目錄內
 
 
 
 ## Resources 資料夾文檔說明
 
 ## Src 資料夾文檔說明
+.env 專案環境設置檔案
+.env.example 專案環境設置檔案範例````
 
+package.json
 
+#### babel
+- .babelrc
+
+#### glup
+- glupfile.js
+
+#### webpack
+- webpack.config.js
+- webpack.dev.config.js
+- webpack.devserver.config.js
+- webpack.prod.config.js
 
