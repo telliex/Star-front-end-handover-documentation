@@ -1,7 +1,7 @@
 # Summary
 
 * [Introduction](README.md)
-* [使用到的技术 F](chapter1.md)
+* [使用到的技术 F](Technologies.md)
 * [環境配置與運行 T](huan-jing-pei-zhi-yu-yun-xing.md)
 	* [安裝 Laravel 開發框架](an-zhuang-laravel-kai-fa-kuang-jia.md)
 	* [安裝 webpack 開發環境](an-zhuang-webpack-kai-fa-huan-jing.md)
