@@ -24,7 +24,7 @@
 * JavaScript 使用套件
     * [Owl Carousel 2](https://owlcarousel2.github.io/OwlCarousel2/) - JavaScript 轮拨套件
     * [ScrollMagic](http://scrollmagic.io/) - JavaScript 卷軸交互套件
-    * [TweenMax](https://greensock.com/docs/TweenMax) - 
+    * [TweenMax](https://greensock.com/docs/TweenMax) - 與 ScrollMagic 一起使用
     * [TimelineMax](https://greensock.com/docs/TimelineMax) - 
 * Webpack 擴充套件 - 
     * [Babel Loader](https://babeljs.io/) - ES6 转码器，可以将 ES6 代码转为 ES5 代码，从而在现有环境执行。
@@ -33,7 +33,7 @@
 
 * [Susy 2.2 中文文檔](https://www.w3cplus.com/preprocessor/susy-docs.html) 
 * [Webpack 中文文檔](https://www.webpackjs.com/)
-* [Webpack 中文教學](http://zhaoda.net/webpack-handbook/index.html)
+* [Webpack 中文教學](http://zhaoda.net/webpack-> handbook/index.html)
 * [Laravel 中文文檔](https://docs.golaravel.com/docs/5.0/installation/)
 
 
