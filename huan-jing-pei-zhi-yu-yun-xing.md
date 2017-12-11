@@ -93,15 +93,18 @@
     "sass-loader": "^6.0.6",
     "script-loader": "^0.7.1",
     "style-loader": "^0.18.2",
+  //壓縮 js
     "uglify-es": "^3.1.0",
     "uglify-js-es6": "^2.8.9",
     "uglifyes-webpack-plugin": "^0.4.3",
     "uglifyjs-webpack-plugin": "^0.4.6",
+    
     "url-loader": "^0.5.9",
-    "video.js": "^6.2.8",
     "vinyl-buffer": "^1.0.0",
     "vinyl-source-stream": "^1.1.0",
+  //webpack 
     "webpack": "^3.8.1",
+  //webpack 發佈仪表盘  
     "webpack-dashboard": "^1.0.0-5",
     "webpack-dev-middleware": "^1.12.0",
     "webpack-dev-server": "^2.8.2",
@@ -114,6 +117,7 @@
     "es5-shim": "^4.5.9",
     "es6-promise": "^4.1.1",
     "fetch-ie8": "^1.5.0",
+  // Tween  
     "gsap": "^1.20.2",
   //JS 主要函數庫
     "jquery": "^1.12.4",
