@@ -21,8 +21,6 @@ gulp.task('default', function() {  // 'default' 默认任务名，运行命令�
 
 
 ## Star gulp
-
-
 ```
 var gulp = require('gulp');
 var babel = require('gulp-babel');
