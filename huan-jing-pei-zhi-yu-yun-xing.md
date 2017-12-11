@@ -84,7 +84,12 @@
     "gulp-uglify": "^3.0.0",
   //查看压缩后的 JS 代码所对应的行数时，source map 就能告诉你其相应代码在未压缩文件的所在行数
     "gulp-sourcemaps": "^2.6.0",
+  //压缩css文件
+    "gulp-cssnano": "^2.1.2",
+  //重新命名文件
+    "gulp-rename": "^1.2.2",
 
+  
     "glob": "^7.1.2",
     "gulp-autoprefixer": "^4.0.0",
   
@@ -98,11 +103,11 @@
     "gulp-clean-css": "^3.9.0",
     "gulp-compass": "^2.1.0",
     "gulp-concat": "^2.6.1",
-    "gulp-cssnano": "^2.1.2",
+    
     "gulp-livereload": "^3.8.1",
     "gulp-notify": "^3.0.0",
     "gulp-plumber": "^1.1.0",
-    "gulp-rename": "^1.2.2",
+    
     "gulp-sass": "^3.1.0",
     
     "gulp-tap": "^1.0.1",
