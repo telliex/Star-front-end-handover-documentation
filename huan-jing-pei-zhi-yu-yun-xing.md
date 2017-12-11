@@ -38,7 +38,9 @@
   "devDependencies": {
   //babel (ES6 轉碼 ES5)
     "babel-cli": "^6.24.1",
-    
+  //代码需要调用Babel的API进行转码，就要使用babel-core模块
+    "babel-core": "^6.26.0",
+
     "babel-loader": "^7.1.2",
     "babel-plugin-transform-es2015-modules-simple-commonjs": "^0.3.0",
   //使 IE8 接受 default or catch 关键字  
@@ -92,7 +94,7 @@
     "gulp-concat": "^2.6.1",
   //glup相關-產出多文件
     "glob": "^7.1.2",
-  //  
+  //測試插件
     "event-stream": "^3.3.4",
   //glup相關-监听每个文件的变化 
     "gulp-livereload": "^3.8.1",
@@ -109,7 +111,7 @@
   
  
 
-    "babel-core": "^6.26.0",
+    
     "babelify": "^7.3.0",
    
     
