@@ -1,11 +1,23 @@
 ## 從 github 抓取
-
 將 Star 項目的檔案從 github 抓回
 > git clone https://github.com/b-x-b/star-dev-server.git
 
-## 安裝插件
+## 安裝開發相關插件
 > cd star-dev-serve
-> npm install
+> npm install （install 會照 package.json 設定進行)
+
+## 分支
+- master 推至正式機，發佈上線版本
+- release 上線前的版本，用於 QA 檢查
+- develop 主要開發分支所在
+- feature 新功能的開發，最後併入 develop 分支
+
+## 分支事項
+- 開發都先會在 develop 分支進行，若有新功能，也會在 develop 分支開始 branch 新的 feature，完成後再 merge 回 develop 分支，develop 分支到一段落（如上線前），會 merge 到 release 分支，進行 QA 工作，驗證遇有問題，回到 develop 分支除錯，完成後再 merge 到 QA 分支供 QA 再檢視。若檢視皆通過，即可 merge 到 master 分支等待上線。
+- 上線時先上欣和測試機 `sh1.shinho.com.cn`，確認無誤時，再更新正式機`http://shinho.com.cn/`。
+- 每個分支都完成階段工作時皆要推至 github 管理，主機推檔也是從 github 拉檔方式進行。安全性考量，勿使用 ftp 上傳檔案。
+- 每日下班時需提交今日的工作。
+- 
 
 
 
