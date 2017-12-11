@@ -55,7 +55,7 @@
     "babel-preset-env": "^1.6.1",
 
     "browser-sync": "^2.18.13",
-
+    "html-loader": "^0.5.1",
     "buble-loader": "^0.4.1",
   //清除 output 檔案，避免產出多餘的亂數檔名檔案  
     "clean-webpack-plugin": "^0.1.16",
@@ -108,7 +108,7 @@
     "gulp-clean-css": "^3.9.0",
 
 
-    "html-loader": "^0.5.1",
+   
     "html-webpack-plugin": "^2.30.1",
     "image-webpack-loader": "^3.4.0",
     "less": "^2.7.2",
