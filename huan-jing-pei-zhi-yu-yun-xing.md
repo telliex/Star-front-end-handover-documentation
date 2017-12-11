@@ -94,13 +94,13 @@
     "gulp-concat": "^2.6.1",
   //glup相關-產出多文件
     "glob": "^7.1.2",
-  //測試插件
+  //glup相關-測試插件
     "event-stream": "^3.3.4",
   //glup相關-监听每个文件的变化 
     "gulp-livereload": "^3.8.1",
   //glup相關-載入 gulp-sass    
     "gulp-sass": "^3.1.0",
-  //gulp-compass
+  //glup相關-編譯scss
     "gulp-compass": "^2.1.0",
   //glup相關-避免出现错误时中断程式
     "gulp-plumber": "^1.1.0",
