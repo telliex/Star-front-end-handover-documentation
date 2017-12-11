@@ -51,7 +51,7 @@
     "babel-polyfill": "^6.26.0",
   // ES6 present  
     "babel-preset-env": "^1.6.1",
-    "babelify": "^7.3.0",
+
     "browser-sync": "^2.18.13",
 
     "buble-loader": "^0.4.1",
@@ -66,17 +66,33 @@
     "extract-text-webpack-plugin": "^3.0.0",
   //可將圖片載入模組  
     "file-loader": "^0.11.2",
+    
+    
   //glup相關
     "gulp": "^3.9.1",
-    "browserify": "^14.4.0",
-    "glob": "^7.1.2",
-    "gulp-autoprefixer": "^4.0.0",
   //glup相關-babel轉換ES6   
     "gulp-babel": "^6.1.2",
   //glup相關-可以使用类似于 node 的 require() 的方式来组织浏览器端的 Javascript 代码
-    
+    "browserify": "^14.4.0",
+  //glup相關-將 ES6 转成 ES5  
+    "babelify": "^7.3.0",
+  //glup相關-将Browserify的bundle()的输出转换为Gulp可用的vinyl（一种虚拟文件格式）流 
+    "vinyl-source-stream": "^1.1.0",
+  //glup相關-辅助工具
+    "vinyl-buffer": "^1.0.0",
+  //压缩 JavaScript
+    "gulp-uglify": "^3.0.0",
+
+  
+    "glob": "^7.1.2",
+    "gulp-autoprefixer": "^4.0.0",
+  
+ 
+
     "babel-core": "^6.26.0",
     "babelify": "^7.3.0",
+   
+    
     
     "gulp-clean-css": "^3.9.0",
     "gulp-compass": "^2.1.0",
@@ -89,7 +105,7 @@
     "gulp-sass": "^3.1.0",
     "gulp-sourcemaps": "^2.6.0",
     "gulp-tap": "^1.0.1",
-    "gulp-uglify": "^3.0.0",
+    
     "gulp-util": "^3.0.8",
     "html-loader": "^0.5.1",
     "html-webpack-plugin": "^2.30.1",
