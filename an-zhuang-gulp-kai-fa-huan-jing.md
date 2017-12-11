@@ -25,5 +25,5 @@ gulp.task('default', function() {  // 'default' 默认任务名，运行命令�
 
 
 
-## 參考
+## 技術參考文檔
 [gulp 中文網](https://www.gulpjs.com.cn/docs/getting-started/)
