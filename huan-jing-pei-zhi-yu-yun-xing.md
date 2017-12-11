@@ -80,17 +80,20 @@
     "vinyl-source-stream": "^1.1.0",
   //glup相關-辅助工具
     "vinyl-buffer": "^1.0.0",
-  //压缩 JavaScript
+  //glup相關-压缩 JavaScript
     "gulp-uglify": "^3.0.0",
-  //查看压缩后的 JS 代码所对应的行数时，source map 就能告诉你其相应代码在未压缩文件的所在行数
+  //glup相關-查看压缩后的 JS 代码所对应的行数时，source map 就能告诉你其相应代码在未压缩文件的所在行数
     "gulp-sourcemaps": "^2.6.0",
-  //压缩css文件
+  //glup相關-压缩css文件
     "gulp-cssnano": "^2.1.2",
-  //重新命名文件
+  //glup相關-重新命名文件
     "gulp-rename": "^1.2.2",
-
-  
+  //glup相關-合并文件
+    "gulp-concat": "^2.6.1",
+  //glup相關-產出多文件
     "glob": "^7.1.2",
+    
+    
     "gulp-autoprefixer": "^4.0.0",
   
  
@@ -102,7 +105,7 @@
     
     "gulp-clean-css": "^3.9.0",
     "gulp-compass": "^2.1.0",
-    "gulp-concat": "^2.6.1",
+    
     
     "gulp-livereload": "^3.8.1",
     "gulp-notify": "^3.0.0",
