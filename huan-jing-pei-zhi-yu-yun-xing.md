@@ -12,16 +12,15 @@
 - develop 主要開發分支所在
 - feature 新功能的開發，最後併入 develop 分支
 
-## 分支事項
+## 開發說明
 - 開發都先會在 develop 分支進行，若有新功能，也會在 develop 分支開始 branch 新的 feature，完成後再 merge 回 develop 分支，develop 分支到一段落（如上線前），會 merge 到 release 分支，進行 QA 工作，驗證遇有問題，回到 develop 分支除錯，完成後再 merge 到 QA 分支供 QA 再檢視。若檢視皆通過，即可 merge 到 master 分支等待上線。
 - 上線時先上欣和測試機 `sh1.shinho.com.cn`，確認無誤時，再更新正式機`http://shinho.com.cn/`。
 - 每個分支都完成階段工作時皆要推至 github 管理，主機推檔也是從 github 拉檔方式進行。安全性考量，勿使用 ftp 上傳檔案。
 - 每日下班時需提交今日的工作。
 - 
 
-
-
 ## package.json
+以下是 install 時所依賴的設定。 `scripts` 部分後面章節說明，下面主要提及所安裝插件的插件功用`devDependencies`、`dependencies`
 
 ```
 {
@@ -116,10 +115,15 @@
     "es6-promise": "^4.1.1",
     "fetch-ie8": "^1.5.0",
     "gsap": "^1.20.2",
+  //JS 主要函數庫
     "jquery": "^1.12.4",
+  //base on jquery的網址指向功能
     "jquery-history": "^1.0.1",
+  //base on jquery的 cookie 功能，
     "jquery.cookie": "^1.4.1",
+  // KV 輪播  
     "owl.carousel": "^2.2.0",
+  //捲動視差特效功能  
     "scrollmagic": "^2.0.5"
   }
 }
