@@ -106,29 +106,8 @@
     "gulp-plumber": "^1.1.0",
   //glup相關-清除并压缩 css
     "gulp-clean-css": "^3.9.0",
-  
 
-  
- 
 
-    
-    "babelify": "^7.3.0",
-   
-    
-    
-   
-    
-    
-    
-
-    "gulp-notify": "^3.0.0",
-    
-    
-    
-    
-    "gulp-tap": "^1.0.1",
-    
-    "gulp-util": "^3.0.8",
     "html-loader": "^0.5.1",
     "html-webpack-plugin": "^2.30.1",
     "image-webpack-loader": "^3.4.0",
