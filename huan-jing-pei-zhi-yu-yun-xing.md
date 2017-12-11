@@ -25,6 +25,7 @@
     "dev:addListener": "browser-sync start --proxy 'http://laravel' --files './public/js/custom/*.js'"  
   },
   "devDependencies": {
+  //babel (ES6 轉碼 ES5)
     "babel-cli": "^6.24.1",
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.2",
@@ -39,11 +40,13 @@
     "babel-runtime": "^6.26.0",
     "babelify": "^7.3.0",
     "browser-sync": "^2.18.13",
+  //js壓縮
     "browserify": "^14.4.0",
     "buble-loader": "^0.4.1",
     "clean-webpack-plugin": "^0.1.16",
     "cross-env": "^5.0.5",
     "css-loader": "^0.28.7",
+ // ES5 轉 ES4 (ES6 IE不支援，需藉 es3ify 再轉成 ES4)
     "es3ify-loader": "^0.2.0",
     "es3ify-webpack-plugin": "0.0.1",
     "event-stream": "^3.3.4",
@@ -51,6 +54,7 @@
     "extract-text-webpack-plugin": "^3.0.0",
     "file-loader": "^0.11.2",
     "glob": "^7.1.2",
+  //glup (scss 編議 css) 
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^4.0.0",
     "gulp-babel": "^6.1.2",
