@@ -5,6 +5,7 @@
 * [環境配置與運行 T](huan-jing-pei-zhi-yu-yun-xing.md)
   * [安裝 Laravel 框架](an-zhuang-laravel-kai-fa-kuang-jia.md)
   * [安裝 webpack 開發環境](an-zhuang-webpack-kai-fa-huan-jing.md)
+  * [安裝 gulp 開發環境](an-zhuang-gulp-kai-fa-huan-jing.md)
 * [文檔架構說明 F](wen-dang-jia-gou-shuo-ming.md)
 * [新增與維運 F T](xin-zeng-yu-wei-yun-f.md)
 * [遠端資料串接 T](yuan-duan-zi-liao-chuan-jie.md)
