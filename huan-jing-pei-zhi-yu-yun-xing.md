@@ -98,9 +98,13 @@
     "gulp-livereload": "^3.8.1",
   // 載入 gulp-sass    
     "gulp-sass": "^3.1.0",
-
-    
-    
+  //gulp-compass
+    "gulp-compass": "^2.1.0",
+  //避免出现错误时中断程式
+    "gulp-plumber": "^1.1.0",
+  //清除并压缩 css
+    "gulp-clean-css": "^3.9.0",
+  
     "gulp-autoprefixer": "^4.0.0",
   
  
@@ -110,13 +114,13 @@
    
     
     
-    "gulp-clean-css": "^3.9.0",
-    "gulp-compass": "^2.1.0",
+   
+    
     
     
 
     "gulp-notify": "^3.0.0",
-    "gulp-plumber": "^1.1.0",
+    
     
     
     
