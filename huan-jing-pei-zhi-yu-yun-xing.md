@@ -82,8 +82,9 @@
     "vinyl-buffer": "^1.0.0",
   //压缩 JavaScript
     "gulp-uglify": "^3.0.0",
+  //查看压缩后的 JS 代码所对应的行数时，source map 就能告诉你其相应代码在未压缩文件的所在行数
+    "gulp-sourcemaps": "^2.6.0",
 
-  
     "glob": "^7.1.2",
     "gulp-autoprefixer": "^4.0.0",
   
@@ -103,7 +104,7 @@
     "gulp-plumber": "^1.1.0",
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^3.1.0",
-    "gulp-sourcemaps": "^2.6.0",
+    
     "gulp-tap": "^1.0.1",
     
     "gulp-util": "^3.0.8",
