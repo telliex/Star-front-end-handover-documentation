@@ -97,6 +97,8 @@
   //监听每个文件的变化 
     "gulp-livereload": "^3.8.1",
   // 載入 gulp-sass    
+    "gulp-sass": "^3.1.0",
+
     
     
     "gulp-autoprefixer": "^4.0.0",
@@ -116,7 +118,7 @@
     "gulp-notify": "^3.0.0",
     "gulp-plumber": "^1.1.0",
     
-    "gulp-sass": "^3.1.0",
+    
     
     "gulp-tap": "^1.0.1",
     
