@@ -92,6 +92,11 @@
     "gulp-concat": "^2.6.1",
   //glup相關-產出多文件
     "glob": "^7.1.2",
+  //  
+    "event-stream": "^3.3.4",
+  //监听每个文件的变化 
+    "gulp-livereload": "^3.8.1",
+  // 載入 gulp-sass    
     
     
     "gulp-autoprefixer": "^4.0.0",
@@ -107,7 +112,7 @@
     "gulp-compass": "^2.1.0",
     
     
-    "gulp-livereload": "^3.8.1",
+
     "gulp-notify": "^3.0.0",
     "gulp-plumber": "^1.1.0",
     
