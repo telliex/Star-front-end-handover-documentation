@@ -38,37 +38,46 @@
   "devDependencies": {
   //babel (ES6 轉碼 ES5)
     "babel-cli": "^6.24.1",
-    "babel-core": "^6.26.0",
+    
     "babel-loader": "^7.1.2",
     "babel-plugin-transform-es2015-modules-simple-commonjs": "^0.3.0",
+  //使 IE8 接受 default or catch 关键字  
     "babel-plugin-transform-es3-member-expression-literals": "^6.22.0",
     "babel-plugin-transform-es3-property-literals": "^6.22.0",
-    "babel-plugin-transform-runtime": "^6.23.0",
-    "babel-polyfill": "^6.26.0",
-    "babel-preset-env": "^1.6.1",
-    "babel-preset-es2015": "^6.24.1",
-    "babel-preset-es2015-loose": "^8.0.0",
+  //转换新的 API，比如 Promise，以及 Object.assign、Array.from 等方法  
     "babel-runtime": "^6.26.0",
+    "babel-plugin-transform-runtime": "^6.23.0",
+  //使用ES6的API
+    "babel-polyfill": "^6.26.0",
+  // ES6 present  
+    "babel-preset-env": "^1.6.1",
     "babelify": "^7.3.0",
     "browser-sync": "^2.18.13",
-  //js壓縮
-    "browserify": "^14.4.0",
+
     "buble-loader": "^0.4.1",
+  //清除 output 檔案，避免產出多餘的亂數檔名檔案  
     "clean-webpack-plugin": "^0.1.16",
-    "cross-env": "^5.0.5",
+  //CSS loader  
     "css-loader": "^0.28.7",
- // ES5 轉 ES4 (ES6 IE不支援，需藉 es3ify 再轉成 ES4)
+  //ES5 轉 ES4 (ES6 IE不支援，需藉 es3ify 再轉成 ES4)
     "es3ify-loader": "^0.2.0",
     "es3ify-webpack-plugin": "0.0.1",
-    "event-stream": "^3.3.4",
-    "exports-loader": "^0.6.4",
+  //可將 CSS 單獨打包  
     "extract-text-webpack-plugin": "^3.0.0",
+  //可將圖片載入模組  
     "file-loader": "^0.11.2",
-    "glob": "^7.1.2",
-  //glup (scss 編議 css) 
+  //glup相關
     "gulp": "^3.9.1",
+    "browserify": "^14.4.0",
+    "glob": "^7.1.2",
     "gulp-autoprefixer": "^4.0.0",
+  //glup相關-babel轉換ES6   
     "gulp-babel": "^6.1.2",
+  //glup相關-可以使用类似于 node 的 require() 的方式来组织浏览器端的 Javascript 代码
+    
+    "babel-core": "^6.26.0",
+    "babelify": "^7.3.0",
+    
     "gulp-clean-css": "^3.9.0",
     "gulp-compass": "^2.1.0",
     "gulp-concat": "^2.6.1",
@@ -100,12 +109,12 @@
     "uglifyjs-webpack-plugin": "^0.4.6",
     
     "url-loader": "^0.5.9",
-    "vinyl-buffer": "^1.0.0",
-    "vinyl-source-stream": "^1.1.0",
+
   //webpack 
     "webpack": "^3.8.1",
   //webpack 發佈仪表盘  
     "webpack-dashboard": "^1.0.0-5",
+  //即時熱  
     "webpack-dev-middleware": "^1.12.0",
     "webpack-dev-server": "^2.8.2",
     "webpack-hot-middleware": "^2.19.1"
