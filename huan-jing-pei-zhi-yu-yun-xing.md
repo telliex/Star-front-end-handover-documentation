@@ -59,11 +59,11 @@
     "clean-webpack-plugin": "^0.1.16",
   //CSS loader
     "css-loader": "^0.28.7",
-  //ES5 转 ES4 (ES6 IE不支援，需藉 es3ify 再转成 ES4)
+  //es3ify解决es3环境兼容
     "es3ify-loader": "^0.2.0",
     "es3ify-webpack-plugin": "0.0.1",
   //可将 CSS 单独打包
-    "extract-text-webpack-plugin": "^3.0.0",
+    "extract-text-webpack-plugin": "^3.0.0",add-module-exports
   //可将图片载入模组
     "file-loader": "^0.11.2",
   //glup相关
@@ -130,6 +130,7 @@
   },
 "dependencies": {
     "babel-plugin-add-module-exports": "^0.2.1",
+  //Browser console polyfill. Makes it safe to do console.log().  
     "console-polyfill": "^0.3.0",
     "core-js": "^2.5.1",
     "es5-shim": "^4.5.9",

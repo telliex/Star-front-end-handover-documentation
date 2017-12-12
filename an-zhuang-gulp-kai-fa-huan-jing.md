@@ -40,7 +40,6 @@ var rename = require('gulp-rename'); //重命名文件
 var concat = require('gulp-concat'); //合并文件
 var glob = require('glob'); //產出多文件
 var es = require('event-stream'); //測試插件
-var livereload = require('gulp-livreload'); //监听每个文件的变化
 var path = require('path');
 
 //scss 编译相关
