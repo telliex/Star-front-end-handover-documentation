@@ -45,64 +45,7 @@ var plumber = require('gulp-plumber'); // 避免出现错误时中断程式
 var cleanCSS = require('gulp-clean-css'); //清除并压缩 css
 
 
-//发布且压缩档案
-gulp.task('prod', function(done) {
-    glob('./public/src/*.es6', function(err, files) {
-        if (err) done(err);
-
-        var tasks = files.map(function(entry) {
-            return browserify({ entries: [entry] })
-                .transform(babelify, {
-                    presets: ["es2015"]
-                })
-                .bundle()
-                .pipe(source(entry))
-                .pipe(rename(function(path) {
-                    path.dirname = "./";
-                    //path.basename += ".min";
-                    path.extname = ".js";
-                }))
-                .pipe(buffer()) //将 stream 转为 buffer
-                .pipe(sourcemaps.init({ loadMaps: true }))
-                .pipe(uglify()) //压缩 JavaScript
-                .pipe(sourcemaps.write('../maps'))
-                .pipe(gulp.dest('./public/js/'));
-        });
-        es.merge(tasks).on('end', done);
-    })
-
-});
-
-//开发不壓縮檔案
-gulp.task('dev', function(done) {
-    glob('./public/src/*.es6', function(err, files) {
-        if (err) done(err);
-
-        var tasks = files.map(function(entry) {
-            return browserify({ entries: [entry] })
-                .transform(babelify, {
-                    presets: ["es2015"]
-                })
-                .bundle()
-                .pipe(source(entry))
-                .pipe(rename(function(path) {
-                    path.dirname = "./";
-                    //path.basename += ".min";
-                    path.extname = ".js";
-                }))
-                .pipe(buffer()) //将 stream 转为 buffer
-                .pipe(sourcemaps.init({ loadMaps: true }))
-                //.pipe(uglify()) //压缩 JavaScript
-                .pipe(sourcemaps.write('../maps'))
-                .pipe(gulp.dest('./public/js/'));
-        });
-        es.merge(tasks).on('end', done);
-    })
-});
-
 gulp.task('watch', function() {
-    //watch方法用于指定需要监视的文件。一旦 ./public/src/ 目录中的 js 文件发生变化，就运行任务。
-    //gulp.watch('./public/src/*.es6', ['dev']);
     gulp.watch('src/sass/*.scss', ['styles']);
 });
 
