@@ -19,6 +19,11 @@ gulp.task('default', function() {  // 'default' 默认任务名，运行命令�
 5. 运行 gulp：
 > $ gulp
 
+## 使用 gulp 進行 scss 的編譯工作
+
+可实时监控 sass档案，有修改时即可编译出 css 档
+
+> gulp watch
 
 ## Star gulp
 ```
