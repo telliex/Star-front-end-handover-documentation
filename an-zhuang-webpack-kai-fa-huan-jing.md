@@ -6,9 +6,18 @@ webpack 是一个现代JavaScript 应用程序的模块打包器(module bundler)
 - 发布：js 程序码优化压缩，去除 consol,进行 ES6 转 ES5 的编码（适应不支援 ES6 语法的低阶浏览器，如 IE） 
 
 ## Webpack 快速入門
+首先要安装 Node.js， Node.js 自带了软件包管理器 npm，Webpack 需要 Node.js v0.6 以上支持，建议使用最新版 Node.js。
 
-## Gulp setting
-`/webpack.config.js` 已此档将设定档分为 dev(开发)和 prod(发布)两版本
+1. 用 npm 安装全局 Webpack
+> $ npm install webpack -g
+2. 进入项目目录，用 npm 安装目录 Webpack
+> $ npm install webpack --save-dev
+3. Webpack 在执行的时候，默认情况下，会搜索当前目录的 webpack.config.js 文件，文件设定下面说明
+
+## Webpack config setting
+
+### `/webpack.config.js` 
+为了更通用，将此设定档再分为 dev(开发)和 prod(上线)两版本，应用于开发与上线两种版本输出
 
 ```
 module.exports = function(env) {
@@ -17,7 +26,7 @@ module.exports = function(env) {
 ```
 
 
-开发设定档 `/webpack.dev.config.js`
+### 开发版设定档 `/webpack.dev.config.js`
 
 ```
 const path = require('path'); //通用 Windows 和 MAC OS 档案系统 
@@ -143,7 +152,7 @@ module.exports = {
 
 ```
 
-发布设定档 `/webpack.prod.config.js`
+### 上线版设定档 `/webpack.prod.config.js`
 ```
 const path = require('path'); //通用 Windows 和 MAC OS 档案系统 
 const webpack = require('webpack');
