@@ -8,8 +8,10 @@
 > git clone https://github.com/b-x-b/star-dev-server.git
 
 ## 安装开发时依赖的相关插件
+install 会照 package.json 设定进行,安装项目会用到的 plugin
 > cd star-dev-serve
-> npm install （install 会照 package.json 设定进行)
+> npm install 
+
 
 ## 启动开发架站软体
 将网站根目录指向 `/public` ， Host 名称设为 laravel (http://laravel/)

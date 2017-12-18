@@ -1,4 +1,7 @@
 # Laravel 开发环境参数设置
+
+Laravel 是一套富有表達性且具有簡潔語法的網頁應用程式框架，減少開發過程中的不便，提供了驗證(authentication)、路由(routing)、sessions、快取(caching) 等開發過程中經常用到的工具或功能。
+
 主机若未安装 laravel 可运行的环境，请依下面步骤安装：
 
 ## CentOS 更新
