@@ -1,6 +1,6 @@
 # Gulp 使用
 
-## 快速入門
+## Gulp 快速入門
 
 如已全局安装过 gulp （npm install gulp -g），在执行下面步骤前先运行  npm rm -g gulp（移除全局 gulp 模块）。
 
@@ -19,6 +19,11 @@ gulp.task('default', function() {  // 'default' 默认任务名，运行命令�
 5. 运行 gulp：
 > $ gulp
 
+## 使用 gulp 進行 scss 的編譯工作
+
+可实时监控 sass档案，有修改时即可编译出 css 档
+
+> gulp watch
 
 ## Star gulp
 ```
@@ -35,7 +40,6 @@ var rename = require('gulp-rename'); //重命名文件
 var concat = require('gulp-concat'); //合并文件
 var glob = require('glob'); //產出多文件
 var es = require('event-stream'); //測試插件
-var livereload = require('gulp-livreload'); //监听每个文件的变化
 var path = require('path');
 
 //scss 编译相关
@@ -45,64 +49,7 @@ var plumber = require('gulp-plumber'); // 避免出现错误时中断程式
 var cleanCSS = require('gulp-clean-css'); //清除并压缩 css
 
 
-//发布且压缩档案
-gulp.task('prod', function(done) {
-    glob('./public/src/*.es6', function(err, files) {
-        if (err) done(err);
-
-        var tasks = files.map(function(entry) {
-            return browserify({ entries: [entry] })
-                .transform(babelify, {
-                    presets: ["es2015"]
-                })
-                .bundle()
-                .pipe(source(entry))
-                .pipe(rename(function(path) {
-                    path.dirname = "./";
-                    //path.basename += ".min";
-                    path.extname = ".js";
-                }))
-                .pipe(buffer()) //将 stream 转为 buffer
-                .pipe(sourcemaps.init({ loadMaps: true }))
-                .pipe(uglify()) //压缩 JavaScript
-                .pipe(sourcemaps.write('../maps'))
-                .pipe(gulp.dest('./public/js/'));
-        });
-        es.merge(tasks).on('end', done);
-    })
-
-});
-
-//开发不壓縮檔案
-gulp.task('dev', function(done) {
-    glob('./public/src/*.es6', function(err, files) {
-        if (err) done(err);
-
-        var tasks = files.map(function(entry) {
-            return browserify({ entries: [entry] })
-                .transform(babelify, {
-                    presets: ["es2015"]
-                })
-                .bundle()
-                .pipe(source(entry))
-                .pipe(rename(function(path) {
-                    path.dirname = "./";
-                    //path.basename += ".min";
-                    path.extname = ".js";
-                }))
-                .pipe(buffer()) //将 stream 转为 buffer
-                .pipe(sourcemaps.init({ loadMaps: true }))
-                //.pipe(uglify()) //压缩 JavaScript
-                .pipe(sourcemaps.write('../maps'))
-                .pipe(gulp.dest('./public/js/'));
-        });
-        es.merge(tasks).on('end', done);
-    })
-});
-
 gulp.task('watch', function() {
-    //watch方法用于指定需要监视的文件。一旦 ./public/src/ 目录中的 js 文件发生变化，就运行任务。
-    //gulp.watch('./public/src/*.es6', ['dev']);
     gulp.watch('src/sass/*.scss', ['styles']);
 });
 
@@ -132,10 +79,6 @@ gulp.task('styles', function() {
 });
 
 ```
-
-
-
-
 
 ## 技術參考文檔
 [gulp 中文網](https://www.gulpjs.com.cn/docs/getting-started/)
