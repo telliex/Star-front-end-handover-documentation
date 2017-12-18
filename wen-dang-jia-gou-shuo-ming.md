@@ -1,8 +1,8 @@
-# 文檔架構說明
+# 文檔目錄架構
 
-## 文檔目錄架構
+## 
 
-### 根目錄資料夾與文檔說明
+## 根目錄資料夾與文檔說明
 
 ![](/assets/doc.png)
 
@@ -29,8 +29,9 @@
 | composer.json | Composer 檔案，描述所使用的 php 套件資訊及版本 |
 | composer.lock | Composer 檔案，描述該專案所下載的 php 套件資訊及版本 |
 
+### 
 
-### Public 資料夾文檔說明
+## Public 資料夾文檔說明
 
 Public 資料夾為網站根目錄指向位置，網站內靜態檔案及所嵌入的檔案均放置於此。
 
@@ -65,6 +66,7 @@ public
   └ web.config
 ```
 
+## 
 
 ## Resources 資料夾文檔說明
 
@@ -81,7 +83,9 @@ resources
   └ welcome.blade.php
 ```
 
-### Src 資料夾文檔說明
+## 
+
+## Src 資料夾文檔說明
 
 ```markdown
 src
