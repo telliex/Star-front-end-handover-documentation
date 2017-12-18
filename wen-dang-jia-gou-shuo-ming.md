@@ -35,22 +35,22 @@ Public 資料夾為網站根目錄指向位置，網站內靜態檔案及所嵌�
 
 ```markdown
 public
-  ├ robots-develop.txt                       # 禁止搜索引擎爬蟲收錄測試機的檔案
-  ├ robots.txt                               # 搜索引擎爬蟲收錄正式機的檔案
-  ├ admfile
-  ├ capw
+  ├ robots-develop.txt                       # 禁止搜索引擎爬蟲收錄測試機的 robots.txt 檔案
+  ├ robots.txt                               # 搜索引擎爬蟲收錄正式機的 robots.txt 檔案
+  ├ admfile                                  # 後台所使用的靜態檔案均放置於此
+  ├ capw                                     # 後台登入驗證所使用的數字圖片
   ├ css                                      # 轉譯後的 CSS 樣式表
   │ └ vendor                                 # 轉譯後的套件樣式，所需页面再將樣式嵌入
   ├ font                                     # 自訂的 icon font 樣式
   ├ fontawesome                              # 首頁使用的 fontawesome icon font
   ├ img                                      # 網站所使用的靜態圖片
-  │ ├ about
-  │ ├ brandgroup
-  │ ├ careers
-  │ ├ contact
-  │ ├ error
-  │ ├ icon
-  │ └ title
+  │ ├ about                                  # 選單「關於欣和」所使用的靜態圖片
+  │ ├ brandgroup                             # 選單「品牌家族」所使用的靜態圖片
+  │ ├ careers                                # 選單「加入欣和」所使用的靜態圖片
+  │ ├ contact                                # 選單「聯繫欣和」所使用的靜態圖片
+  │ ├ error                                  # 「錯誤頁面」所使用的靜態圖片
+  │ ├ icon                                   # 「全站 icon 圖示」所使用的靜態圖片
+  │ └ title                                  # 「全站標題」所使用的靜態圖片
   ├ js                                       # 轉譯後的 JS 檔案
   ├ maps
   ├ pdf                                      # 網站所使用的 PDF 檔案
