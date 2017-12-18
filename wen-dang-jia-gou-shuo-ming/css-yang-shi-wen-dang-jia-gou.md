@@ -1,12 +1,12 @@
 ## CSS 樣式文檔架構
 
-> 路徑: src/sass
-> 轉譯後路徑: pubic/css
+> 文檔路徑: root/src/sass
+> 轉譯後路徑: root/pubic/css
 
 ```markdown
 sass
 ├ base
-│ ├ _base-style-setting.scss
+│ ├ _base-style-setting.scss    
 │ ├ _grid-setting.scss
 │ └ _variables.scss
 ├ generic

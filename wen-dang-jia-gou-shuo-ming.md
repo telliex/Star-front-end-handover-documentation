@@ -1,7 +1,5 @@
 # 文檔目錄架構
 
-## 
-
 ## 根目錄資料夾與文檔說明
 
 ![](/assets/doc.png)
@@ -29,18 +27,18 @@
 | composer.json | Composer 檔案，描述所使用的 php 套件資訊及版本 |
 | composer.lock | Composer 檔案，描述該專案所下載的 php 套件資訊及版本 |
 | package.json |  |
-|  |  |
-|  |  |
-|  |  |
-|  |  |
-|  |  |
-|  |  |
-
-### 
+| .babelrc |  |
+| glupfile.js |  |
+| webpack.config.js |  |
+| webpack.dev.config.js |  |
+| webpack.devserver.config.js |  |
+| webpack.prod.config.js |  | 
 
 ## Public 資料夾文檔說明
 
 Public 資料夾為網站根目錄指向位置，網站內靜態檔案及所嵌入的檔案均放置於此。
+
+> 路徑: root/public
 
 ```markdown
 public
@@ -73,9 +71,10 @@ public
   └ web.config
 ```
 
-## 
 
 ## Resources 資料夾文檔說明
+
+> 路徑: root/resources
 
 ```markdown
 resources
@@ -90,9 +89,10 @@ resources
   └ welcome.blade.php
 ```
 
-## 
 
 ## Src 資料夾文檔說明
+
+> 路徑: root/src
 
 ```markdown
 src
