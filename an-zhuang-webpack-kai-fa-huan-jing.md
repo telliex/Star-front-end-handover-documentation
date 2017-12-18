@@ -1,4 +1,4 @@
-# webpack 使用
+# webpack 开发环境参数设置
 Install with npm:
 
 

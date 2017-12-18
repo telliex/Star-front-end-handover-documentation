@@ -1,4 +1,4 @@
-## CSS 樣式文檔架構
+# CSS 样式文档架构
 
 > 文檔路徑: root/src/sass
 > 轉譯後路徑: root/pubic/css
