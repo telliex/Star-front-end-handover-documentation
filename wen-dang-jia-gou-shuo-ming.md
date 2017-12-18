@@ -26,13 +26,13 @@
 | artisan | artisan 的主程式進入點，也因此 artisan 只能在此專案目錄下操作。 |
 | composer.json | Composer 檔案，描述所使用的 php 套件資訊及版本 |
 | composer.lock | Composer 檔案，描述該專案所下載的 php 套件資訊及版本 |
-| package.json |  |
-| .babelrc |  |
-| glupfile.js |  |
-| webpack.config.js |  |
-| webpack.dev.config.js |  |
-| webpack.devserver.config.js |  |
-| webpack.prod.config.js |  |
+| package.json | ? |
+| .babelrc | ? |
+| glupfile.js | ? |
+| webpack.config.js | ? |
+| webpack.dev.config.js | ? |
+| webpack.devserver.config.js | ? |
+| webpack.prod.config.js | ? |
 
 ## Public 資料夾文檔說明
 
@@ -61,10 +61,10 @@ public
   ├ js                                       # 轉譯後的 JS 檔案
   ├ pdf                                      # 網站所使用的 PDF 檔案
   ├ favicon.ico                              # 网站或网页相关联的图标          
-  ├ error-403.html
-  ├ error-404.html
-  ├ error-500.html
-  ├ error-403.html
+  ├ error-403.html                           # 403 錯誤頁面
+  ├ error-404.html                           # 404 錯誤頁面
+  ├ error-500.html                           # 500 錯誤頁面
+  ├ error-503.html                           # 503 錯誤頁面
   ├ index.php
   ├ sitemap.xml                              # 提供給搜索引擎收錄页面的檔案                                       
   └ web.config
