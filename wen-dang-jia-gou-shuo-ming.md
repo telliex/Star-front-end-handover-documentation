@@ -28,6 +28,13 @@
 | artisan | artisan 的主程式進入點，也因此 artisan 只能在此專案目錄下操作。 |
 | composer.json | Composer 檔案，描述所使用的 php 套件資訊及版本 |
 | composer.lock | Composer 檔案，描述該專案所下載的 php 套件資訊及版本 |
+| package.json |  |
+|  |  |
+|  |  |
+|  |  |
+|  |  |
+|  |  |
+|  |  |
 
 ### 
 
