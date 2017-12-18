@@ -1,4 +1,4 @@
-# 文檔目錄架構
+# 文档架构说明
 
 ## 根目錄資料夾與文檔說明
 
@@ -32,7 +32,7 @@
 | webpack.config.js |  |
 | webpack.dev.config.js |  |
 | webpack.devserver.config.js |  |
-| webpack.prod.config.js |  |
+| webpack.prod.config.js |  | 
 
 ## Public 資料夾文檔說明
 
@@ -59,16 +59,18 @@ public
   │ ├ icon                                   # 「全站 icon 圖示」所使用的靜態圖片
   │ └ title                                  # 「全站標題」所使用的靜態圖片
   ├ js                                       # 轉譯後的 JS 檔案
+  ├ maps                                     # JS Source map，除錯使用的信息文件
   ├ pdf                                      # 網站所使用的 PDF 檔案
   ├ favicon.ico                              # 网站或网页相关联的图标          
-  ├ error-403.html                           # 403 錯誤頁面
+  ├ error-403.html
   ├ error-404.html
   ├ error-500.html
   ├ error-403.html
   ├ index.php
   ├ sitemap.xml                              # 提供給搜索引擎收錄页面的檔案                                       
-  └ web.config                               # 預定
+  └ web.config
 ```
+
 
 ## Resources 資料夾文檔說明
 
@@ -87,6 +89,7 @@ resources
   └ welcome.blade.php
 ```
 
+
 ## Src 資料夾文檔說明
 
 > 路徑: root/src
@@ -95,7 +98,7 @@ resources
 src
 ├ js
 ├ lib
-├ map                                        # JS Source map，除錯使用的信息文件
+├ map
 └ sass
 ```
 
