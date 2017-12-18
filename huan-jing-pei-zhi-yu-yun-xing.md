@@ -1,4 +1,4 @@
-# 开发环境安装
+# 开发环境配置
 ## 从 github 抓取
 将 Star 项目开发档案从 github 抓回
 > git clone https://github.com/b-x-b/star-dev-server.git
