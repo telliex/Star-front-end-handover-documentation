@@ -7,13 +7,12 @@
 - 操作系统：Centos 7.2 64位
 - PHP 
 - Laravel
-
+- 
 
 ### 主机环境应用程序
 - nodejs
 - git
 - 
-
 
 ## 兼容版本
 ---
