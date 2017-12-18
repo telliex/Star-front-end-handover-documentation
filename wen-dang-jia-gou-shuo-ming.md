@@ -6,7 +6,7 @@
 
 ![](/assets/doc.png)
 
-| 目錄及檔案 | 功能說明 |
+| 目錄 | 功能說明 |
 | :--- | :--- |
 | app | 此目錄為專案的核心目錄，專案的程式邏輯皆會放置在裡面。 |
 | bootstrap | 放置框架的啟動程式碼，內含一個 cache 目錄放置由框架產生的快取以提高效能。 |
@@ -21,13 +21,14 @@
 | tests | ?? |
 | vendor | 此目錄由 Composer 建立，所有透過 Composer 安裝的元件皆放於此。 |
 
-|  |  |
+| 檔案 | 功能說明 |
 | :--- | :--- |
 | .env | 專案的環境檔案，會依照伺服器環境不同而有差異，Laravel 在執行時會將環境檔案載入，若是發生無環境檔案的錯誤可透過複製環境檔案範例重新建立此檔案。 |
 | .env.example | Laravel 所提供的環境檔案範例 |
 | artisan | artisan 的主程式進入點，也因此 artisan 只能在此專案目錄下操作。 |
 | composer.json | Composer 檔案，描述所使用的 php 套件資訊及版本 |
 | composer.lock | Composer 檔案，描述該專案所下載的 php 套件資訊及版本 |
+
 
 ### Public 資料夾文檔說明
 
@@ -52,9 +53,9 @@ public
   │ ├ icon                                   # 「全站 icon 圖示」所使用的靜態圖片
   │ └ title                                  # 「全站標題」所使用的靜態圖片
   ├ js                                       # 轉譯後的 JS 檔案
-  ├ maps
+  ├ maps                                     # JS Source map，除錯使用的信息文件
   ├ pdf                                      # 網站所使用的 PDF 檔案
-  ├ favicon.ico
+  ├ favicon.ico                              # 网站或网页相关联的图标          
   ├ error-403.html
   ├ error-404.html
   ├ error-500.html
@@ -63,6 +64,7 @@ public
   ├ sitemap.xml                              # 提供給搜索引擎收錄页面的檔案                                       
   └ web.config
 ```
+
 
 ## Resources 資料夾文檔說明
 
