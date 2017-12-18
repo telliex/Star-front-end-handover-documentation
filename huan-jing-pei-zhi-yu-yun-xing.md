@@ -1,9 +1,9 @@
-#
-# 从 github 抓取
-将 Star 项目的档案从 github 抓回
+# 开发环境安装
+## 从 github 抓取
+将 Star 项目开发档案从 github 抓回
 > git clone https://github.com/b-x-b/star-dev-server.git
 
-## 安装开发相关插件
+## 安装开发时依赖的相关插件
 > cd star-dev-serve
 > npm install （install 会照 package.json 设定进行)
 
