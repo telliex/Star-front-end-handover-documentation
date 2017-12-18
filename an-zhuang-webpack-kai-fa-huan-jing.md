@@ -17,17 +17,16 @@ module.exports = function(env) {
 ```
 
 
-`/webpack.dev.config.js`
+开发设定档 `/webpack.dev.config.js`
 
 ```
-const path = require('path');
-const webpack = require('webpack');
-const node_modules_dir = path.resolve(__dirname, 'node_modules');
-const js_dir = path.resolve(__dirname, "src/lib");
+const path = require('path'); //通用 Windows 和 MAC OS 档案系统 
+const webpack = require('webpack'); 
+const node_modules_dir = path.resolve(__dirname, 'node_modules'); //webpack 插件放置路径(透过 npm 安装)
+const js_dir = path.resolve(__dirname, "src/lib"); //webpack js 组件路径 
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
 const WebpackDevServer = require('webpack-dev-server');
-const CleanWebpackPlugin = require('clean-webpack-plugin');
-const es3ifyPlugin = require('es3ify-webpack-plugin');
+const CleanWebpackPlugin = require('clean-webpack-plugin'); // 清除不需要的暂存档
 
 module.exports = {
     devtool: 'source-map',
@@ -40,7 +39,7 @@ module.exports = {
     },
     // 通过在浏览器调试工具(browser devtools)中添加元信息(meta info)增强调试
     entry: {
-        // 单页应用(SPA)：一个入口起点，多页应用(MPA)：多个入口起点。
+        // 多頁面入口，针对不同页面 js 进行添加，.es6 转 .js (es6 转码)
         'global': './src/js/global.es6',
         'lyt-about-csv': './src/js/lyt-about-csv.es6',
         'lyt-about-business': './src/js/lyt-about-business.es6',
@@ -105,7 +104,7 @@ module.exports = {
     resolve: {
         // 使用的扩展名
         alias: {
-            // 模块别名列表
+            // js 模块引用列表
             "jquery$": js_dir + "/jquery.js",
             "jquery.history$": js_dir + "/jquery.history.js",
             "jquery.cookie$": js_dir + "/jquery.cookie.js",
@@ -124,7 +123,7 @@ module.exports = {
 
     },
     plugins: [
-        // 清除 js 资料夹
+        // 针对 ES6 模块管理引用名称
         new webpack.ProvidePlugin({
             $: 'jquery',
             jQuery: 'jquery',
@@ -144,6 +143,140 @@ module.exports = {
 
 ```
 
+发布设定档 `/webpack.prod.config.js`
+```
+const path = require('path'); //通用 Windows 和 MAC OS 档案系统 
+const webpack = require('webpack');
+const node_modules_dir = path.resolve(__dirname, 'node_modules'); //webpack 插件放置路径(透过 npm 安装)
+const js_dir = path.resolve(__dirname, "src/lib"); //webpack js 组件路径 
+const ExtractTextPlugin = require("extract-text-webpack-plugin");
+const UglifyJSPlugin = require('uglifyjs-webpack-plugin'); // 压缩插件引用
+const CleanWebpackPlugin = require('clean-webpack-plugin'); // 清除不需要的暂存档
+const es3ifyPlugin = require('es3ify-webpack-plugin'); // ES5 再转码，IE 低阶浏览器可识别
+// dashboard 
+const Dashboard = require('webpack-dashboard');
+const DashboardPlugin = require('webpack-dashboard/plugin');
+const dashboard = new Dashboard();
+
+
+module.exports = {
+    entry: {
+        // 多頁面入口，针对不同页面 js 进行添加，.es6 转 .js (es6 转码)
+        'global': './src/js/global.es6',
+        'lyt-about-csv': './src/js/lyt-about-csv.es6',
+        'lyt-about-business': './src/js/lyt-about-business.es6',
+        'lyt-about-focus': './src/js/lyt-about-focus.es6',
+        'lyt-about-history': './src/js/lyt-about-history.es6',
+        'lyt-about-crafts': './src/js/lyt-about-crafts.es6',
+        'lyt-about': './src/js/lyt-about.es6',
+        'lyt-brand-attitude': './src/js/lyt-brand-attitude.es6',
+        'lyt-brand-group': './src/js/lyt-brand-group.es6',
+        'lyt-brand-index': './src/js/lyt-brand-index.es6',
+        'lyt-brand-news-list': './src/js/lyt-brand-news-list.es6',
+        'lyt-brand-prod-detail': './src/js/lyt-brand-prod-detail.es6',
+        'lyt-brand-prod-list': './src/js/lyt-brand-prod-list.es6',
+        'lyt-brand-prod-print': './src/js/lyt-brand-prod-print.es6',
+        'lyt-brand-recipe-detail': './src/js/lyt-brand-recipe-detail.es6',
+        'lyt-brand-recipe-list': './src/js/lyt-brand-recipe-list.es6',
+        'lyt-brand-topic': './src/js/lyt-brand-topic.es6',
+        'lyt-careers-camp-recruiting-list': './src/js/lyt-careers-camp-recruiting-list.es6',
+        'lyt-careers-recruiting-list': './src/js/lyt-careers-recruiting-list.es6',
+        'lyt-careers': './src/js/lyt-careers.es6',
+        'lyt-news-detail': './src/js/lyt-news-detail.es6',
+        'lyt-news-list': './src/js/lyt-news-list.es6',
+        'lyt-recipedetail': './src/js/lyt-recipedetail.es6',
+    },
+    output: {
+        filename: '[name].js',
+        // 所输出的档名
+        path: path.resolve(__dirname, 'public/js/custom'),
+        // 所有输出文件的目标路径
+        sourceMapFilename: "../../../src/map/[file].map"
+    },
+    module: {
+
+        rules: [
+           
+            // 模块规则（配置 loader、解析器等选项）
+            {
+                loader: 'babel-loader',
+                test: /\.(es6|js)$/,
+            },
+             {
+                loader: 'es3ify-loader',
+                test: /\.(es6|js)$/,
+                include: /\/node_modules\//,
+                enforce: "post"
+            },
+            {
+                test: /\.css$/,
+                use: [
+                    'style-loader',  // 這個會後執行 (順序很重要)
+                    'css-loader' // 這個會先執行
+                ]
+            },
+            {
+                test: /\.(png|svg|jpg|gif)$/,
+                use: ['file-loader']
+            },
+            {
+                test: /\.(woff|woff2|eot|ttf|otf)$/,
+                use: ['file-loader']
+            }
+        ]
+    },
+    resolve: {
+        alias: {
+            // 模块别名列表
+            "jquery$": js_dir + "/jquery.js",
+            "jquery.history$": js_dir + "/jquery.history.js",
+            "jquery.cookie$": js_dir + "/jquery.cookie.js",
+            "carousel$": js_dir + "/owlcarousel/owl.carousel.js",
+            "jqRotate$": js_dir + "/jQueryRotate.js",
+            "jqMobile$": js_dir + "/jquery.mobile.min.js",
+            "TweenLite$": node_modules_dir + '/gsap/src/uncompressed/TweenLite.js',
+            "TweenMax$": node_modules_dir + '/gsap/src/uncompressed/TweenMax.js',
+            "TimelineLite$": node_modules_dir + '/gsap/src/uncompressed/TimelineLite.js',
+            "TimelineMax$": node_modules_dir + '/gsap/src/uncompressed/TimelineMax.js',
+            "ScrollMagic$": node_modules_dir + '/scrollmagic/scrollmagic/uncompressed/ScrollMagic.js',
+            "animation$": node_modules_dir + '/scrollmagic/scrollmagic/uncompressed/plugins/animation.gsap.js',
+            "debug.addIndicators$": node_modules_dir + '/scrollmagic/scrollmagic/uncompressed/plugins/debug.addIndicators.js',
+            "slick$": js_dir + "/slick/slick.js",
+        }
+
+    },
+    plugins: [
+        //针对 ES6 模块管理引用名称
+        new webpack.ProvidePlugin({
+            $: 'jquery',
+            jQuery: 'jquery',
+            'window.jQuery': 'jquery',
+            'root.jQuery': 'jquery',
+            'owlCarousel' : 'carousel',
+            ScrollMagic : 'ScrollMagic',
+        }),
+        //打包压缩时去掉 console.log
+        new UglifyJSPlugin({
+            compress: { screw_ie8: false , warnings: false},
+            mangle: { except: ['$'],screw_ie8: false },
+            output: {
+                screw_ie8: false
+            },
+            support_ie8: true
+        }),
+        // dashboard
+        new DashboardPlugin(dashboard.setData),
+
+        // 清除多馀的档案
+        new CleanWebpackPlugin(['./public/js/custom/'], {
+            "verbose": true,
+            "exclude": []
+        }),
+        // 输出低阶浏览器可识别的程序码
+        new es3ifyPlugin()
+    ]
+}
+```
 
 
 ## 技術參考文檔
