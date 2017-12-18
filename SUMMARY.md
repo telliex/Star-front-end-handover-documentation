@@ -1,6 +1,6 @@
 # Summary
 
-* [Introduction](README.md)
+* [文件说明](README.md)
 * [使用到的技术 F](chapter1.md)
 * [環境配置與運行 T](huan-jing-pei-zhi-yu-yun-xing.md)
 * [文檔架構說明 F](wen-dang-jia-gou-shuo-ming.md)
