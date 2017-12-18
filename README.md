@@ -21,8 +21,9 @@
 
 ## 开发使用工具
 ---
-- git 版空档案
-- github 统一管理档案
+- **git** - 版空档案
+- **github** - 统一管理档案
+- **MAMP** - MAC OS 上佈置 Apache + MySQL + PHP環境的套装软体 ( Windows 系统开发者可使用 XAMPP 等类似的网页服务器架站工具)
 
 
 

@@ -1,4 +1,8 @@
 # 开发环境配置
+## 安装本机开发架站软体
+- Mac OS - [MAMP](https://www.mamp.info/en/)
+- Windows - [XAMPP](https://www.apachefriends.org/zh_tw/index.html)
+
 ## 从 github 抓取
 将 Star 项目开发档案从 github 抓回
 > git clone https://github.com/b-x-b/star-dev-server.git
@@ -7,10 +11,13 @@
 > cd star-dev-serve
 > npm install （install 会照 package.json 设定进行)
 
+## 启动开发架站软体
+将网站根目录指向 `/public`
+
 ## 分支
 - master 推至正式机，发佈上线版本
 - release 上线前的版本，用于 QA 检查
-- develop 主要开发分支所在
+- **develop 主要开发分支所在**
 - feature 新功能的开发，最后併入 develop 分支
 
 ## 开发说明
@@ -18,7 +25,6 @@
 - 上线时先上欣和测试机 `sh1.shinho.com.cn`，确认无误时，再更新正式机`http://shinho.com.cn/`。
 - 每个分支都完成阶段工作时皆要推至 github 管理，主机推档也是从 github 拉档方式进行。安全性考量，勿使用 ftp 上传档案。
 - 每日下班时需提交今日的工作。
--
 
 ## package.json
 以下是 install 时所依赖的设定。 `scripts` 部分后面章节说明，下面主要提及所安装插件的插件功用`devDependencies`、`dependencies`
@@ -153,15 +159,6 @@
 
 ```
 
-
-### 环境配置
-
-## 如何启动
-
-## 运行
+## 技術參考資料
 
 
-
-
-
-# 参考资料
