@@ -12,7 +12,7 @@
 > npm install （install 会照 package.json 设定进行)
 
 ## 启动开发架站软体
-将网站根目录指向 `/public`
+将网站根目录指向 `/public` ， Host 名称设为 laravel (http://laravel/)
 
 ## 分支
 - master 推至正式机，发佈上线版本
