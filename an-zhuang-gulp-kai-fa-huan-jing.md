@@ -1,6 +1,6 @@
 # Gulp 使用
 
-## 快速入門
+## Gulp 快速入門
 
 如已全局安装过 gulp （npm install gulp -g），在执行下面步骤前先运行  npm rm -g gulp（移除全局 gulp 模块）。
 
