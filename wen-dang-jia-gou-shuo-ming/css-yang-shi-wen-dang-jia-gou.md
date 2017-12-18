@@ -1,7 +1,7 @@
 ## CSS 樣式文檔架構
 
-路徑: src/sass
-轉譯後路徑: pubic/css
+> 路徑: src/sass
+> 轉譯後路徑: pubic/css
 
 ```markdown
 sass
