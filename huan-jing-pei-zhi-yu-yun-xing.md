@@ -1,159 +1,152 @@
-## 從 github 抓取
-將 Star 項目的檔案從 github 抓回
+# 开发环境安装
+## 从 github 抓取
+将 Star 项目开发档案从 github 抓回
 > git clone https://github.com/b-x-b/star-dev-server.git
 
-## 安裝開發相關插件
+## 安装开发时依赖的相关插件
 > cd star-dev-serve
-> npm install （install 會照 package.json 設定進行)
+> npm install （install 会照 package.json 设定进行)
 
 ## 分支
-- master 推至正式機，發佈上線版本
-- release 上線前的版本，用於 QA 檢查
-- develop 主要開發分支所在
-- feature 新功能的開發，最後併入 develop 分支
+- master 推至正式机，发佈上线版本
+- release 上线前的版本，用于 QA 检查
+- develop 主要开发分支所在
+- feature 新功能的开发，最后併入 develop 分支
 
-## 開發說明
-- 開發都先會在 develop 分支進行，若有新功能，也會在 develop 分支開始 branch 新的 feature，完成後再 merge 回 develop 分支，develop 分支到一段落（如上線前），會 merge 到 release 分支，進行 QA 工作，驗證遇有問題，回到 develop 分支除錯，完成後再 merge 到 QA 分支供 QA 再檢視。若檢視皆通過，即可 merge 到 master 分支等待上線。
-- 上線時先上欣和測試機 `sh1.shinho.com.cn`，確認無誤時，再更新正式機`http://shinho.com.cn/`。
-- 每個分支都完成階段工作時皆要推至 github 管理，主機推檔也是從 github 拉檔方式進行。安全性考量，勿使用 ftp 上傳檔案。
-- 每日下班時需提交今日的工作。
-- 
+## 开发说明
+- 开发都先会在 develop 分支进行，若有新功能，也会在 develop 分支开始 branch 新的 feature，完成后再 merge 回 develop 分支，develop 分支到一段落（如上线前），会 merge 到 release 分支，进行 QA 工作，验证遇有问题，回到 develop 分支除错，完成后再 merge 到 QA 分支供 QA 再检视。若检视皆通过，即可 merge 到 master 分支等待上线。
+- 上线时先上欣和测试机 `sh1.shinho.com.cn`，确认无误时，再更新正式机`http://shinho.com.cn/`。
+- 每个分支都完成阶段工作时皆要推至 github 管理，主机推档也是从 github 拉档方式进行。安全性考量，勿使用 ftp 上传档案。
+- 每日下班时需提交今日的工作。
+-
 
 ## package.json
-以下是 install 時所依賴的設定。 `scripts` 部分後面章節說明，下面主要提及所安裝插件的插件功用`devDependencies`、`dependencies`
+以下是 install 时所依赖的设定。 `scripts` 部分后面章节说明，下面主要提及所安装插件的插件功用`devDependencies`、`dependencies`
 
 ```
 {
-  "private": true,
-  "scripts": {
-  //發佈（壓縮）
+    "private": true,
+    "scripts": {
+  //发佈（压缩）
     "prod": "webpack --config webpack.prod.config.js",
-  //開發偵聽（可同時編譯出檔案）
-    "dev:watch": "webpack --config webpack.dev.config.js  --watch",  
+  //开发侦听（可同时编译出档案）
+    "dev:watch": "webpack --config webpack.dev.config.js --watch",
     "dev-serverbuild": "node server.js",
     "lint": "eslint my-files.js",
-  //開發 + livereview
-    "dev:addListener": "browser-sync start --proxy 'http://laravel' --files './public/js/custom/*.js'"  
-  },
-  "devDependencies": {
-  //babel (ES6 轉碼 ES5)
+  //开发 + livereview
+    "dev:addListener": "browser-sync start --proxy 'http://laravel' --files './public/js/custom/*.js'"
+    },
+    "devDependencies": {
+  //babel (ES6 转码 ES5)
     "babel-cli": "^6.24.1",
   //代码需要调用Babel的API进行转码，就要使用babel-core模块
     "babel-core": "^6.26.0",
-
     "babel-loader": "^7.1.2",
     "babel-plugin-transform-es2015-modules-simple-commonjs": "^0.3.0",
-  //使 IE8 接受 default or catch 关键字  
+  //使 IE8 接受 default or catch 关键字
     "babel-plugin-transform-es3-member-expression-literals": "^6.22.0",
     "babel-plugin-transform-es3-property-literals": "^6.22.0",
-  //转换新的 API，比如 Promise，以及 Object.assign、Array.from 等方法  
+  //转换新的 API，比如 Promise，以及 Object.assign、Array.from 等方法
     "babel-runtime": "^6.26.0",
     "babel-plugin-transform-runtime": "^6.23.0",
   //使用ES6的API
     "babel-polyfill": "^6.26.0",
-  // ES6 present  
+  //ES6 present
     "babel-preset-env": "^1.6.1",
-
+  //页面刷新插件
     "browser-sync": "^2.18.13",
-    "html-loader": "^0.5.1",
-    "buble-loader": "^0.4.1",
-  //清除 output 檔案，避免產出多餘的亂數檔名檔案  
+  //清除 output 档案，避免产出多馀的乱数档名档案
     "clean-webpack-plugin": "^0.1.16",
-  //CSS loader  
+  //CSS loader
     "css-loader": "^0.28.7",
-  //ES5 轉 ES4 (ES6 IE不支援，需藉 es3ify 再轉成 ES4)
+  //es3ify解决es3环境兼容
     "es3ify-loader": "^0.2.0",
     "es3ify-webpack-plugin": "0.0.1",
-  //可將 CSS 單獨打包  
-    "extract-text-webpack-plugin": "^3.0.0",
-  //可將圖片載入模組  
+  //可将 CSS 单独打包
+    "extract-text-webpack-plugin": "^3.0.0",add-module-exports
+  //可将图片载入模组
     "file-loader": "^0.11.2",
-    
-    
-  //glup相關
+  //glup相关
     "gulp": "^3.9.1",
-  //glup相關-babel轉換ES6   
+  //glup相关-babel转换ES6
     "gulp-babel": "^6.1.2",
-  //glup相關-可以使用类似于 node 的 require() 的方式来组织浏览器端的 Javascript 代码
+  //glup相关-可以使用类似于 node 的 require() 的方式来组织浏览器端的 Javascript 代码
     "browserify": "^14.4.0",
-  //glup相關-將 ES6 转成 ES5  
+  //glup相关-将 ES6 转成 ES5
     "babelify": "^7.3.0",
-  //glup相關-将Browserify的bundle()的输出转换为Gulp可用的vinyl（一种虚拟文件格式）流 
+  //glup相关-将Browserify的bundle()的输出转换为Gulp可用的vinyl（一种虚拟文件格式）流
     "vinyl-source-stream": "^1.1.0",
-  //glup相關-辅助工具
+  //glup相关-辅助工具
     "vinyl-buffer": "^1.0.0",
-  //glup相關-压缩 JavaScript
+  //glup相关-压缩 JavaScript
     "gulp-uglify": "^3.0.0",
-  //glup相關-查看压缩后的 JS 代码所对应的行数时，source map 就能告诉你其相应代码在未压缩文件的所在行数
+  //glup相关-查看压缩后的 JS 代码所对应的行数时，source map 就能告诉你其相应代码在未压缩文件的所在行数
     "gulp-sourcemaps": "^2.6.0",
-  //glup相關-压缩css文件
+  //glup相关-压缩css文件
     "gulp-cssnano": "^2.1.2",
-  //glup相關-重新命名文件
+  //glup相关-重新命名文件
     "gulp-rename": "^1.2.2",
-  //glup相關-合并文件
+  //glup相关-合并文件
     "gulp-concat": "^2.6.1",
-  //glup相關-產出多文件
+  //glup相关-产出多文件
     "glob": "^7.1.2",
-  //glup相關-測試插件
+  //glup相关-测试插件
     "event-stream": "^3.3.4",
-  //glup相關-监听每个文件的变化 
+  //glup相关-监听每个文件的变化
     "gulp-livereload": "^3.8.1",
-  //glup相關-載入 gulp-sass    
+  //glup相关-载入 gulp-sass
     "gulp-sass": "^3.1.0",
-  //glup相關-編譯scss
+  //glup相关-编译scss
     "gulp-compass": "^2.1.0",
-  //glup相關-避免出现错误时中断程式
+  //glup相关-避免出现错误时中断程式
     "gulp-plumber": "^1.1.0",
-  //glup相關-清除并压缩 css
+  //glup相关-清除并压缩 css
     "gulp-clean-css": "^3.9.0",
-
-
-   
-    "html-webpack-plugin": "^2.30.1",
-    "image-webpack-loader": "^3.4.0",
-    "less": "^2.7.2",
-    "less-loader": "^4.0.5",
     "minimatch": "^3.0.4",
+  //各个loader
     "node-sass": "^4.5.3",
-    "postcss-loader": "^2.0.8",
     "sass-loader": "^6.0.6",
     "script-loader": "^0.7.1",
     "style-loader": "^0.18.2",
-  //壓縮 js
+    "less": "^2.7.2",
+    "image-webpack-loader": "^3.4.0",
+    "less-loader": "^4.0.5",
+    "url-loader": "^0.5.9",
+    "html-loader": "^0.5.1",
+    "buble-loader": "^0.4.1",
+  //压缩 js
     "uglify-es": "^3.1.0",
     "uglify-js-es6": "^2.8.9",
     "uglifyes-webpack-plugin": "^0.4.3",
     "uglifyjs-webpack-plugin": "^0.4.6",
-    
-    "url-loader": "^0.5.9",
-
-  //webpack 
+  //webpack
     "webpack": "^3.8.1",
-  //webpack 發佈仪表盘  
+  //webpack 发佈仪表盘
     "webpack-dashboard": "^1.0.0-5",
-  //即時熱  
+  //即时热插拔
     "webpack-dev-middleware": "^1.12.0",
     "webpack-dev-server": "^2.8.2",
     "webpack-hot-middleware": "^2.19.1"
   },
-  "dependencies": {
+"dependencies": {
     "babel-plugin-add-module-exports": "^0.2.1",
+  //Browser console polyfill. Makes it safe to do console.log().  
     "console-polyfill": "^0.3.0",
     "core-js": "^2.5.1",
     "es5-shim": "^4.5.9",
     "es6-promise": "^4.1.1",
     "fetch-ie8": "^1.5.0",
-  // Tween  
+  // Tween
     "gsap": "^1.20.2",
-  //JS 主要函數庫
+  //JS 主要函数库
     "jquery": "^1.12.4",
-  //base on jquery的網址指向功能
+  //base on jquery的网址指向功能
     "jquery-history": "^1.0.1",
   //base on jquery的 cookie 功能，
     "jquery.cookie": "^1.4.1",
-  // KV 輪播  
+  // KV 轮播
     "owl.carousel": "^2.2.0",
-  //捲動視差特效功能  
+  //捲动视差特效功能
     "scrollmagic": "^2.0.5"
   }
 }
@@ -161,15 +154,14 @@
 ```
 
 
-### 環境配置
+### 环境配置
 
-## 如何啟動
+## 如何启动
 
-## 運行
-
-
+## 运行
 
 
 
-# 參考資料
 
+
+# 参考资料
