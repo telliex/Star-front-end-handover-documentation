@@ -10,6 +10,8 @@ js
 ├ base.js
 ├ browser.js
 ├ generic.js
+├ maxin.js
+├ partical.js
 ├ global.es6
 ├ ie-debug.es6
 ├ lyt-about-business.es6
@@ -34,15 +36,25 @@ js
 ├ lyt-careers.es6
 ├ lyt-news-detail.es6
 ├ lyt-news-list.es6
-├ maxin.js
-├ partical.js
-└ share.es6
+└ share.es6  沈大哥
 ```
 
 ## lib 资料夹
 
 > 文党路径: root/src/lib
 
-
-
-
+```markdown
+lib
+├ owlcarousel
+├ slick
+├ animation.gsap.min.js
+├ brewser.js
+├ debug.addIndicators.min.js
+├ jquery.cookie.js
+├ jquery.history.js
+├ jquery.js
+├ jquery.mobile.min.js
+├ jQueryRotate.js
+├ ScrollMagic.min.js
+└ TweenMax.min.js
+```
