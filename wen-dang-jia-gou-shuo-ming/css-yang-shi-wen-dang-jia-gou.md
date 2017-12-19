@@ -5,14 +5,14 @@
 
 ```markdown
 sass
-├ base
-│ ├ _base-style-setting.scss    
-│ ├ _grid-setting.scss
-│ └ _variables.scss
-├ generic
-│ ├ _common.scss
-│ ├ _extend.scss
-│ └ _maxin.scss
+├ base                                      #
+│ ├ _base-style-setting.scss                #    
+│ ├ _grid-setting.scss                      #
+│ └ _variables.scss                         #
+├ generic                                   #
+│ ├ _common.scss                            #
+│ ├ _extend.scss                            #
+│ └ _maxin.scss                             #
 ├ layout
 ├ modules
 │ ├ _module-anchor.scss
