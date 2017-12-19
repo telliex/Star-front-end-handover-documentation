@@ -13,8 +13,8 @@
 | node\_modules | node.js 使用的 Plugins。 |
 | public ![](/images/star.png) | 专案网站的根目录，放置静态档案，而其中的 index.php 则是整个应用程式的进入点。 |
 | resources ![](/images/star.png) | 其中资料夹为 views、lang、assets，分别放了视图档案、语系档案及预先编译才能使用的资源档案。 |
-| routes | |
-| src ![](/images/star.png) | |
+| routes | Routes 设定档案。 |
+| src ![](/images/star.png) | SCSS、ES6 预先编译才能使用的资源档案。 |
 | storage | ?? |
 | tests | ?? |
 | vendor | 此目录由 Composer 建立，所有透过 Composer 安装的元件皆放于此。 |
@@ -22,10 +22,10 @@
 | 档案 | 功能说明 |
 | :--- | :--- |
 | .env | 专案的环境档案，会依照伺服器环境不同而有差异，Laravel 在执行时会将环境档案载入，若是发生无环境档案的错误可透过复制环境档案范例重新建立此档案。 |
-| .env.example | Laravel 所提供的环境档案范例 |
+| .env.example | Laravel 所提供的环境档案范例。 |
 | artisan | artisan 的主程式进入点，也因此 artisan 只能在此专案目录下操作。 |
-| composer.json | Composer 档案，描述所使用的 php 套件资讯及版本 |
-| composer.lock | Composer 档案，描述该专案所下载的 php 套件资讯及版本 |
+| composer.json | Composer 档案，描述所使用的 php 套件资讯及版本。 |
+| composer.lock | Composer 档案，描述该专案所下载的 php 套件资讯及版本。 |
 | package.json | ? |
 | .babelrc | Babel? |
 | glupfile.js | Glup? |
@@ -72,24 +72,28 @@ public
 
 ## Resources 资料夹文档说明
 
+Resources 资料夹内为 views、lang、assets，分别放了视图档案、语系档案及预先转译才能使用的资源档案。目前仅使用 views 资料夹存放 Laravel Blade 样板引擎，前台页面都存放在此。
+
+* 若需新增或运维网站内容请参考：1.5.3 新增与运维 - PHP 
+
 > 路径: root/resources
 
 ```markdown
 resources
-├ assets
-├ lang
-└ views
-├ adm
-├ errors
-├ front
-├ layouts
-├ vendor
-└ welcome.blade.php
+├ assets                                    # Laravel 框架：预先转译才能使用的资源档案，目前不使用
+├ lang                                      # Laravel 框架：语系档案，目前尚未使用到此功能
+└ views                                     # Laravel 框架：视图档案，存放 Laravel Blade 样板引擎，前台页面都存放在此
 ```
 
 ## Src 资料夹文档说明
 
+Src 资料夹存放预先编译才能使用的资源档案，例如：SCSS、ES6。无论样式或交互动效，转译前档案都在此。
+
+* 若需新㽪或运维样式请参考：1.5.1 新增与运维 - CSS
+* 若需新㽪或运维交互动效请参考：1.5.2 新增与运维 - JavaScript
+
 > 路径: root/src
+
 
 ```markdown
 src
