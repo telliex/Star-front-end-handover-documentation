@@ -70,5 +70,7 @@ resolve: {
 
 ```
 
+## 技術參考文檔
 
+- [webpack](https://doc.webpack-china.org/concepts/)
 
