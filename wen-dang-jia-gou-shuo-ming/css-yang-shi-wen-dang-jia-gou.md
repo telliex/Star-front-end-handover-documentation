@@ -1,6 +1,6 @@
 # CSS 样式文档架构
 
-全站的 CSS 样式，统一使用 SCSS 撰写，架构分别为 `base`
+全站的 CSS 样式，统一使用 SCSS 撰写，架构分别为 `base`、`generic`、`layout`、`modules`、`partials`、`vendor`
 
 > 文党路径: `root/src/sass`  
 > 转译后路径: `root/pubic/css`
