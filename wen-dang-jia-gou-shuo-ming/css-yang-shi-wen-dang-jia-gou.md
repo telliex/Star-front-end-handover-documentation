@@ -1,7 +1,7 @@
 # CSS 样式文档架构
 
-> 文檔路徑: root/src/sass
-> 轉譯後路徑: root/pubic/css
+> 文党路径: root/src/sass
+> 转译后路径: root/pubic/css
 
 ```markdown
 sass
