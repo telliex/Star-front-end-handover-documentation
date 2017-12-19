@@ -66,7 +66,7 @@ public
 ├ error-500.html                            # 500 错误页面
 ├ error-503.html                            # 503 错误页面
 ├ index.php                                 # Laravel 应用程式的进入点，非普遍定义的首页
-├ sitemap.xml                             [](/xin-zeng-yu-wei-yun-f/css.md)  # 提供给搜索引擎收录页面的档案
+├ sitemap.xml                               # 提供给搜索引擎收录页面的档案
 └ web.config                                # 设定 Laravel rewrite rule
 ```
 
