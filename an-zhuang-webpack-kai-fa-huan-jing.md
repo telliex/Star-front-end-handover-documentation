@@ -1,4 +1,5 @@
 # webpack 开发环境参数设置
+
 webpack 是一个现代JavaScript 应用程序的模块打包器(module bundler)。当webpack 处理应用程序时，它会递归地构建一个依赖关系图(dependency graph)，其中包含应用程序需要的每个模块，然后将所有这些模块打包成一个或多个bundle。
 
 使用 webpack 来协助 ES6 模块的管理，管理开发与发布两套版本的输出
@@ -6,6 +7,7 @@ webpack 是一个现代JavaScript 应用程序的模块打包器(module bundler)
 - 发布：js 程序码优化压缩，去除 consol,进行 ES6 转 ES5 的编码（适应不支援 ES6 语法的低阶浏览器，如 IE） 
 
 ## Webpack 快速入門
+
 首先要安装 Node.js， Node.js 自带了软件包管理器 npm，Webpack 需要 Node.js v0.6 以上支持，建议使用最新版 Node.js。
 
 1. 用 npm 安装全局 Webpack
@@ -289,4 +291,5 @@ module.exports = {
 
 
 ## 技術參考文檔
+
 - [webpack](https://doc.webpack-china.org/concepts/)
