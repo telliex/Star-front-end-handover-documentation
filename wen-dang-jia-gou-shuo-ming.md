@@ -74,7 +74,7 @@ public
 
 Resources 资料夹内为 views、lang、assets，分别放了视图档案、语系档案及预先转译才能使用的资源档案。目前仅使用 views 资料夹存放 Laravel Blade 样板引擎，前台页面都存放在此。
 
-* 若需新增或运维网站内容请参考：1.5.3 新增与运维 - PHP 
+* 若需新增或运维网站内容请参考：[1.5.3 新增与运维 - PHP ](/xin-zeng-yu-wei-yun-f/php.md)
 
 > 路径: root/resources
 
