@@ -87,7 +87,7 @@ resources
 
 ## Src 资料夹文档说明
 
-Src 资料夹存放预先编译才能使用的资源档案，例如：SCSS、ES6。无论样式或交互动效，转译前档案都在此。
+Src 资料夹存放预先转译才能使用的资源档案，例如：SCSS、ES6。无论样式或交互动效，转译前档案都在此。
 
 * 若需新㽪或运维样式请参考：1.5.1 新增与运维 - CSS
 * 若需新㽪或运维交互动效请参考：1.5.2 新增与运维 - JavaScript
@@ -97,9 +97,9 @@ Src 资料夹存放预先编译才能使用的资源档案，例如：SCSS、ES6
 
 ```markdown
 src
-├ js
-├ lib
-├ map
-└ sass
+├ js                                        # JavaScript(ES6) 档案
+├ lib                                       # JavaScript 套件档案
+├ map                                       # JavaScript 转换代码前后位置的信息文件
+└ sass                                      # CSS(SCSS) 档案
 ```
 
