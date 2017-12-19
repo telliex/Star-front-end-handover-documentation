@@ -1,10 +1,8 @@
 # Laravel 开发环境参数设置
 
-## 開發機系統環境需求
-- CPU：1核
-- 内存：1 GB
-- 操作系统：Centos 7.2 64位
+Laravel 是一套富有表達性且具有簡潔語法的網頁應用程式框架，減少開發過程中的不便，提供了驗證(authentication)、路由(routing)、sessions、快取(caching) 等開發過程中經常用到的工具或功能。
 
+主机若未安装 laravel 可运行的环境，请依下面步骤安装：
 
 ## CentOS 更新
 >    yum -y update
@@ -86,12 +84,13 @@
 ## 修改 /etc/httpd/conf/httpd.conf
 >    ServerName test.myproject.com
 >    DocumentRoot /var/www/laravel/publicAllowOverride All
+
 重啟服務器
 >    systemctl restart httpd
 
 ## 技術參考文檔
-* [Laravel 中文文檔](https://docs.golaravel.com/docs/5.0/installation/)
-* [How to Install the PHP Laravel Framework on CentOS 7](https://hostpresto.com/community/tutorials/how-to-install-the-php-laravel-framework-on-centos-7/)
+- [Laravel 中文文檔](https://docs.golaravel.com/docs/5.0/installation/)
+- [How to Install the PHP Laravel Framework on CentOS 7](https://hostpresto.com/community/tutorials/how-to-install-the-php-laravel-framework-on-centos-7/)
 
 
 

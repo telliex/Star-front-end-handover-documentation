@@ -22,6 +22,7 @@
   * [Animate.css](https://daneden.github.io/animate.css/) - CSS3 动画库
 * JavaScript 使用套件
   * [Owl Carousel 2](https://owlcarousel2.github.io/OwlCarousel2/) - JavaScript 轮拨套件
+  * [slick](http://kenwheeler.github.io/slick/) - JavaScript 轮拨套件
   * [ScrollMagic](http://scrollmagic.io/) - JavaScript 卷軸交互套件
   * [TweenMax](https://greensock.com/docs/TweenMax) - JS 动画库，與 ScrollMagic 一起使用
   * [TimelineMax](https://greensock.com/docs/TimelineMax) - JS 动画库，與 ScrollMagic 一起使用
