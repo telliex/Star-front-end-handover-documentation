@@ -1,4 +1,4 @@
-#文档架构说明
+# 文档架构说明
 
 ## 根目录资料夹与文档说明
 
@@ -66,7 +66,7 @@ public
 ├ error-500.html                            # 500 错误页面
 ├ error-503.html                            # 503 错误页面
 ├ index.php                                 # Laravel 应用程式的进入点，非普遍定义的首页
-├ sitemap.xml                               # 提供给搜索引擎收录页面的档案
+├ sitemap.xml                             [](/xin-zeng-yu-wei-yun-f/css.md)  # 提供给搜索引擎收录页面的档案
 └ web.config                                # 设定 Laravel rewrite rule
 ```
 
@@ -89,11 +89,10 @@ resources
 
 Src 资料夹存放预先转译才能使用的资源档案，例如：SCSS、ES6。无论样式或交互动效，转译前档案都在此。
 
-* 若需新㽪或运维样式请参考：1.5.1 新增与运维 - CSS
-* 若需新㽪或运维交互动效请参考：1.5.2 新增与运维 - JavaScript
+* 若需新㽪或运维样式请参考：[1.5.1 新增与运维 - CSS](/xin-zeng-yu-wei-yun-f/css.md)
+* 若需新㽪或运维交互动效请参考：[1.5.2 新增与运维 - JavaScript](/xin-zeng-yu-wei-yun-f/javascript.md)
 
 > 路径: root/src
-
 
 ```markdown
 src
@@ -102,4 +101,6 @@ src
 ├ map                                       # JavaScript 转换代码前后位置的信息文件
 └ sass                                      # CSS(SCSS) 档案
 ```
+
+
 

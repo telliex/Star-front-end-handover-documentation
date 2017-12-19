@@ -5,7 +5,7 @@
 
 ```markdown
 sass
-├ base                                      #
+├ base                                      # 
 │ ├ _base-style-setting.scss                #    
 │ ├ _grid-setting.scss                      #
 │ └ _variables.scss                         #
