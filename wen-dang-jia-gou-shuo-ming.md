@@ -27,12 +27,12 @@
 | composer.json | Composer 档案，描述所使用的 php 套件资讯及版本 |
 | composer.lock | Composer 档案，描述该专案所下载的 php 套件资讯及版本 |
 | package.json | ? |
-| .babelrc | ? |
-| glupfile.js | ? |
-| webpack.config.js | ? |
-| webpack.dev.config.js | ? |
-| webpack.devserver.config.js | ? |
-| webpack.prod.config.js | ? |
+| .babelrc | Babel? |
+| glupfile.js | Glup? |
+| webpack.config.js | Webpack? |
+| webpack.dev.config.js | Webpack? |
+| webpack.devserver.config.js | Webpack? |
+| webpack.prod.config.js | Webpack? |
 
 ## Public 资料夹文档说明
 
@@ -98,25 +98,4 @@ src
 ├ map
 └ sass
 ```
-
-.env 专案环境设置档案
-.env.example 专案环境设置档案范例
-
-package.json
-
-#### babel
-
-* .babelrc
-
-#### glup
-
-* glupfile.js
-
-#### webpack
-
-* webpack.config.js
-* webpack.dev.config.js
-* webpack.devserver.config.js
-* webpack.prod.config.js
-
 
