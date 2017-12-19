@@ -2,6 +2,16 @@
 
 全站的 CSS 样式，统一使用 SCSS 撰写，架构分别为 `base`、`generic`、`layout`、`modules`、`partials`、`vendor`
 
+| 目录 | 功能说明 |
+| :--- | :--- |
+| base | 功能说明 |
+| generic | 功能说明 |
+| layout | 功能说明 |
+| modules | 功能说明 |
+| partials | 功能说明 |
+| vendor | 功能说明 |
+
+<br/>
 > 文党路径: `root/src/sass`  
 > 转译后路径: `root/pubic/css`
 

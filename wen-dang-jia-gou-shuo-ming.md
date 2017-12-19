@@ -3,9 +3,10 @@
 ## 根目录资料夹与文档说明
 
 ![](/assets/doc.png)
+<br/>
 
 | 目录 | 功能说明 |
-| :--- | :--- |
+| :- | :--- |
 | app | 此目录为专案的核心目录，专案的程式逻辑皆会放置在里面。 |
 | bootstrap | 放置框架的启动程式码，内含一个 cache 目录放置由框架产生的快取以提高效能。 |
 | config | 放置框架以及其他元件的设定档案。 |
@@ -20,7 +21,7 @@
 | vendor | 此目录由 Composer 建立，所有透过 Composer 安装的元件皆放于此。 |
 
 | 档案 | 功能说明 |
-| :--- | :--- |
+| :- | :--- |
 | .env | 专案的环境档案，会依照伺服器环境不同而有差异，Laravel 在执行时会将环境档案载入，若是发生无环境档案的错误可透过复制环境档案范例重新建立此档案。 |
 | .env.example | Laravel 所提供的环境档案范例。 |
 | artisan | artisan 的主程式进入点，也因此 artisan 只能在此专案目录下操作。 |
@@ -34,6 +35,7 @@
 | webpack.devserver.config.js | Webpack? |
 | webpack.prod.config.js | Webpack? |
 
+<br/>
 ## Public 资料夹文档说明
 
 Public 资料夹为网站根目录指向位置，网站内静态档案及所嵌入的档案均放置于此。
@@ -69,12 +71,10 @@ public
 ├ sitemap.xml                               # 提供给搜索引擎收录页面的档案
 └ web.config                                # 设定 Laravel rewrite rule
 ```
-
+<br/>
 ## Resources 资料夹文档说明
 
 Resources 资料夹内为 `views`、`lang`、`assets`，分别放了视图档案、语系档案及预先转译才能使用的资源档案。目前仅使用 views 资料夹存放 Laravel Blade 样板引擎，前台页面都存放在此。
-
-* 若需新增或运维网站内容请参考：[1.5.3 新增与运维 - PHP](/xin-zeng-yu-wei-yun-f/php.md) 
 
 > 路径: `root/resources`
 
@@ -84,13 +84,13 @@ resources
 ├ lang                                      # Laravel 框架：语系档案，目前尚未使用到此功能
 └ views                                     # Laravel 框架：视图档案，存放 Laravel Blade 样板引擎，前台页面都存放在此
 ```
+* 若需新增或运维网站内容请参考：[1.5.3 新增与运维 - PHP](/xin-zeng-yu-wei-yun-f/php.md) 
 
+
+<br/>
 ## Src 资料夹文档说明
 
 Src 资料夹存放预先转译才能使用的资源档案，例如：SCSS、ES6。无论样式或交互动效，转译前档案都在此。
-
-* 若需新㽪或运维样式请参考：[1.5.1 新增与运维 - CSS](/xin-zeng-yu-wei-yun-f/css.md)
-* 若需新㽪或运维交互动效请参考：[1.5.2 新增与运维 - JavaScript](/xin-zeng-yu-wei-yun-f/javascript.md)
 
 > 路径: `root/src`
 
@@ -101,6 +101,10 @@ src
 ├ map                                       # JavaScript 转换代码前后位置的信息文件
 └ sass                                      # CSS(SCSS) 档案
 ```
+* 若需新㽪或运维样式请参考：[1.5.1 新增与运维 - CSS](/xin-zeng-yu-wei-yun-f/css.md)
+* 若需新㽪或运维交互动效请参考：[1.5.2 新增与运维 - JavaScript](/xin-zeng-yu-wei-yun-f/javascript.md)
+
+
 
 
 
