@@ -1,32 +1,31 @@
 # webpack 开发环境参数设置
 
-webpack 是一个现代 JavaScript 应用程序的模块打包器(module bundler)。当 webpack 处理应用程序时，它会递归地构建一个依赖关系图(dependency graph)，其中包含应用程序需要的每个模块，然后将所有这些模块打包成一个或多个bundle。
+webpack 是一个现代 JavaScript 应用程序的模块打包器\(module bundler\)。当 webpack 处理应用程序时，它会递归地构建一个依赖关系图\(dependency graph\)，其中包含应用程序需要的每个模块，然后将所有这些模块打包成一个或多个bundle。
 
 使用 webpack 来协助 ES6 模块的管理，管理开发与发布两套版本的输出
-- 开发：js 程序码未压缩（方便开发时除错） 
-- 发布：js 程序码优化压缩，去除 consol,进行 ES6 转 ES5 的编码（适应不支援 ES6 语法的低阶浏览器，如 IE） 
+
+* 开发：js 程序码未压缩（方便开发时除错） 
+* 发布：js 程序码优化压缩，去除 consol,进行 ES6 转 ES5 的编码（适应不支援 ES6 语法的低阶浏览器，如 IE） 
 
 ## Webpack 快速入門
 
 首先要安装 Node.js， Node.js 自带了软件包管理器 npm，Webpack 需要 Node.js v0.6 以上支持，建议使用最新版 Node.js。
 
 1. 用 npm 安装全局 Webpack
-> $ npm install webpack -g
+   > $ npm install webpack -g
 2. 进入项目目录，用 npm 安装目录 Webpack
-> $ npm install webpack --save-dev
+   > $ npm install webpack --save-dev
 3. Webpack 在执行的时候，默认情况下，会搜索当前目录的 webpack.config.js 文件，文件设定下面说明
 
 ## Webpack config setting
 
-### `/webpack.config.js` 
-为了更通用，将此设定档再分为 dev(开发)和 prod(上线)两版本，应用于开发与上线两种版本输出
+### `/webpack.config.js`
 
-```
-module.exports = function(env) {
-  return require(`./webpack.${env}.config.js`)
-}
-```
+为了更通用，将此设定档再分为 dev\(开发\)和 prod\(上线\)两版本，应用于开发与上线两种版本输出
 
+    module.exports = function(env) {
+      return require(`./webpack.${env}.config.js`)
+    }
 
 ### 开发版设定档 `/webpack.dev.config.js`
 
@@ -151,10 +150,10 @@ module.exports = {
     ]
 
 }
-
 ```
 
 ### 上线版设定档 `/webpack.prod.config.js`
+
 ```
 const path = require('path'); //通用 Windows 和 MAC OS 档案系统 
 const webpack = require('webpack');
@@ -207,7 +206,7 @@ module.exports = {
     module: {
 
         rules: [
-           
+
             // 模块规则（配置 loader、解析器等选项）
             {
                 loader: 'babel-loader',
@@ -289,7 +288,9 @@ module.exports = {
 }
 ```
 
-
 ## 技術參考文檔
 
-- [webpack](https://doc.webpack-china.org/concepts/)
+* [webpack](https://doc.webpack-china.org/concepts/)
+
+
+
