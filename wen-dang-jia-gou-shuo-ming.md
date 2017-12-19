@@ -65,7 +65,7 @@ public
   ├ error-404.html                           # 404 錯誤頁面
   ├ error-500.html                           # 500 錯誤頁面
   ├ error-503.html                           # 503 錯誤頁面
-  ├ index.php
+  ├ index.php                                # Laravel 應用程式的進入點，非普遍定義的首頁
   ├ sitemap.xml                              # 提供給搜索引擎收錄页面的檔案                                       
   └ web.config
 ```
