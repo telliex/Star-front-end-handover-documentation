@@ -45,8 +45,8 @@ else if($job=="your-new-page-name"){
 
 
 ## 技術參考文檔
--[meta](/file/meta设定 .xlsx)
--[meta]()
+- [meta 资讯](/file/meta-setting.xlsx)
+- [API 规划](/file/star-api-setting.xlsx)
 
 
 
