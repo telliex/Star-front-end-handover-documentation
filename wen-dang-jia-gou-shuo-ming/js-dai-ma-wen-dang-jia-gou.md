@@ -1,7 +1,7 @@
 # Javascript 代码文档架构
 
 ## JS 资料夹
-
+---
 > 文档路径: `root/src/js`  
 > 转译后路径: `root/pubic/js`
 
@@ -38,11 +38,12 @@ js
 ├ lyt-news-list.es6                         #
 └ share.es6  沈大哥                          #
 ```
+### 相关连结与文档
 * 若需新增或运维交互动效请参考：[1.5.2 新增与运维 - JavaScript](/xin-zeng-yu-wei-yun-f/javascript.md)
 
 <br/>
 ## Lib 资料夹
-
+---
 > 文档路径: `root/src/lib`
 
 ```markdown
@@ -60,6 +61,7 @@ lib
 ├ ScrollMagic.min.js                        #
 └ TweenMax.min.js                           #
 ```
+### 相关连结与文档
 
 * 若新增 JavaScript 套件请参考：[1.5.2 新增与运维 - JavaScript](/xin-zeng-yu-wei-yun-f/javascript.md)
 
