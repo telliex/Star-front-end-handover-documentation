@@ -1,4 +1,4 @@
-# webpack
+# Webpack
 
 ## 新增网页页面
 
@@ -45,18 +45,18 @@ entry: {
 ```
 ...
 resolve: {
-        // 使用的扩展名
-        alias: {
-            // 模块别名列表
-            "jquery$": js_dir + "/jquery.js",
-            "jquery.history$": js_dir + "/jquery.history.js",
-            "jquery.cookie$": js_dir + "/jquery.cookie.js",
-            "carousel$": js_dir + "/owlcarousel/owl.carousel.js",
-            "jqRotate$": js_dir + "/jQueryRotate.js",
-            "jqMobile$": js_dir + "/jquery.mobile.min.js",
-            "TweenLite$": node_modules_dir + '/gsap/src/uncompressed/TweenLite.js',
-            "TweenMax$": node_modules_dir + '/gsap/src/uncompressed/TweenMax.js',
-            "TimelineLite$": node_modules_dir + '/gsap/src/uncompressed/TimelineLite.js',
+  // 使用的扩展名
+  alias: {
+    // 模块别名列表
+    "jquery$": js_dir + "/jquery.js",
+    "jquery.history$": js_dir + "/jquery.history.js",
+    "jquery.cookie$": js_dir + "/jquery.cookie.js",
+    "carousel$": js_dir + "/owlcarousel/owl.carousel.js",
+    "jqRotate$": js_dir + "/jQueryRotate.js",
+    "jqMobile$": js_dir + "/jquery.mobile.min.js",
+    "TweenLite$": node_modules_dir + '/gsap/src/uncompressed/TweenLite.js',
+    "TweenMax$": node_modules_dir + '/gsap/src/uncompressed/TweenMax.js',
+    "TimelineLite$": node_modules_dir + '/gsap/src/uncompressed/TimelineLite.js',
             "TimelineMax$": node_modules_dir + '/gsap/src/uncompressed/TimelineMax.js',
             "ScrollMagic$": node_modules_dir + '/scrollmagic/scrollmagic/uncompressed/ScrollMagic.js',
             "animation$": node_modules_dir + '/scrollmagic/scrollmagic/uncompressed/plugins/animation.gsap.js',
@@ -64,8 +64,7 @@ resolve: {
             //加入对应的 js 名称路径
             "newJsModuleName":js/module/location/newJs.js
         }
-
-    },
+},
 ...
 
 ```

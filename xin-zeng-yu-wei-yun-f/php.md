@@ -17,19 +17,19 @@ Laravel 框架里，网页呈现的部份我们称为 view (MVC 里的 V)，所�
 位置: /routes/web.php
 ```
 ...
-//關於欣和
+// 關於欣和
 Route::get('about','front@about');
-//生产工艺
+// 生产工艺
 Route::get('about/process','front@crafts');
-//生产工艺 - beanpaste
+// 生产工艺 - beanpaste
 Route::get('about/process/beanpaste','front@beanpaste');
-//生产工艺 - soysauce
+// 生产工艺 - soysauce
 Route::get('about/process/soysauce','front@soysauce');
-//生产工艺 - vinegar
+// 生产工艺 - vinegar
 Route::get('about/process/vinegar','front@vinegar');
-//生产工艺 - miso
+// 生产工艺 - miso
 Route::get('about/process/miso','front@miso');
-//生产工艺 - spicypeanuts
+// 生产工艺 - spicypeanuts
 Route::get('about/process/spicypeanuts','front@spicypeanuts');
 //新页面
 Route::get('your/new/page/url','front@your-new-page-name');
