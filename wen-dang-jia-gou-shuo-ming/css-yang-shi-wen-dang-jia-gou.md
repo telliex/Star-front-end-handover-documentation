@@ -1,15 +1,15 @@
 # CSS 样式文档架构
 
-全站的 CSS 样式，统一使用 SCSS 撰写，架构分别为 `base`、`generic`、`layout`、`modules`、`partials`、`vendor`
+全站的 CSS 样式，统一使用 SCSS 撰写，架构分别为 `base`、`generic`、`layout`、`modules`、`partials`、`vendor`，相對應的功能說明如下：
 
 | 目录 | 功能说明 |
 | :--- | :--- |
-| base | 功能说明 |
-| generic | 功能说明 |
-| layout | 功能说明 |
-| modules | 功能说明 |
-| partials | 功能说明 |
-| vendor | 功能说明 |
+| base | 针对全站定义基础样式的资料夹，如：基础样式、栅栏系统、全站字型与颜色样式 |
+| generic | 针对全站定义通用样式，将大量重复使用的样式，转为 Extend 或 maxin，利于重复使用 |
+| layout | 客制每个页面样式的资料夹，若有新增页面需要定义该页的样式，请在此资料夹中新增 SCSS 档案 |
+| modules | 特定功能模组化样式，如：菜谱列表、产品列表等 |
+| partials | 全站元件样式，如：Header、Footer、回顶部等 |
+| vendor | 放置 CSS 样式套件的资料夹 |
 
 <br/>
 > 文党路径: `root/src/sass`  
@@ -18,9 +18,9 @@
 ```markdown
 sass
 ├ base                                      # 基础样式设定资料夹
-│ ├ _base-style-setting.scss                #    
-│ ├ _grid-setting.scss                      #
-│ └ _variables.scss                         #
+│ ├ _base-style-setting.scss                # 全站 reset css 设定   
+│ ├ _grid-setting.scss                      # Susy Grid 设定
+│ └ _variables.scss                         # 全站 使用变数设定
 ├ generic                                   # 通用样式资料夹
 │ ├ _common.scss                            #
 │ ├ _extend.scss                            #
@@ -63,6 +63,6 @@ sass
 ├ errors.scss                               #
 └ global.scss                               #
 ```
-
+* 若需新㽪或运维样式请参考：[1.5.1 新增与运维 - CSS](/xin-zeng-yu-wei-yun-f/css.md)
 
 

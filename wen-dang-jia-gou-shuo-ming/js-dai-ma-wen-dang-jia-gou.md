@@ -2,8 +2,8 @@
 
 ## JS 资料夹
 
-> 文党路径: root/src/js
-> 转译后路径: root/pubic/js
+> 文党路径: `root/src/js`  
+> 转译后路径: `root/pubic/js`
 
 ```markdown
 js                                        
@@ -39,9 +39,9 @@ js
 └ share.es6  沈大哥                          #
 ```
 
-## lib 资料夹
+## Lib 资料夹
 
-> 文党路径: root/src/lib
+> 文党路径: `root/src/lib`
 
 ```markdown
 lib
@@ -58,3 +58,6 @@ lib
 ├ ScrollMagic.min.js                        #
 └ TweenMax.min.js                           #
 ```
+
+
+
