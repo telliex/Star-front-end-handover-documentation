@@ -7,14 +7,20 @@
 
 ## 从 github 抓取
 
-将 Star github 或欣和 fork 的 github Repositories  复制档案到本机
-> git clone https://github.com/b-x-b/star-dev-server.git
-> 或
+将 Star Github 或欣和 fork 回来的 Github Repositories  复制档案到本机> // command line
+
+> \# commandline
+> Git clone https://github.com/b-x-b/star-dev-server.git
+
+或
+
+> \# commandline
 > git clone https://github.com/shinho-github-name/star-dev-server.git
 
 ## 安装开发时依赖的相关插件
 
-install 指令会参照 package.json 罗列的配置，进行安装所需的 plugin
+install 指令会参照 `package.json` 罗列的配置，进行安装所需的 plugin
+> \# commandline
 > cd star-dev-serve
 > npm install 
 
@@ -45,83 +51,83 @@ install 指令会参照 package.json 罗列的配置，进行安装所需的 plu
 {
     "private": true,
     "scripts": {
-  //发佈（压缩）
+  // 发佈（压缩）
     "prod": "webpack --config webpack.prod.config.js",
-  //开发侦听（可同时编译出档案）
+  // 开发侦听（可同时编译出档案）
     "dev:watch": "webpack --config webpack.dev.config.js --watch",
     "dev-serverbuild": "node server.js",
     "lint": "eslint my-files.js",
-  //开发 + livereview
+  // 开发 + livereview
     "dev:addListener": "browser-sync start --proxy 'http://laravel' --files './public/js/custom/*.js'"
     },
     "devDependencies": {
-  //babel (ES6 转码 ES5)
+  // babel (ES6 转码 ES5)
     "babel-cli": "^6.24.1",
   //代码需要调用Babel的API进行转码，就要使用babel-core模块
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.2",
     "babel-plugin-transform-es2015-modules-simple-commonjs": "^0.3.0",
-  //使 IE8 接受 default or catch 关键字
+  // 使 IE8 接受 default or catch 关键字
     "babel-plugin-transform-es3-member-expression-literals": "^6.22.0",
     "babel-plugin-transform-es3-property-literals": "^6.22.0",
-  //转换新的 API，比如 Promise，以及 Object.assign、Array.from 等方法
+  // 转换新的 API，比如 Promise，以及 Object.assign、Array.from 等方法
     "babel-runtime": "^6.26.0",
     "babel-plugin-transform-runtime": "^6.23.0",
-  //使用ES6的API
+  // 使用ES6的API
     "babel-polyfill": "^6.26.0",
-  //ES6 present
+  // ES6 present
     "babel-preset-env": "^1.6.1",
-  //页面刷新插件
+  // 页面刷新插件
     "browser-sync": "^2.18.13",
-  //清除 output 档案，避免产出多馀的乱数档名档案
+  // 清除 output 档案，避免产出多馀的乱数档名档案
     "clean-webpack-plugin": "^0.1.16",
-  //CSS loader
+  // CSS loader
     "css-loader": "^0.28.7",
-  //es3ify解决es3环境兼容
+  // es3ify解决es3环境兼容
     "es3ify-loader": "^0.2.0",
     "es3ify-webpack-plugin": "0.0.1",
-  //可将 CSS 单独打包
+  // 可将 CSS 单独打包
     "extract-text-webpack-plugin": "^3.0.0",add-module-exports
-  //可将图片载入模组
+  // 可将图片载入模组
     "file-loader": "^0.11.2",
-  //glup相关
+  // glup相关
     "gulp": "^3.9.1",
-  //glup相关-babel转换ES6
+  // glup相关-babel转换ES6 
     "gulp-babel": "^6.1.2",
-  //glup相关-可以使用类似于 node 的 require() 的方式来组织浏览器端的 Javascript 代码
+  // glup相关-可以使用类似于 node 的 require() 的方式来组织浏览器端的 Javascript 代码
     "browserify": "^14.4.0",
-  //glup相关-将 ES6 转成 ES5
+  // glup相关-将 ES6 转成 ES5
     "babelify": "^7.3.0",
-  //glup相关-将Browserify的bundle()的输出转换为Gulp可用的vinyl（一种虚拟文件格式）流
+  // glup相关-将Browserify的bundle()的输出转换为Gulp可用的vinyl（一种虚拟文件格式）流
     "vinyl-source-stream": "^1.1.0",
-  //glup相关-辅助工具
+  // glup相关-辅助工具
     "vinyl-buffer": "^1.0.0",
-  //glup相关-压缩 JavaScript
+  // glup相关-压缩 JavaScript
     "gulp-uglify": "^3.0.0",
-  //glup相关-查看压缩后的 JS 代码所对应的行数时，source map 就能告诉你其相应代码在未压缩文件的所在行数
+  // glup相关-查看压缩后的 JS 代码所对应的行数时，source map 就能告诉你其相应代码在未压缩文件的所在行数
     "gulp-sourcemaps": "^2.6.0",
-  //glup相关-压缩css文件
+  // glup相关-压缩css文件
     "gulp-cssnano": "^2.1.2",
-  //glup相关-重新命名文件
+  // glup相关-重新命名文件
     "gulp-rename": "^1.2.2",
-  //glup相关-合并文件
+  // glup相关-合并文件
     "gulp-concat": "^2.6.1",
-  //glup相关-产出多文件
+  // glup相关-产出多文件
     "glob": "^7.1.2",
-  //glup相关-测试插件
+  // glup相关-测试插件
     "event-stream": "^3.3.4",
-  //glup相关-监听每个文件的变化
+  // glup相关-监听每个文件的变化
     "gulp-livereload": "^3.8.1",
-  //glup相关-载入 gulp-sass
+  // glup相关-载入 gulp-sass
     "gulp-sass": "^3.1.0",
-  //glup相关-编译scss
+  // glup相关-编译scss
     "gulp-compass": "^2.1.0",
-  //glup相关-避免出现错误时中断程式
+  // glup相关-避免出现错误时中断程式
     "gulp-plumber": "^1.1.0",
-  //glup相关-清除并压缩 css
+  // glup相关-清除并压缩 css
     "gulp-clean-css": "^3.9.0",
     "minimatch": "^3.0.4",
-  //各个loader
+  // 各个loader
     "node-sass": "^4.5.3",
     "sass-loader": "^6.0.6",
     "script-loader": "^0.7.1",
@@ -132,23 +138,23 @@ install 指令会参照 package.json 罗列的配置，进行安装所需的 plu
     "url-loader": "^0.5.9",
     "html-loader": "^0.5.1",
     "buble-loader": "^0.4.1",
-  //压缩 js
+  // 压缩 js
     "uglify-es": "^3.1.0",
     "uglify-js-es6": "^2.8.9",
     "uglifyes-webpack-plugin": "^0.4.3",
     "uglifyjs-webpack-plugin": "^0.4.6",
-  //webpack
+  // webpack
     "webpack": "^3.8.1",
-  //webpack 发佈仪表盘
+  // webpack 发佈仪表盘
     "webpack-dashboard": "^1.0.0-5",
-  //即时热插拔
+  // 即时热插拔
     "webpack-dev-middleware": "^1.12.0",
     "webpack-dev-server": "^2.8.2",
     "webpack-hot-middleware": "^2.19.1"
   },
 "dependencies": {
     "babel-plugin-add-module-exports": "^0.2.1",
-  //Browser console polyfill. Makes it safe to do console.log().  
+  // Browser console polyfill. Makes it safe to do console.log().  
     "console-polyfill": "^0.3.0",
     "core-js": "^2.5.1",
     "es5-shim": "^4.5.9",
@@ -156,15 +162,15 @@ install 指令会参照 package.json 罗列的配置，进行安装所需的 plu
     "fetch-ie8": "^1.5.0",
   // Tween
     "gsap": "^1.20.2",
-  //JS 主要函数库
+  // JS 主要函数库
     "jquery": "^1.12.4",
-  //base on jquery的网址指向功能
+  // base on jquery的网址指向功能
     "jquery-history": "^1.0.1",
-  //base on jquery的 cookie 功能，
+  // base on jquery的 cookie 功能，
     "jquery.cookie": "^1.4.1",
   // KV 轮播
     "owl.carousel": "^2.2.0",
-  //捲动视差特效功能
+  // 捲动视差特效功能
     "scrollmagic": "^2.0.5"
   }
 }
