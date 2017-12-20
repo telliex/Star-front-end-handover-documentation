@@ -39,9 +39,11 @@ entry: {
 如此开发与上线编译时才能正确够过 webpack 编译 ES6。
 
 
-## 新增网页引用 js modeule
+## 新增网页引用 js module
 
-页面加入 js modeule 的引用，若名称无法在 js 模塊系統內被引用，可添加以下设置
+js 内若要引用其他函数库或是插件，需依照 [ES6 modele](http://es6.ruanyifeng.com/#docs/module) 的 import 方式引入，
+若以引入，但名称无法在 js module 系統內被识别，可添加以下内容进进行设置。
+
 ```
 ...
 resolve: {
@@ -71,5 +73,6 @@ resolve: {
 
 ## 技術參考文檔
 
+- [ES6 module](http://es6.ruanyifeng.com/#docs/module)
 - [webpack](https://doc.webpack-china.org/concepts/)
 
