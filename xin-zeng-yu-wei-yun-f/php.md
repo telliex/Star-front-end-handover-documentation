@@ -39,20 +39,20 @@ Route::get('your/new/page/url','front@your-new-page-name');
 `/app/Http/Controllers/front.php`写入过 route 后所要呼叫的页面及傳入的参数
 
 ```
-public function careergroup(Request $request,$job=''){//產品葉面
+public function careergroup(Request $request,$job=''){
     if($job !=""){
       $c=explode('-',$job);
-      if($c[0]=="recruiting"){//崗位需求
+      if($c[0]=="recruiting"){    //崗位需求
         if(count($c)<2 || $c[1]==""){
           return redirect('/careers/recruiting-1');
         }else{
           $to='social';
           return careergroup::recruiting($job,$to);
         }
-      }else if($c[0]=="recruitingdetail"){//詳細
+      }else if($c[0]=="recruitingdetail"){    //詳細
         return careergroup::recruitingdetail($job,2);
       }
-    }else{//加入欣和
+    }else{   //加入欣和
       $bas=DB::table('brandnew')->where('isopen','1')->orderby('sorting','DESC')->get();
       $brandall=json_decode(json_encode($bas), true);
       $itemp=Helper::get_insert();
@@ -71,7 +71,7 @@ public function careergroup(Request $request,$job=''){//產品葉面
 
 #### 全站 template
 
-新增或修改全站通用的 js，如 vue.js 等
+新增或修改全站通用的线上 CDN url
 位置: /resources/views/layouts/master.blade.php
 
 #### Meta

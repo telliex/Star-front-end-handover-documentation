@@ -1,13 +1,16 @@
 # 开发环境配置
 
-## 安装本机开发架站软体
+## 本机开发环境
+---
+
+### Step1.安装本机开发架站软体
 
 - Mac OS - [MAMP](https://www.mamp.info/en/)
 - Windows - [XAMPP](https://www.apachefriends.org/zh_tw/index.html)
 
-## 从 github 抓取
+### Step2.从 github 抓取档案
 
-将 Star Github 或欣和 fork 回来的 Github Repositories  复制档案到本机> // command line
+将 Star Github 或欣和 fork 回来的 Github Repositories  复制档案到本机
 
 > \# commandline
 > Git clone https://github.com/b-x-b/star-dev-server.git
@@ -17,18 +20,26 @@
 > \# commandline
 > git clone https://github.com/shinho-github-name/star-dev-server.git
 
-## 安装开发时依赖的相关插件
+### Step3.安装开发时依赖的相关插件
 
 install 指令会参照 `package.json` 罗列的配置，进行安装所需的 plugin
 > \# commandline
 > cd star-dev-serve
 > npm install 
 
-## 启动开发架站软体
+### Step4.启动开发架站软体
 
 开启架站软体（MAMP 或 XAMPP）将网站根目录指向 `/public` ， Host 名称设为 laravel （http://laravel/）
 
-## git 分支
+### Step5.启动开发架站软体
+
+打开浏览器连接 `http://laravel/` 出现官网首页表成功。
+
+
+## 如何进行开发
+---
+
+### git 分支
 
 复制回的档案，分支规划如下
 
@@ -37,14 +48,19 @@ install 指令会参照 `package.json` 罗列的配置，进行安装所需的 p
 - **develop 主要开发分支所在**
 - feature 未来新功能的开发，最后併入 develop 分支
 
-#### 开发说明
+
+### 开发说明
 
 - 开发都先会在 develop 分支进行，若有新功能，也会在 develop 分支开始 branch 新的 feature，完成后再 merge 回 develop 分支，develop 分支到一段落（如上线前），会 merge 到 release 分支，进行 QA 工作，验证遇有问题，回到 develop 分支除错，完成后再 merge 到 QA 分支供 QA 再检视。若检视皆通过，即可 merge 到 master 分支等待上线。
+- 各分支的修改皆需推至远端 Github 上，进行版本管理。
+- 一般阶段性功能的上机检视工作，登入开发机，从主机将档案从 Github拉回，`git pull`。
 - 上线时先上欣和测试机 `sh1.shinho.com.cn`，确认无误时，再更新正式机`http://shinho.com.cn/`。
 - 每个分支都完成阶段工作时皆要推至 github 管理，主机推档也是从 github 拉档方式进行。安全性考量，勿使用 ftp 上传档案。
-- 每日下班时需提交今日的工作。
+- 每日下班时需提交今日的工作至 GitHub 上。
 
 ## package.json
+---
+
 以下是 install 时所依赖的设定。 `scripts` 部分后面章节说明，下面主要提及所安装插件的插件功用`devDependencies`、`dependencies`
 
 ```
@@ -178,5 +194,6 @@ install 指令会参照 `package.json` 罗列的配置，进行安装所需的 p
 ```
 
 ## 技術參考資料
+---
 
--[完整开发档案原始档]()
+- [完整开发档案原始档]()

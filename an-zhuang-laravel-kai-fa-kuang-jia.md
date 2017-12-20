@@ -4,6 +4,7 @@ Laravel 是一套富有表达性且具有简洁语法的网页应用程式框架
 
 主机若未安装 laravel 可运行的环境，请依下面步骤安装：
 
+
 ## CentOS 更新
 
 > \# commandline
