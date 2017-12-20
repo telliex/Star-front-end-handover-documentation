@@ -63,6 +63,6 @@ sass
 ├ errors.scss                               #
 └ global.scss                               #
 ```
-* 若需新㽪或运维样式请参考：[1.5.1 新增与运维 - CSS](/xin-zeng-yu-wei-yun-f/css.md)
+* 若需新增或运维样式请参考：[1.5.1 新增与运维 - CSS](/xin-zeng-yu-wei-yun-f/css.md)
 
 

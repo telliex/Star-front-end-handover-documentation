@@ -38,7 +38,7 @@ js
 ├ lyt-news-list.es6                         #
 └ share.es6  沈大哥                          #
 ```
-* 若需新㽪或运维交互动效请参考：[1.5.2 新增与运维 - JavaScript](/xin-zeng-yu-wei-yun-f/javascript.md)
+* 若需新增或运维交互动效请参考：[1.5.2 新增与运维 - JavaScript](/xin-zeng-yu-wei-yun-f/javascript.md)
 
 <br/>
 ## Lib 资料夹
@@ -60,6 +60,10 @@ lib
 ├ ScrollMagic.min.js                        #
 └ TweenMax.min.js                           #
 ```
+
+* 若新增 JavaScript 套件请参考：[1.5.2 新增与运维 - JavaScript](/xin-zeng-yu-wei-yun-f/javascript.md)
+
+
 
 
 
