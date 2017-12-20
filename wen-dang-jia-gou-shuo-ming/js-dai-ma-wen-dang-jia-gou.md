@@ -63,7 +63,8 @@ lib
 ```
 ### 相关连结与文档
 
-* 若新增 JavaScript 套件请参考：[1.5.2 新增与运维 - JavaScript](/xin-zeng-yu-wei-yun-f/javascript.md)
+* 若新增 JavaScript 套件至该页面请参考：[1.5.2 新增与运维 - JavaScript](/xin-zeng-yu-wei-yun-f/javascript.md)
+* 若新增 JavaScript 套件至 Webpack 请参考：[1.5.4 新增与运维 - Webpack:新增网页引用 JS Module](/xin-zeng-yu-wei-yun-f/webpack.md)
 
 
 
