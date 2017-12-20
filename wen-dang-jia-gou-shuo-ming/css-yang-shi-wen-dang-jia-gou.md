@@ -22,27 +22,27 @@ sass
 │ ├ _grid-setting.scss                      # Susy Grid 设定
 │ └ _variables.scss                         # 全站 使用变数设定
 ├ generic                                   # 通用样式资料夹
-│ ├ _common.scss                            #
-│ ├ _extend.scss                            #
-│ └ _maxin.scss                             #
+│ ├ _common.scss                            # 全站通用样式
+│ ├ _extend.scss                            # 全站继承样式模块代码
+│ └ _maxin.scss                             # 全站混合指令样式代码
 ├ layout                                    # 页面样式资料夹
 ├ modules                                   # 模组样式资料夹
-│ ├ _module-anchor.scss                     #
-│ ├ _module-article.scss                    #
-│ ├ _module-button.scss                     #
-│ ├ _module-checkbox.scss                   #
-│ ├ _module-news-list.scss                  #
-│ ├ _module-prod-list.scss                  #
-│ ├ _module-recipe-list.scss                #
-│ ├ _module-search-bar.scss                 #
-│ ├ _module-selectbox.scss                  #
-│ ├ _module-subtitle.scss                   #
-│ ├ _module-tab.scss                        #
-│ └ _module-topic-info.scss                 #
+│ ├ _module-anchor.scss                     # 作者模组样式
+│ ├ _module-article.scss                    # 文章模组样式
+│ ├ _module-button.scss                     # 按钮模组样式
+│ ├ _module-checkbox.scss                   # 多选模组样式
+│ ├ _module-news-list.scss                  # 新闻列表模组样式
+│ ├ _module-prod-list.scss                  # 产品列表模组样式
+│ ├ _module-recipe-list.scss                # 菜谱列表模组样式
+│ ├ _module-search-bar.scss                 # 搜寻模组样式
+│ ├ _module-selectbox.scss                  # 下拉选单模组样式
+│ ├ _module-subtitle.scss                   # 主标题模组样式
+│ ├ _module-tab.scss                        # 页签模组样式
+│ └ _module-topic-info.scss                 # 主题介绍模组样式
 ├ partials                                  # 元件样式资料夹
-│ ├ _awards.scss                            # 
+│ ├ _awards.scss                            # 认证与奖项模块样式
 │ ├ _breadcrumb.scss                        # 面包屑样式
-│ ├ _careers-temp.scss                      # 加入欣和
+│ ├ _careers-temp.scss                      # 加入欣和模块样式
 │ ├ _error.scss                             # 错误页面样式
 │ ├ _footer-org.scss                        # 首页 Footer 样式
 │ ├ _footer.scss                            # Footer 样式
@@ -52,16 +52,16 @@ sass
 │ ├ _key-visual.scss                        # 首图样式
 │ ├ _pre-loader.scss                        # Loader 样式
 │ ├ _support-mess.scss                      # POP 提示讯息框
-│ └ _topics-recommend.scss                  # 
+│ └ _topics-recommend.scss                  # 推荐主题模块样式
 ├ vendor                                    # 套件样式资料夹
 │ ├ carousel                                # Carousel 套件样式
 │ ├ _fontello-embedded.scss                 # Fontello 自定 icon 字体样式 嵌入式
 │ ├ _fontello-ie7.scss                      # Fontello 自定 icon 字体样式 for IE7
 │ ├ _fontello.scss                          # Fontello 自定 icon 字体样式
 │ └ _normalize.scss                         # CSS reset
-├ global-org.scss                           #
-├ errors.scss                               #
-└ global.scss                               #
+├ global-org.scss                           # 配适首页客制的通用主样式
+├ errors.scss                               # 错误页面主样式
+└ global.scss                               # 全站内页的通用主样式
 ```
 * 若需新增或运维样式请参考：[1.5.1 新增与运维 - CSS](/xin-zeng-yu-wei-yun-f/css.md)
 
