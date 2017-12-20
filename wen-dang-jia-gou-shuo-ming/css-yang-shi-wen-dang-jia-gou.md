@@ -12,7 +12,7 @@
 | vendor | 放置 CSS 样式套件的资料夹 |
 
 <br/>
-> 文党路径: `root/src/sass`  
+> 文档路径: `root/src/sass`  
 > 转译后路径: `root/pubic/css`
 
 ```markdown

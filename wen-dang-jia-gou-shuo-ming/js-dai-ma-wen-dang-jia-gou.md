@@ -2,7 +2,7 @@
 
 ## JS 资料夹
 
-> 文党路径: `root/src/js`  
+> 文档路径: `root/src/js`  
 > 转译后路径: `root/pubic/js`
 
 ```markdown
@@ -38,10 +38,12 @@ js
 ├ lyt-news-list.es6                         #
 └ share.es6  沈大哥                          #
 ```
+* 若需新㽪或运维交互动效请参考：[1.5.2 新增与运维 - JavaScript](/xin-zeng-yu-wei-yun-f/javascript.md)
 
+<br/>
 ## Lib 资料夹
 
-> 文党路径: `root/src/lib`
+> 文档路径: `root/src/lib`
 
 ```markdown
 lib
