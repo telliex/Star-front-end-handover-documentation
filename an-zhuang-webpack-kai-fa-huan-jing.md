@@ -18,21 +18,27 @@ Webpack 是一个现代 JavaScript 应用程序的模块打包器(module bundler
 > npm install webpack --save-dev
 3. Webpack 在执行的时候，默认情况下，会搜索当前目录的`webpack.config.js`文件，文件设定下面说明
 
+## Webpack 工作原理
+
+ECMAScript 6 (简称 ES6)是新一代 Javascript ，可行模组化管理 js ，增加效能。但尚有低阶浏览器不支援，所以需要有 Babel 这样的转码器进行转码。Webpack 本身不只可以将 Babel 的转码用放进自动化流程，其实还有许多如程序码压缩、SCSS 编译等功能，在开发上缩短了许多时间。使用的设定可透过 `/webpack.config.js` 设置
+
+
 ## Webpack config setting
 
 ### 预設
+
+
  Webpack 设定档
 
 > 文档路径：/webpack.config.js
 
-为了更通用，将此设定档再分为 dev(开发)和 prod(上线)两版本，应用于开发与上线两种版本输出
+为了更通用，我们将此设定档再分为 dev(开发)和 prod(上线)两版本，应用于开发与上线两种版本输出
 
 ```
 module.exports = function(env) {
   return require(`./webpack.${env}.config.js`)
 }
 ```
-
 
 ### 开发版 Webpack 设定档 
 
@@ -298,6 +304,30 @@ module.exports = {
     ]
 }
 ```
+
+## Babel
+
+刚提到的 ES6 代码转为 ES5 代码，这部份的运作上需要另一支 Babel 设定档进行设定。
+
+> 文档路径: /.babelrc
+
+```
+{
+    "presets": [
+    	["env",
+    	{
+    		"targets":{
+    			"browsers": ["last 2 versions", "ie >= 7"] 
+    		},
+    		"useBuiltIns": true,
+
+    	}]
+    ],
+    "plugins": ["transform-es3-member-expression-literals","transform-es3-property-literals"]    //针对低阶浏览器通用
+} 
+```
+
+
 
 
 ## 技術參考文檔

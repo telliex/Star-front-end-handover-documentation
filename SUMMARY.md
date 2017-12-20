@@ -15,6 +15,6 @@
   * [PHP](xin-zeng-yu-wei-yun-f/php.md)
   * [Webpack](xin-zeng-yu-wei-yun-f/webpack.md)
 * [远端资料串接 T](yuan-duan-zi-liao-chuan-jie.md)
-* [开发版与正式版发布 F T](kai-fa-yu-zheng-shi-ban-ben-fa-bu.md)
+* [发布网站](kai-fa-yu-zheng-shi-ban-ben-fa-bu.md)
 * [效能优化 F](xiao-neng-you-hua-f.md)
 
