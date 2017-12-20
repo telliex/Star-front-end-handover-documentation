@@ -3,10 +3,28 @@
 ## 本机开发环境
 ---
 
+## Step0.安装环境软体
+
+- [node.js](https://nodejs.org/en/)
+- [Git](https://git-scm.com/)
+- 若为 Mac OS 系统，请安装或更新 XCode
+
 ### Step1.安装本机开发架站软体
 
 - Mac OS - [MAMP](https://www.mamp.info/en/)
+
+  留意 PHP 版本 5.6 及 Root 的路径需指向 `/public` 
+
+  ![MAMP](/images/MAMP-image.jpg)
+  
+  设定为 80 port 
+  
+  ![MAMP](/images/MAMP-image2.jpg)
+
+
 - Windows - [XAMPP](https://www.apachefriends.org/zh_tw/index.html)
+
+
 
 ### Step2.从 github 抓取档案
 
@@ -27,13 +45,104 @@ install 指令会参照 `package.json` 罗列的配置，进行安装所需的 p
 > cd star-dev-serve
 > npm install 
 
+
 ### Step4.启动开发架站软体
 
 开启架站软体（MAMP 或 XAMPP）将网站根目录指向 `/public` ， Host 名称设为 laravel （http://laravel/）
 
-### Step5.启动开发架站软体
+
+### Step5.汇入资料库
+
+1. 架站软件中建立数据库，名称为 shinhowebsite 
+2. 汇入[资料库范本](/file/shinhowebsite_2017-12-20.sql)（实际可将当前官网的资料库汇出，再汇入开发环境）
+
+### Step6.建立 .env
+
+> 文档路径：/.env
+
+此檔在本机开发时实为重要，上线版本是不需要的。内容主要针对开发者本机环境的设定。若 clone 回来的档案没有此档，请自行建立。
+
+#### Mac OS - MAMP
+```
+APP_ENV=local
+APP_KEY=base64:C4s5VyTWCyzuZkwgUuh7NUqWNdYmWGj7pnxaxPVj4s4=
+APP_DEBUG=true
+APP_LOG_LEVEL=debug
+APP_URL=http://localhost
+
+DB_SOCKET=/Applications/MAMP/tmp/mysql/mysql.sock     
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=shinhowebsite    //  加入资料库名称
+DB_USERNAME=shinhowebsite    //  填入使用者名称
+DB_PASSWORD=12345678    //  填入使用者密码
+
+BROADCAST_DRIVER=log
+CACHE_DRIVER=file
+SESSION_DRIVER=file
+QUEUE_DRIVER=sync
+
+REDIS_HOST=127.0.0.1
+REDIS_PASSWORD=null
+REDIS_PORT=6379
+
+MAIL_DRIVER=smtp
+MAIL_HOST=mailtrap.io
+MAIL_PORT=2525
+MAIL_USERNAME=null
+MAIL_PASSWORD=null
+MAIL_ENCRYPTION=null
+
+PUSHER_APP_ID=
+PUSHER_KEY=
+PUSHER_SECRET=
+```
+
+#### Windows - XAMPP
+```
+APP_ENV=local
+APP_KEY=base64:C4s5VyTWCyzuZkwgUuh7NUqWNdYmWGj7pnxaxPVj4s4=
+APP_DEBUG=true
+APP_LOG_LEVEL=debug
+APP_URL=http://localhost
+
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=shinhowebsite    //  加入资料库名称
+DB_USERNAME=shinhowebsite    //  填入使用者名称
+DB_PASSWORD=12345678    //  填入使用者密码
+
+BROADCAST_DRIVER=log
+CACHE_DRIVER=file
+SESSION_DRIVER=file
+QUEUE_DRIVER=sync
+
+REDIS_HOST=127.0.0.1
+REDIS_PASSWORD=null
+REDIS_PORT=6379
+
+MAIL_DRIVER=smtp
+MAIL_HOST=mailtrap.io
+MAIL_PORT=2525
+MAIL_USERNAME=null
+MAIL_PASSWORD=null
+MAIL_ENCRYPTION=null
+
+PUSHER_APP_ID=
+PUSHER_KEY=
+PUSHER_SECRET=
+
+```
+
+### Step7.启动开发架站软体
 
 打开浏览器连接 `http://laravel/` 出现官网首页表成功。
+
+
+
+
 
 
 ## 如何进行开发
@@ -47,6 +156,20 @@ install 指令会参照 `package.json` 罗列的配置，进行安装所需的 p
 - release 上线前的版本，用于 QA 检查
 - **develop 主要开发分支所在**
 - feature 未来新功能的开发，最后併入 develop 分支
+
+### Git 视觉化管理工具
+
+以图形介面的 Git 管理工具可增加工作效率，推荐
+
+
+- Mac OS - [SourceTree](https://www.sourcetreeapp.com/)
+
+- Windows - [tortoisegit](https://tortoisegit.org/)
+
+
+
+
+
 
 
 ### 开发说明
