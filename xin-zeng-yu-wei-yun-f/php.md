@@ -1,43 +1,39 @@
 # PHP
 
-Laravel 框架里，网页呈现的部份我们称为 view \(MVC 里的 V\)，所有的页面都是放置在 `/resources/views/`下，
+Laravel 框架里，网页呈现的部份我们称为 view (MVC 里的 V)，所有的页面都是放置在 `/resources/views/`下，
+- `/resources/views/layousts` 为网页的 templat 模版，
+包含 `master.blade.php`(主要的 templater 架构)、`meta.blade.php`（网页 meta 资讯部分）、`header.blade.php`（网页 header 主副选单部分）、`footer.blade.php`（网页 footer 连结）,`keyvisual.blade.php`、`keyVisualCraftSlider.blade.php`、`keyVisualNewsSlider.blade.php`（banner key vision 轮播）
 
-* `/resources/views/layousts` 为网页的 templat 模版，  
-  包含 `master.blade.php`\(主要的 templater 架构\)、`meta.blade.php`（网页 meta 资讯部分）、`header.blade.php`（网页 header 主副选单部分）、`footer.blade.php`（网页 footer 连结）,`keyvisual.blade.php`、`keyVisualCraftSlider.blade.php`、`keyVisualNewsSlider.blade.php`（banner key vision 轮播）
-
-* `/resources/views/front` 为各网页
+- `/resources/views/front` 为各网页
 
 ## 新增
-
-新加入页面需求时，先将页面置于  
-/resources/views/front/xxx.blade.php  
+新加入页面需求时，先将页面置于
+/resources/views/front/xxx.blade.php
 档案需以`.blade.php`结尾
 
 ### Route
 
-设定新页面的 route  
+设定新页面的 route
 位置: /routes/web.php
-
 ```
 ...
-//關於欣和
+// 關於欣和
 Route::get('about','front@about');
-//生产工艺
+// 生产工艺
 Route::get('about/process','front@crafts');
-//生产工艺 - beanpaste
+// 生产工艺 - beanpaste
 Route::get('about/process/beanpaste','front@beanpaste');
-//生产工艺 - soysauce
+// 生产工艺 - soysauce
 Route::get('about/process/soysauce','front@soysauce');
-//生产工艺 - vinegar
+// 生产工艺 - vinegar
 Route::get('about/process/vinegar','front@vinegar');
-//生产工艺 - miso
+// 生产工艺 - miso
 Route::get('about/process/miso','front@miso');
-//生产工艺 - spicypeanuts
+// 生产工艺 - spicypeanuts
 Route::get('about/process/spicypeanuts','front@spicypeanuts');
 //新页面
 Route::get('your/new/page/url','front@your-new-page-name');
 ```
-
 ### Controller
 
 `/app/Http/Controllers/front.php`写入过 route 后所要呼叫的页面及傳入的参数
@@ -70,16 +66,17 @@ public function careergroup(Request $request,$job=''){//產品葉面
   }
 ```
 
+
 ## 维运
 
 #### 全站 template
 
-新增或修改全站通用的 js，如 vue.js 等  
+新增或修改全站通用的 js，如 vue.js 等
 位置: /resources/views/layouts/master.blade.php
 
 #### Meta
 
-新增或修改页面 meta 资讯  
+新增或修改页面 meta 资讯
 位置: /resources/views/layouts/meta.blade.php
 
 ```
@@ -91,22 +88,25 @@ else if($job=="your-new-page-name"){
   $image="/img/about/your-new-page-img.png";
   $kwords="";
 }
+
 ```
 
 #### Header
 
-修改或新增 header 区块上次选单顺序与名称连结  
+修改或新增 header 区块上次选单顺序与名称连结
 位置: /resources/views/layouts/header.blade.php
 
 #### Footer
 
-修改或新增 footer 区块上连结与名称  
+修改或新增 footer 区块上连结与名称
 位置: /resources/views/layouts/footer.blade.php
+
 
 ## 技術參考文檔
 
-* [meta 资讯](/file/meta-setting.xlsx)
-* [API 规划](/file/star-api-setting.xlsx)
+- [meta 资讯](/file/meta-setting.xlsx)
+- [API 规划](/file/star-api-setting.xlsx)
+
 
 
 

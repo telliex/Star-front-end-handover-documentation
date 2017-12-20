@@ -1,42 +1,51 @@
-# webpack 开发环境参数设置
+# Webpack 开发环境参数设置
 
-webpack 是一个现代 JavaScript 应用程序的模块打包器\(module bundler\)。当 webpack 处理应用程序时，它会递归地构建一个依赖关系图\(dependency graph\)，其中包含应用程序需要的每个模块，然后将所有这些模块打包成一个或多个bundle。
+Webpack 是一个现代 JavaScript 应用程序的模块打包器(module bundler)。当 Webpack 处理应用程序时，它会递归地构建一个依赖关系图(dependency graph)，其中包含应用程序需要的每个模块，然后将所有这些模块打包成一个或多个bundle。
 
-使用 webpack 来协助 ES6 模块的管理，管理开发与发布两套版本的输出
-
-* 开发：js 程序码未压缩（方便开发时除错） 
-* 发布：js 程序码优化压缩，去除 consol,进行 ES6 转 ES5 的编码（适应不支援 ES6 语法的低阶浏览器，如 IE） 
+使用 Webpack 来协助 ES6 模块的管理，管理开发与发布两套版本的输出
+- 开发：js 程序码未压缩（方便开发时除错） 
+- 发布：js 程序码优化压缩，去除 consol,进行 ES6 转 ES5 的编码（适应不支援 ES6 语法的低阶浏览器，如 IE） 
 
 ## Webpack 快速入門
 
 首先要安装 Node.js， Node.js 自带了软件包管理器 npm，Webpack 需要 Node.js v0.6 以上支持，建议使用最新版 Node.js。
 
-1. 用 npm 安装全局 Webpack
-   > $ npm install webpack -g
+1. 用 NPM 安装全局 Webpack
+> \# commandline
+> npm install webpack -g
 2. 进入项目目录，用 npm 安装目录 Webpack
-   > $ npm install webpack --save-dev
-3. Webpack 在执行的时候，默认情况下，会搜索当前目录的 webpack.config.js 文件，文件设定下面说明
+> \# commandline
+> npm install webpack --save-dev
+3. Webpack 在执行的时候，默认情况下，会搜索当前目录的`webpack.config.js`文件，文件设定下面说明
 
 ## Webpack config setting
 
-### `/webpack.config.js`
+### 预設
+ Webpack 设定档
 
-为了更通用，将此设定档再分为 dev\(开发\)和 prod\(上线\)两版本，应用于开发与上线两种版本输出
+> 文档路径：/webpack.config.js
 
-    module.exports = function(env) {
-      return require(`./webpack.${env}.config.js`)
-    }
-
-### 开发版设定档 `/webpack.dev.config.js`
+为了更通用，将此设定档再分为 dev(开发)和 prod(上线)两版本，应用于开发与上线两种版本输出
 
 ```
-const path = require('path'); //通用 Windows 和 MAC OS 档案系统 
+module.exports = function(env) {
+  return require(`./webpack.${env}.config.js`)
+}
+```
+
+
+### 开发版 Webpack 设定档 
+
+> 文档路径：/webpack.dev.config.js
+
+```
+const path = require('path');   //通用 Windows 和 MAC OS 档案系统  
 const webpack = require('webpack'); 
-const node_modules_dir = path.resolve(__dirname, 'node_modules'); //webpack 插件放置路径(透过 npm 安装)
-const js_dir = path.resolve(__dirname, "src/lib"); //webpack js 组件路径 
+const node_modules_dir = path.resolve(__dirname, 'node_modules');   //webpack 插件放置路径(透过 npm 安装)
+const js_dir = path.resolve(__dirname, "src/lib");   //webpack js 组件路径 
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
 const WebpackDevServer = require('webpack-dev-server');
-const CleanWebpackPlugin = require('clean-webpack-plugin'); // 清除不需要的暂存档
+const CleanWebpackPlugin = require('clean-webpack-plugin');   // 清除不需要的暂存档
 
 module.exports = {
     devtool: 'source-map',
@@ -97,8 +106,8 @@ module.exports = {
             {
                 test: /\.css$/,
                 use: [
-                    'style-loader', // 這個會後執行 (順序很重要)
-                    'css-loader' // 這個會先執行
+                    'style-loader',   // 這個會後執行 (順序很重要)
+                    'css-loader'   // 這個會先執行
                 ]
             },
             {
@@ -150,19 +159,22 @@ module.exports = {
     ]
 
 }
-```
-
-### 上线版设定档 `/webpack.prod.config.js`
 
 ```
-const path = require('path'); //通用 Windows 和 MAC OS 档案系统 
+
+### 上线版 Webpack 设定档 
+
+> 文档路径：/webpack.prod.config.js
+
+```
+const path = require('path');   //通用 Windows 和 MAC OS 档案系统 
 const webpack = require('webpack');
-const node_modules_dir = path.resolve(__dirname, 'node_modules'); //webpack 插件放置路径(透过 npm 安装)
+const node_modules_dir = path.resolve(__dirname, 'node_modules');   //webpack 插件放置路径(透过 npm 安装)
 const js_dir = path.resolve(__dirname, "src/lib"); //webpack js 组件路径 
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
-const UglifyJSPlugin = require('uglifyjs-webpack-plugin'); // 压缩插件引用
-const CleanWebpackPlugin = require('clean-webpack-plugin'); // 清除不需要的暂存档
-const es3ifyPlugin = require('es3ify-webpack-plugin'); // ES5 再转码，IE 低阶浏览器可识别
+const UglifyJSPlugin = require('uglifyjs-webpack-plugin');   // 压缩插件引用
+const CleanWebpackPlugin = require('clean-webpack-plugin');   // 清除不需要的暂存档
+const es3ifyPlugin = require('es3ify-webpack-plugin');   // ES5 再转码，IE 低阶浏览器可识别
 // dashboard 
 const Dashboard = require('webpack-dashboard');
 const DashboardPlugin = require('webpack-dashboard/plugin');
@@ -204,9 +216,8 @@ module.exports = {
         sourceMapFilename: "../../../src/map/[file].map"
     },
     module: {
-
         rules: [
-
+           
             // 模块规则（配置 loader、解析器等选项）
             {
                 loader: 'babel-loader',
@@ -256,7 +267,7 @@ module.exports = {
 
     },
     plugins: [
-        //针对 ES6 模块管理引用名称
+        // 针对 ES6 模块管理引用名称
         new webpack.ProvidePlugin({
             $: 'jquery',
             jQuery: 'jquery',
@@ -265,7 +276,7 @@ module.exports = {
             'owlCarousel' : 'carousel',
             ScrollMagic : 'ScrollMagic',
         }),
-        //打包压缩时去掉 console.log
+        // 打包压缩时去掉 console.log
         new UglifyJSPlugin({
             compress: { screw_ie8: false , warnings: false},
             mangle: { except: ['$'],screw_ie8: false },
@@ -288,9 +299,7 @@ module.exports = {
 }
 ```
 
+
 ## 技術參考文檔
 
-* [webpack](https://doc.webpack-china.org/concepts/)
-
-
-
+- [webpack](https://doc.webpack-china.org/concepts/)
