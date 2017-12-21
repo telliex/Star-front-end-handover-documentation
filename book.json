@@ -14,7 +14,7 @@
             "Shinho": "http://shinho.com.cn/"
         }
     },
-    "plugins": [ "jsfiddle","anchor-navigation"],
+    "plugins": [ "jsfiddle","anchor-navigation","prism", "-highlight"],
     "pluginsConfig": {
           "jsfiddle":{
             "type":"script",
@@ -27,6 +27,11 @@
           "copyright":"&copy Taobao FED Team",
           "modify_label": "该文件修订时间：",
           "modify_format": "YYYY-MM-DD HH:mm:ss"
-        }
+          },
+          "prism": {
+            "css": [
+              "prismjs/themes/prism-solarizedlight.css"
+            ]
+          }
     }
 }
