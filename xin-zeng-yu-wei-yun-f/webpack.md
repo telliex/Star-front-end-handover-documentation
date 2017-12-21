@@ -1,8 +1,10 @@
 # Webpack
 
 ## 新增网页页面
-
+---
 新增页面时，需更动 **webpack.dev.config.js**（开发） & **webpack.prod.config.js**（上线）
+
+> 文档路径：/webpack.dev.config.js 、/webpack.prod.config.js
 
 ```
 ...

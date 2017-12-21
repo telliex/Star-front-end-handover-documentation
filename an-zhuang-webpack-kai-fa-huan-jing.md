@@ -7,6 +7,7 @@ Webpack 是一个现代 JavaScript 应用程序的模块打包器(module bundler
 - 发布：js 程序码优化压缩，去除 consol,进行 ES6 转 ES5 的编码（适应不支援 ES6 语法的低阶浏览器，如 IE） 
 
 ## Webpack 快速入門
+---
 
 首先要安装 Node.js， Node.js 自带了软件包管理器 npm，Webpack 需要 Node.js v0.6 以上支持，建议使用最新版 Node.js。
 
@@ -19,16 +20,15 @@ Webpack 是一个现代 JavaScript 应用程序的模块打包器(module bundler
 3. Webpack 在执行的时候，默认情况下，会搜索当前目录的`webpack.config.js`文件，文件设定下面说明
 
 ## Webpack 工作原理
+---
 
 ECMAScript 6 (简称 ES6)是新一代 Javascript ，可行模组化管理 js ，增加效能。但尚有低阶浏览器不支援，所以需要有 Babel 这样的转码器进行转码。Webpack 本身不只可以将 Babel 的转码用放进自动化流程，其实还有许多如程序码压缩、SCSS 编译等功能，在开发上缩短了许多时间。使用的设定可透过 `/webpack.config.js` 设置
 
 
 ## Webpack config setting
+---
 
-### 预設
-
-
- Webpack 设定档
+### Webpack 设定档
 
 > 文档路径：/webpack.config.js
 
@@ -306,7 +306,7 @@ module.exports = {
 ```
 
 ## Babel
-
+---
 刚提到的 ES6 代码转为 ES5 代码，这部份的运作上需要另一支 Babel 设定档进行设定。
 
 > 文档路径: /.babelrc
@@ -326,8 +326,6 @@ module.exports = {
     "plugins": ["transform-es3-member-expression-literals","transform-es3-property-literals"]    //针对低阶浏览器通用
 } 
 ```
-
-
 
 
 ## 技术文件参考资料

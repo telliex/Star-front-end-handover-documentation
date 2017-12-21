@@ -5,6 +5,7 @@ Gulp.js 是基于 Node.js 构建的，利用 Node.js 流的威力，可以快速
 使用 Gulp.js 来协助 SCSS 编译成 CSS 所需的实时自动化编译。
 
 ## Gulp 快速入門
+---
 
 如已全局安装过 Gulp `npm install gulp -g`，执行下面步骤前先运行  `npm rm -g gulp`（移除全局 Gulp 模块）。
 
@@ -28,14 +29,15 @@ gulp.task('default', function() {  // 'default' 默认任务名，运行命令�
 > gulp
 
 ## 使用 Gulp 進行 scss 的編譯工作
+---
 
 可实时监控 SASS 档案，若档案有异动修改时即可编译出 CSS 档
 > \# commandline
 > gulp watch
 
-## Gulp setting
+### Gulp setting
 
-Gulp 相关设定档位于 `/gulpfile.js`
+> 文档路径：/gulpfile.js
 
 ```
 //gulpfile.js

@@ -24,8 +24,8 @@
             "fontColor": "00FF00"
           },
           "tbfed-pagefooter": {
-          "copyright":"&copy star Team",
-          "modify_label": "该文件修订时间：",
+          "copyright":"&copy Archex Star Team",
+          "modify_label": "last modified：",
           "modify_format": "YYYY-MM-DD HH:mm:ss"
           },
           "prism": {
