@@ -62,16 +62,16 @@ Laravel 是一套富有表达性且具有简洁语法的网页应用程式框架
 > cd /var/www/laravel
 > composer install 
 
-## 設定環境
+## 设定环境
 ---
 
-### Step1. 調整資料夾權限
+### Step1. 调整资料夹权限
 
 > \# commandline
 > chown -R apache:apache /var/www/laravel
 > chmod -R 755 /var/www/laravel
 
-### Step2.設定 Laravel 環境變數
+### Step2.设定 Laravel 环境变数
 
 > \# commandline
 > cd /var/www/laravel
@@ -85,12 +85,13 @@ ServerName test.myproject.com
 DocumentRoot /var/www/laravel/publicAllowOverride All
 ```
 
-### Step4.重啟服務器
+### Step4.重启服务器
 
 > \# commandline
 > systemctl restart httpd
 
-## 技術參考文檔
+## 技术文件参考资料
+---
 
 - [Laravel 中文文檔](https://docs.golaravel.com/docs/5.0/installation/)
 - [How to Install the PHP Laravel Framework on CentOS 7](https://hostpresto.com/community/tutorials/how-to-install-the-php-laravel-framework-on-centos-7/)

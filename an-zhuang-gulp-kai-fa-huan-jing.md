@@ -93,6 +93,7 @@ gulp.task('styles', function() {
 
 ```
 
-## 技術參考文檔
+## 技术文件参考资料
+---
 
 - [gulp 中文網](https://www.gulpjs.com.cn/docs/getting-started/)
