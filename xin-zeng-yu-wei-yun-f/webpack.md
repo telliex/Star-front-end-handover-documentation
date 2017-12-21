@@ -34,7 +34,7 @@ entry: {
         'lyt-news-list': './src/js/lyt-news-list.es6',
         'lyt-recipedetail': './src/js/lyt-recipedetail.es6',
         //加入对应的 js 名称及路径
-        {% em color="#ff0000" %}'new-js-name': './src/js/new-js-name.es6',{% endem %}
+        'new-js-name': './src/js/new-js-name.es6',
     },
 ...
 ```
