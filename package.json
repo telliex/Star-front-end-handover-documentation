@@ -1,0 +1,27 @@
+{
+  "name": "handover",
+  "version": "1.0.0",
+  "description": "star front end documentation",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/b-x-b/Star-front-end-handover-documentation.git"
+  },
+  "keywords": [
+    "star",
+    "handover",
+    "documentation"
+  ],
+  "author": "Telliex & Fish",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/b-x-b/Star-front-end-handover-documentation/issues"
+  },
+  "homepage": "https://github.com/b-x-b/Star-front-end-handover-documentation#readme",
+  "dependencies": {
+    "gitbook-plugin-jsfiddle": "^1.0.0"
+  }
+}
