@@ -1,10 +1,12 @@
 # 远端资料串接
+
 ## 引入 Ajax 模组
+---
 
 在目标 js 内引入 Ajax API模组
 > import * as share from './share.es6';
 
-## 使用方法
+### 使用方法
 
 ```
    let tempvals = Array(page, dutyid);
