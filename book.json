@@ -1,0 +1,24 @@
+{
+    "title": "欣和官网前端交接文件",
+    "description": "记录 欣官网前端开发工具及技术",
+    "author": "Telliex & Fish",
+    "output.name": "",
+    "language": "zh-hans",
+    "gitbook": "3.2.3",
+    "root": ".",
+    "structure": {
+        "readme": "introduction.md"
+    },
+    "links": {
+        "sidebar": {
+            "Shinho": "http://shinho.com.cn/"
+        }
+    },
+    "plugins": [
+        
+    ],
+
+    "pluginsConfig": {
+        
+    }
+}
