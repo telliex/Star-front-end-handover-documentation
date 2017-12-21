@@ -48,18 +48,18 @@ js
 
 ```markdown
 lib
-├ owlcarousel                               #
-├ slick                                     #
-├ animation.gsap.min.js                     #
+├ owlcarousel                               # JavaScript 轮拨套件
+├ slick                                     # JavaScript 轮拨套件
+├ animation.gsap.min.js                     # JS 动画库，與 ScrollMagic 一起使用
 ├ brewser.js                                #
 ├ debug.addIndicators.min.js                #
-├ jquery.cookie.js                          #
+├ jquery.cookie.js                          # cookie 读取、写入、删除插件
 ├ jquery.history.js                         #
-├ jquery.js                                 #
-├ jquery.mobile.min.js                      #
+├ jquery.js                                 # JavaScript 框架
+├ jquery.mobile.min.js                      # JavaScript 框架 for Mobile
 ├ jQueryRotate.js                           #
-├ ScrollMagic.min.js                        #
-└ TweenMax.min.js                           #
+├ ScrollMagic.min.js                        # JS 动画库，與 ScrollMagic 一起使用
+└ TweenMax.min.js                           # JS 动画库，與 ScrollMagic 一起使用
 ```
 ### 相关连结与文档
 
