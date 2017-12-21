@@ -14,7 +14,7 @@
             "Shinho": "http://shinho.com.cn/"
         }
     },
-    "plugins": [ "ace","jsfiddle","anchor-navigation","prism", "-highlight","emphasize"],
+    "plugins": [ "anchors","ace","jsfiddle","anchor-navigation","prism", "-highlight","emphasize","tbfed-pagefooter","copy-code-button"],
     "pluginsConfig": {
           "jsfiddle":{
             "type":"script",
@@ -24,7 +24,7 @@
             "fontColor": "00FF00"
           },
           "tbfed-pagefooter": {
-          "copyright":"&copy Taobao FED Team",
+          "copyright":"&copy star Team",
           "modify_label": "该文件修订时间：",
           "modify_format": "YYYY-MM-DD HH:mm:ss"
           },
