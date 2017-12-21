@@ -7,24 +7,26 @@
 
 - [node.js](https://nodejs.org/en/)
 - [Git](https://git-scm.com/)
-- 若为 Mac OS 系统，请安装或更新 XCode
+- XCode - Mac OS 使用者需加安装
 
 ### Step1.安装本机开发架站软体
 
+以下为推荐的架站工具，同性质的其他工具亦可。
+
 - Mac OS - [MAMP](https://www.mamp.info/en/)
 
-  留意 PHP 版本 5.6 及 Root 的路径需指向 `/public` 
+  ▼ 留意 **PHP version 5.6** 及 Root 的路径需指向 `/public` ，如下圖：
 
   ![MAMP](/images/MAMP-image.jpg)
   
-  设定为 80 port 
+  ▼ 设定为 **80 port** ，如下圖：
   
   ![MAMP](/images/MAMP-image2.jpg)
 
 
 - Windows - [XAMPP](https://www.apachefriends.org/zh_tw/index.html)
 
-
+安装完后，开启架站软体（MAMP 或 XAMPP），确认工具可正常使用。
 
 ### Step2.从 github 抓取档案
 
@@ -45,16 +47,14 @@ install 指令会参照 `package.json` 罗列的配置，进行安装所需的 p
 > cd star-dev-serve
 > npm install 
 
-
 ### Step4.启动开发架站软体
 
-开启架站软体（MAMP 或 XAMPP）将网站根目录指向 `/public` ， Host 名称设为 laravel （http://laravel/）
-
+设置架站软体（MAMP 或 XAMPP），将网站根目录指向 `/public` ， Host 名称设为 laravel http://laravel/ （可自行命名）
 
 ### Step5.汇入资料库
 
 1. 架站软件中建立数据库，名称为 shinhowebsite 
-2. 汇入[资料库范本](/file/shinhowebsite_2017-12-20.sql)（实际可将当前官网的资料库汇出，再汇入开发环境）
+2. 汇入<a href="/file/shinhowebsite_2017-12-20.sql" target="_blank">资料库范本</a>（实际可将当前官网的资料库汇出，再汇入开发环境）
 
 ### Step6.建立 .env
 
