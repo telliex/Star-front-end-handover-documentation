@@ -75,8 +75,8 @@ DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
 DB_PORT=3306
 DB_DATABASE=shinhowebsite    //  加入资料库名称
-DB_USERNAME=shinhowebsite    //  填入使用者名称
-DB_PASSWORD=12345678    //  填入使用者密码
+DB_USERNAME=shinhowebsite    //  填入架站软体数据库使用者名称
+DB_PASSWORD=12345678    //  填入架站软体数据库使用者密码
 
 BROADCAST_DRIVER=log
 CACHE_DRIVER=file
@@ -111,8 +111,8 @@ DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
 DB_PORT=3306
 DB_DATABASE=shinhowebsite    //  加入资料库名称
-DB_USERNAME=shinhowebsite    //  填入使用者名称
-DB_PASSWORD=12345678    //  填入使用者密码
+DB_USERNAME=shinhowebsite    //  填入架站软体数据库使用者名称
+DB_PASSWORD=12345678    //  填入架站软体数据库使用者密码
 
 BROADCAST_DRIVER=log
 CACHE_DRIVER=file
