@@ -3,18 +3,20 @@
 * [介绍](README.md)
 * [使用到的技术 F](chapter1.md)
 
-#### 开发设置
+## 开发设置
 
 * [开发环境设置](huan-jing-pei-zhi-yu-yun-xing.md)
-  * [Laravel 开发环境建置](an-zhuang-laravel-kai-fa-kuang-jia.md)
-  * [gulp 开发环境参数设置](an-zhuang-gulp-kai-fa-huan-jing.md)
-  * [webpack 开发环境参数设置](an-zhuang-webpack-kai-fa-huan-jing.md)
+* [Laravel 开发环境建置](an-zhuang-laravel-kai-fa-kuang-jia.md)
+* [gulp 开发环境参数设置](an-zhuang-gulp-kai-fa-huan-jing.md)
+* [webpack 开发环境参数设置](an-zhuang-webpack-kai-fa-huan-jing.md)
+
+## 文档架构
 
 * [文档架构说明](wen-dang-jia-gou-shuo-ming.md)
   * [CSS 样式文档架构](wen-dang-jia-gou-shuo-ming/css-yang-shi-wen-dang-jia-gou.md)
   * [Javascript 代码文档架构](wen-dang-jia-gou-shuo-ming/js-dai-ma-wen-dang-jia-gou.md)
-  
-#### 维护
+
+## 维护
 
 * [新增与運維 F T](xin-zeng-yu-wei-yun-f.md)
   * [CSS](xin-zeng-yu-wei-yun-f/css.md)
