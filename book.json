@@ -1,6 +1,6 @@
 {
     "title": "欣和官网前端交接文件",
-    "description": "记录 欣官网前端开发工具及技术",
+    "description": "记录欣官网前端开发工具及技术",
     "author": "Telliex & Fish",
     "output.name": "",
     "language": "zh-hans",
@@ -9,16 +9,28 @@
     "structure": {
         "readme": "README.md"
     },
-    "theme-default": {
-            "showLevel": true
-        },
     "links": {
         "sidebar": {
             "Shinho": "http://shinho.com.cn/"
         }
     },
-    "plugins": [ "anchors","ace","jsfiddle","anchor-navigation","prism", "-highlight","emphasize","tbfed-pagefooter","copy-code-button","splitter","alerts"],
+    "plugins": [
+        "-sharing", 
+        "anchors","ace",
+        "jsfiddle",
+        "anchor-navigation",
+        "prism", 
+        "-highlight",
+        "emphasize",
+        "tbfed-pagefooter",
+        "copy-code-button",
+        "splitter",
+        "alerts"
+        ],
     "pluginsConfig": {
+          "theme-default": {
+            "showLevel": true
+          },
           "jsfiddle":{
             "type":"script",
             "tabs":["result","js","css", "html"],
