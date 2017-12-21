@@ -3,7 +3,7 @@
 ## 本机开发环境
 ---
 
-## Step0.安装环境软体
+### Step0.安装环境软体
 
 - [node.js](https://nodejs.org/en/)
 - [Git](https://git-scm.com/)
@@ -62,7 +62,7 @@ install 指令会参照 `package.json` 罗列的配置，进行安装所需的 p
 
 此檔在本机开发时实为重要，上线版本是不需要的。内容主要针对开发者本机环境的设定。若 clone 回来的档案没有此档，请自行建立。
 
-#### Mac OS - MAMP
+##### Mac OS - MAMP
 ```
 APP_ENV=local
 APP_KEY=base64:C4s5VyTWCyzuZkwgUuh7NUqWNdYmWGj7pnxaxPVj4s4=
@@ -99,7 +99,7 @@ PUSHER_KEY=
 PUSHER_SECRET=
 ```
 
-#### Windows - XAMPP
+##### Windows - XAMPP
 ```
 APP_ENV=local
 APP_KEY=base64:C4s5VyTWCyzuZkwgUuh7NUqWNdYmWGj7pnxaxPVj4s4=
@@ -140,6 +140,7 @@ PUSHER_SECRET=
 
 打开浏览器连接 `http://laravel/` 出现官网首页表成功。
 
+![frontpage](/images/shinho-website-frontpage.png)
 
 
 
@@ -161,16 +162,9 @@ PUSHER_SECRET=
 
 以图形介面的 Git 管理工具可增加工作效率，推荐
 
-
 - Mac OS - [SourceTree](https://www.sourcetreeapp.com/)
 
 - Windows - [tortoisegit](https://tortoisegit.org/)
-
-
-
-
-
-
 
 ### 开发说明
 
