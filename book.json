@@ -14,7 +14,7 @@
             "Shinho": "http://shinho.com.cn/"
         }
     },
-    "plugins": [ "anchors","ace","jsfiddle","anchor-navigation","prism", "-highlight","emphasize","tbfed-pagefooter","copy-code-button"],
+    "plugins": [ "anchors","ace","jsfiddle","anchor-navigation","prism", "-highlight","emphasize","tbfed-pagefooter","copy-code-button","splitter"],
     "pluginsConfig": {
           "jsfiddle":{
             "type":"script",
