@@ -25,6 +25,7 @@
     "gitbook-plugin-ace": "^0.3.2",
     "gitbook-plugin-anchor-navigation": "0.0.1",
     "gitbook-plugin-jsfiddle": "^1.0.0",
-    "gitbook-plugin-prism": "^2.3.0"
+    "gitbook-plugin-prism": "^2.3.0",
+    "gitbook-plugin-prism-themes": "0.0.2"
   }
 }
