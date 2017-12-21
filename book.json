@@ -9,6 +9,9 @@
     "structure": {
         "readme": "README.md"
     },
+    "theme-default": {
+            "showLevel": true
+        },
     "links": {
         "sidebar": {
             "Shinho": "http://shinho.com.cn/"
