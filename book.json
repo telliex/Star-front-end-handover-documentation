@@ -25,7 +25,8 @@
         "tbfed-pagefooter",
         "copy-code-button",
         "splitter",
-        "alerts"
+        "alerts",
+        "mermaid-gb3"
         ],
     "pluginsConfig": {
           "theme-default": {
