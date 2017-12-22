@@ -9,6 +9,7 @@
 * [文档架构说明](wen-dang-jia-gou-shuo-ming.md)
   * [CSS 样式文档架构](wen-dang-jia-gou-shuo-ming/css-yang-shi-wen-dang-jia-gou.md)
   * [Javascript 代码文档架构](wen-dang-jia-gou-shuo-ming/js-dai-ma-wen-dang-jia-gou.md)
+  * [PHP 前端文档架构](wen-dang-jia-gou-shuo-ming/php-dai-ma-wen-dang-jia-gou.md)
 * [新增与運維 F T](xin-zeng-yu-wei-yun-f.md)
   * [CSS](xin-zeng-yu-wei-yun-f/css.md)
   * [Javascript](xin-zeng-yu-wei-yun-f/javascript.md)
