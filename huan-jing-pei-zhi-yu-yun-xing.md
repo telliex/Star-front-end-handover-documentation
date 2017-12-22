@@ -54,24 +54,21 @@ install 指令会参照 `package.json` 罗列的配置，进行安装所需的 p
 ### Step5.汇入数据库
 
 1. 架站软件中建立数据库，名称为 shinhowebsite 
-2. 抓取当天官网上运行的资料库
-
+2. 抓取当天官网的数据库
 > \# commandline
-> scp -r -P 1212 www@116.62.117.96:/dockerfile/shinho/app/sqlbak/  /Users/telliex/document/star-server-backup
+> scp -r -P 1212 www@116.62.117.96:/dockerfile/shinho/app/sqlbak/  /Users/使用者名称/欲放置的资料夹
+3. 汇入数据库
+
 
 
 ### Step6.汇入图档
 
+1. 抓取官网数据库用图
 > \# commandline
-> rsync -av -r -e "ssh -p 1212"  www@116.62.117.96:/dockerfile/shinho/app/star-dev-server/public/img/up /Users/telliex/document/star-server-backup
+> scp -r -P 1212  www@116.62.117.96:/dockerfile/shinho/app/star-dev-server/public/img/up /Users/使用者名称/欲放置的资料夹
+2. 将抓下来的图放进开发环境 '/public/img/up' 内
 
-
-> **[info] 登入密码**
-> 你知道的
-
-
-
-### Step6.建立 .env
+### Step7.建立 .env
 
 > 文档路径：/.env
 
@@ -151,14 +148,11 @@ PUSHER_SECRET=
 
 ```
 
-### Step7.启动开发架站软体
+### Step8.启动开发架站软体
 
 打开浏览器连接 `http://laravel/` 出现官网首页表成功。
 
 ![frontpage](/images/shinho-website-frontpage.png)
-
-
-
 
 
 ## 如何进行开发
@@ -324,7 +318,6 @@ PUSHER_SECRET=
 }
 
 ```
-
 
 ## 技术文件参考资料
 ---
