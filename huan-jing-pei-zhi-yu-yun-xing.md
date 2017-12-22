@@ -172,7 +172,6 @@ PUSHER_SECRET=
 以图形介面的 Git 管理工具可增加工作效率，推荐
 
 - Mac OS - [SourceTree](https://www.sourcetreeapp.com/)
-
 - Windows - [tortoisegit](https://tortoisegit.org/)
 
 ### 开发说明

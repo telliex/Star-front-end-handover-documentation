@@ -7,23 +7,23 @@ Laravel 是一套富有表达性且具有简洁语法的网页应用程式框架
 ## Laravel 开发环境安装
 ---
 
-### Step1.CentOS 更新
+### Step0.CentOS 更新
 
 > \# commandline
 > yum -y update
 
-### Step2.安裝 Centos 擴充資源庫
+### Step1.安裝 Centos 擴充資源庫
 
 > \# commandline
 > yum -y install epel-release
 > yum -y update
 > yum clean all
     
-### Step3.安裝 Mariadb 數據庫
+### Step2.安裝 Mariadb 數據庫
 
 > yum -y install httpd mariadb-server mariadb 
     
-### Step4.安裝 PHP
+### Step3.安裝 PHP
 
 > yum -y install php56w php56w-mysql php56w-mcrypt php56w-dom php56w-mbstring
     
@@ -42,21 +42,21 @@ Laravel 是一套富有表达性且具有简洁语法的网页应用程式框架
 > // 將 mariadb 設為常駐
 > systemctl enable mariadb
   
-### Step4.安裝 Composer - Laravel 框架使用 Composer 來管理其相依性
+### Step5.安裝 Composer - Laravel 框架使用 Composer 來管理其相依性
 
 > \# commandline
 > curl -sS https://getcomposer.org/installer | php
 > mv composer.phar /usr/bin/composer
 > chmod +x /usr/bin/composer
 
-### Step5.安裝 git 並取回 Laravel 框架
+### Step6.安裝 git 並取回 Laravel 框架
 
 > \# commandline
 > yum -y install git
 > cd /var/www/
 > git clone https://github.com/laravel/laravel.git
 
-### Step6.安裝 Laravel 相關套件
+### Step7.安裝 Laravel 相關套件
 
 > \# commandline
 > cd /var/www/laravel
