@@ -9,8 +9,26 @@
 ![](/images/new-page.jpg)
 
 2. 调整个页面的 Meta 资讯
-请见[]()
+> 文档路径：/resources/views/layouts/meta.blade.php
+
+    请见[1.5.3 PHP](xin-zeng-yu-wei-yun-f/php.md) # Meta
+
 3. 新增或修改 footer 连结
+> 文档路径：/resources/views/layouts/footer.blade.php
+
+    请见[1.5.3 PHP](xin-zeng-yu-wei-yun-f/php.md) # Footer
+
 4. 增加修改或调整 子选单顺序
+> 文档路径：/resources/views/layouts/header.blade.php
+    
+    请见[1.5.3 PHP](xin-zeng-yu-wei-yun-f/php.md) # Header
+
 5. 已存在的页面进行内容修改
-6. 测试机机新建立 
+    - JS
+    > 文档路径：/src/js/*.es6
+
+    - PHP
+    > 文档路径：/resources/views/front/*.blade.php
+
+6. 开发机新建立 
+请见[1.3.1 Laravel 开发环境建置](huan-jing-pei-zhi-yu-yun-xing.md)
