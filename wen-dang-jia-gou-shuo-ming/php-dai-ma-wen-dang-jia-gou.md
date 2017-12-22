@@ -8,7 +8,7 @@
 
 
 
-## Views 资料夹
+## l 资料夹
 ---
 > 文档路径: `root/resources/views/layouts`
 
