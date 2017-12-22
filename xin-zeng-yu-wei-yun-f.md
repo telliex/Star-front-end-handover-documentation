@@ -4,16 +4,19 @@
 
 ### 工作流程
 
-![Star work flow](/images/star-work-flow.jpg)
+通过确认后的设计版面 --> 切版套成 HTML 页面 --> 套入 Laravel 框架 --> 编写 JS 动效与 Ajax 串皆资料 --> 推档至 Github --> 开发机从 Github pull 档案 --> 完成推档，检视
 
 
-欣和网站运维时会有几种需求产生
+### 档案确认流程
+
+测试机档案前端确认没问题后  -->  
+
+
+
+欣和网站运维时会有几种情况发生
 
 1. 新页面的增加
-
-![Star work flow](/images/new-page.jpg)    
-2. 调整页面的 Meta 资讯
-见 [1.5.3 PHP]()
+2. 调整个页面的 Meta 资讯
 3. 新增或修改 footer 连结
 4. 增加修改或调整 子选单顺序
 5. 已存在的页面进行内容修改
