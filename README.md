@@ -40,7 +40,7 @@
 ## 欣和官网兼容浏览器版本
 ---
 
-欣和官网支援的浏览器有:
+欣和官网支援的浏览器有：
 
 - IE11 以上
 - Chrome
@@ -52,9 +52,9 @@
 
 ### github
 
-网站开发及上线档案皆在 github 管理，属未开源，请 mail 到 telliex@archex.co 请求加入权限，再将档案 fork 回欣和开发维护团队的 github 进行维护及二次开发。
+网站开发及上线档案皆置于 Github 管理，未开源。档案无法抓取时，请 mail 到 telliex@archex.co 请求权限，再将档案 fork 回欣和开发维护团队的 github ，以利进行维护或二次开发。
 
-Star github: https://github.com/b-x-b/star-dev-server
+Star Github: https://github.com/b-x-b/star-dev-server
 
 ### 对接人
 

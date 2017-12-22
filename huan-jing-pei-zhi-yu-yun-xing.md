@@ -3,13 +3,13 @@
 ## 本机开发环境
 ---
 
-### Step0.安装环境软体
+### Step0.安装环境所需软体
 
-- [node.js](https://nodejs.org/en/)
+- [Node.js](https://nodejs.org/en/)
 - [Git](https://git-scm.com/)
 - XCode - Mac OS 使用者需加安装
 
-### Step1.安装本机开发架站软体
+### Step1.安装本机开发用架站软体
 
 以下为推荐的架站工具，同性质的其他工具亦可。
 
@@ -30,10 +30,10 @@
 
 ### Step2.从 github 抓取档案
 
-将 Star Github 或欣和 fork 回来的 Github Repositories  复制档案到本机
+将从 [Star Github]()  fork 回来的 Github Repositories  复制档案到本机
 
 > \# commandline
-> Git clone https://github.com/b-x-b/star-dev-server.git
+> git clone https://github.com/b-x-b/star-dev-server.git
 
 或
 
