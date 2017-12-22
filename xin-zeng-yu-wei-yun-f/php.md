@@ -1,8 +1,8 @@
 # PHP
 
 Laravel 框架里，网页呈现的部份我们称为 view (MVC 里的 V)，所有的页面都是放置在 `/resources/views/`下，
-- `/resources/views/layousts` 为网页的 templat 模版，
-包含 `master.blade.php`(主要的 templater 架构)、`meta.blade.php`（网页 meta 资讯部分）、`header.blade.php`（网页 header 主副选单部分）、`footer.blade.php`（网页 footer 连结）,`keyvisual.blade.php`、`keyVisualCraftSlider.blade.php`、`keyVisualNewsSlider.blade.php`（banner key vision 轮播）
+- `/resources/views/layouts` 为网页的 template 模版，
+包含 `master.blade.php`(主要的 template 架构)、`meta.blade.php`（网页 meta 资讯部分）、`header.blade.php`（网页 header 主副选单部分）、`footer.blade.php`（网页 footer 连结）,`keyvisual.blade.php`、`keyVisualCraftSlider.blade.php`、`keyVisualNewsSlider.blade.php`（banner key vision 轮播）
 
 - `/resources/views/front` 放置各子网页
 
