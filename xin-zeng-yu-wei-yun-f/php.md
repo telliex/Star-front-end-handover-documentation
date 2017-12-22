@@ -4,7 +4,7 @@ Laravel 框架里，网页呈现的部份我们称为 view (MVC 里的 V)，所�
 - `/resources/views/layousts` 为网页的 templat 模版，
 包含 `master.blade.php`(主要的 templater 架构)、`meta.blade.php`（网页 meta 资讯部分）、`header.blade.php`（网页 header 主副选单部分）、`footer.blade.php`（网页 footer 连结）,`keyvisual.blade.php`、`keyVisualCraftSlider.blade.php`、`keyVisualNewsSlider.blade.php`（banner key vision 轮播）
 
-- `/resources/views/front` 为各网页
+- `/resources/views/front` 放置各子网页
 
 ## 新增页面
 ---
@@ -42,7 +42,6 @@ Route::get('your/new/page/url','front@your-new-page-name');
 
 > 文档路径：/app/Http/Controllers/front.php
 
-
 ```
 public function careergroup(Request $request,$job=''){
     if($job !=""){
@@ -72,7 +71,7 @@ public function careergroup(Request $request,$job=''){
 ```
 
 
-## 维运
+## 维护
 ---
 
 #### 全站 template

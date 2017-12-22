@@ -21,10 +21,12 @@ Laravel 是一套富有表达性且具有简洁语法的网页应用程式框架
     
 ### Step2.安裝 Mariadb 數據庫
 
+> \# commandline
 > yum -y install httpd mariadb-server mariadb 
     
 ### Step3.安裝 PHP
 
+> \# commandline
 > yum -y install php56w php56w-mysql php56w-mcrypt php56w-dom php56w-mbstring
     
 ### Step4.啟動服務器

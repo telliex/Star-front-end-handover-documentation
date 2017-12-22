@@ -33,5 +33,6 @@
        }
    });
 ```
-
+说明：
+- API 名称对照请参阅 [Star API](/file/star-api-setting.xlsx)
 
