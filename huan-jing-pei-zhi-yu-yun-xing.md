@@ -51,10 +51,25 @@ install 指令会参照 `package.json` 罗列的配置，进行安装所需的 p
 
 设置架站软体（MAMP 或 XAMPP），将网站根目录指向 `/public` ， Host 名称设为 laravel http://laravel/ （可自行命名）
 
-### Step5.汇入资料库
+### Step5.汇入数据库
 
 1. 架站软件中建立数据库，名称为 shinhowebsite 
-2. 汇入<a href="/file/shinhowebsite_2017-12-20.sql" target="_blank">资料库范本</a>（实际可将当前官网的资料库汇出，再汇入开发环境）
+2. 抓取当天官网上运行的资料库
+
+> \# commandline
+> scp -r -P 1212 www@116.62.117.96:/dockerfile/shinho/app/sqlbak/  /Users/telliex/document/star-server-backup
+
+
+### Step6.汇入图档
+
+> \# commandline
+> rsync -av -r -e "ssh -p 1212"  www@116.62.117.96:/dockerfile/shinho/app/star-dev-server/public/img/up /Users/telliex/document/star-server-backup
+
+
+> **[info] 登入密码**
+> 你知道的
+
+
 
 ### Step6.建立 .env
 
