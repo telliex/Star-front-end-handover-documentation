@@ -1,14 +1,15 @@
 # PHP 前端文档架构
 
-在 Laravel 框架里，PHP 前端页面档案
+Laravel 框架里，网页呈现的部份我们称为 view (MVC 里的 V)，所有的页面都是放置在 `/resources/views/`下，
+
 
 ## Front 资料夹
 ---
-> 文档路径: `root/resources/views/front`
+> 文档路径: `/resources/views/front`
 
 
 
-## l 资料夹
+## Layouts 资料夹
 ---
-> 文档路径: `root/resources/views/layouts`
+> 文档路径: `/resources/views/layouts`
 

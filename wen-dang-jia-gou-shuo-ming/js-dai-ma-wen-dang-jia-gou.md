@@ -2,8 +2,8 @@
 
 ## JS 资料夹
 ---
-> 文档路径: `root/src/js`  
-> 转译后路径: `root/pubic/js`
+> 文档路径: `/src/js`  
+> 转译后路径: `/pubic/js`
 
 ```markdown
 js                                        
@@ -43,20 +43,18 @@ js
 <br/>
 ## Lib 资料夹
 ---
-> 文档路径: `root/src/lib`
+> 文档路径: `/src/lib`
 
 ```markdown
 lib
 ├ owlcarousel                               # JavaScript 轮拨套件
 ├ slick                                     # JavaScript 轮拨套件
-├ animation.gsap.min.js                     # JS 动画库，與 ScrollMagic 一起使用
-├ brewser.js                                #
-├ debug.addIndicators.min.js                #
+├ animation.gsap.min.js                     # JavaScript 动画库，與 ScrollMagic 一起使用
+├ debug.addIndicators.min.js                # ScrollMagic Debug 套件
 ├ jquery.cookie.js                          # cookie 读取、写入、删除插件
-├ jquery.history.js                         #
+├ jquery.history.js                         # JavaScript 新增浏览记录套件
 ├ jquery.js                                 # JavaScript 框架
-├ jquery.mobile.min.js                      # JavaScript 框架 for Mobile
-├ jQueryRotate.js                           #
+├ jquery.mobile.min.js                      # JavaScript 框架 for Mobile                        # 
 ├ ScrollMagic.min.js                        # JS 动画库，與 ScrollMagic 一起使用
 └ TweenMax.min.js                           # JS 动画库，與 ScrollMagic 一起使用
 ```

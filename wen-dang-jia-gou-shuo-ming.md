@@ -40,7 +40,7 @@
 ---
 Public 资料夹为网站根目录指向位置，网站内静态档案及所嵌入的档案均放置于此。
 
-> 文档路径: `root/public`
+> 文档路径: `/public`
 
 ```markdown
 public
@@ -76,7 +76,7 @@ public
 ---
 Resources 资料夹内为 `views`、`lang`、`assets`，分别放了视图档案、语系档案及预先转译才能使用的资源档案。目前仅使用 views 资料夹存放 Laravel Blade 样板引擎，前台页面都存放在此。
 
-> 文档路径: `root/resources`
+> 文档路径: `/resources`
 
 ```markdown
 resources
@@ -92,7 +92,7 @@ resources
 ---
 Src 资料夹存放预先转译才能使用的资源档案，例如：SCSS、ES6。无论样式或交互动效，转译前档案都在此。
 
-> 文档路径: `root/src`
+> 文档路径: `/src`
 
 ```markdown
 src
@@ -103,8 +103,3 @@ src
 ```
 * 若需新增或运维样式请参考：[1.5.1 新增与运维 - CSS](/xin-zeng-yu-wei-yun-f/css.md)
 * 若需新增或运维交互动效请参考：[1.5.2 新增与运维 - JavaScript](/xin-zeng-yu-wei-yun-f/javascript.md)
-
-
-
-
-

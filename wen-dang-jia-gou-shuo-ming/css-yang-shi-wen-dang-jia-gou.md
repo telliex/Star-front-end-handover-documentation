@@ -13,8 +13,8 @@
 
 若有新增元件相关的样式，请依照上述说明，放置对应的资料夹或更新档案。
 <br/>
-> 文档路径: `root/src/sass`  
-> 转译后路径: `root/pubic/css`
+> 文档路径: `/src/sass`  
+> 转译后路径: `/pubic/css`
 
 ```markdown
 sass
