@@ -19,7 +19,7 @@
 
     请见[1.5.3 PHP](xin-zeng-yu-wei-yun-f/php.md) # Footer
 
-4. 增加修改或调整 子选单顺序
+4. 增加修改或调整子选单顺序
 > 文档路径：/resources/views/layouts/header.blade.php
     
     请见[1.5.3 PHP](xin-zeng-yu-wei-yun-f/php.md) # Header
