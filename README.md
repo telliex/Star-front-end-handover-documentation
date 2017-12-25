@@ -15,7 +15,7 @@
 
 - **Git** - 版空档案
 - **Github** - 统一管理档案
-- **MAMP** - MAC OS 上佈置 Apache + MySQL + PHP環境的套装软体 ( Windows 系统开发者可使用 XAMPP 等类似的网页服务器架站工具)
+- **MAMP** - MAC OS 上佈置 Apache + MySQL + PHP 環境的套装软体 ( Windows 系统开发者可使用 XAMPP 等类似的网页服务器架站工具)
 
 > 本机环境安装方式可参考：[**1.3 开发环境配置**](/huan-jing-pei-zhi-yu-yun-xing.md)
 
@@ -50,9 +50,9 @@
 ## 其他讯息
 ---
 
-### github
+### Github
 
-网站开发及上线档案皆置于 Github 管理，未开源。档案无法抓取时，请 mail 到 telliex@archex.co 请求权限，再将档案 fork 回欣和开发维护团队的 github ，以利进行维护或二次开发。
+网站开发及上线档案皆置于 Github 管理，未开源。档案无法抓取时，请 mail 到 telliex@archex.co 请求权限，再将档案 fork 回欣和开发维护团队的 Github ，以利进行维护或二次开发。
 
 Star Github: https://github.com/b-x-b/star-dev-server
 
@@ -60,10 +60,10 @@ Star Github: https://github.com/b-x-b/star-dev-server
 
 Star 团队
 - Telliex (telliex.chiu@archex.co) 前端页面制作
-- Fish (claire.chung@archex.co) 前端页面制作
+- Fish (bonbonfishs@gmail.com) 前端页面制作
 
 欣和团队
-- 春涛（xuchuntao@shinho.net.cn）主机推档部分
+- 春涛 (xuchuntao@shinho.net.cn) 主机推档部分
 
 
 
