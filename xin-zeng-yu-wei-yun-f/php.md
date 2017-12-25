@@ -6,8 +6,12 @@ Blade 是 Laravel 所提供的簡單且強大的模板引擎，Blade 視圖檔�
 包含 `master.blade.php`(主要的 template 架构)、`meta.blade.php`（网页 meta 资讯部分）、`header.blade.php`（网页 header 主副选单部分）、`footer.blade.php`（网页 footer 连结）,`keyvisual.blade.php`、`keyVisualCraftSlider.blade.php`、`keyVisualNewsSlider.blade.php`（banner key vision 轮播）
 - `/resources/views/front` 放置各子网页
 
-## Master template
+## Template
+---
 
+以下可以由两个 .blade.php 档说明 laravel 里 template 的用法
+
+> 表示引用母页面
 > 文档路径：/resources/views/layouts/master.blade.php
 
 ```
@@ -17,6 +21,7 @@ Blade 是 Laravel 所提供的簡單且強大的模板引擎，Blade 視圖檔�
   // 将 /resources/views/layouts/meta.blade.php 的程式码导入（网页 mata 部分）
   @include('layouts.meta')  
   
+  // @yield 在母页面使用,供子页面继承此母页面时，以 @section('headInsert') 区块内容取代此 @yield('headInsert')
   @yield('headInsert')
   
   // 将 /resources/views/layouts/inserttop.blade.php 的程式码导入（网页 head 第三方 js 部分,
@@ -72,6 +77,7 @@ Blade 是 Laravel 所提供的簡單且強大的模板引擎，Blade 視圖檔�
 <script src="{{ asset('/js/selectivizr-min.js') }}"></script>
 <![endif]--> 
 <script src="{{ asset('/js/custom/global.js') }}"></script>
+
   @yield('jsInsert')
 // 将 /resources/views/layouts/insertbottom.blade.php 的程式码导入（网页 footer 第三方 js 部分,
   如百度,谷歌程式码）
@@ -79,6 +85,62 @@ Blade 是 Laravel 所提供的簡單且強大的模板引擎，Blade 視圖檔�
 </body>
 </html>
 ```
+
+> 表示引用子页面
+> 文档路径：/resources/views/front/careers.blade.php
+
+
+```
+// 继承 master.blade.php 母页面
+@extends('layouts.master')
+
+// 将以下 @section('headInsert') 几夹带的内容,置换继承母页面内 @yield('headInsert')位置
+@section('headInsert')
+	{{-- <link rel="stylesheet" href="{{ asset('/css/vendor/carousel/owl.carousel.css') }}">
+    <link rel="stylesheet" href="{{ asset('/css/vendor/carousel/owl.theme.default.css') }}">
+    <link rel="stylesheet" href="{{ asset('/css/vendor/carousel/animate.css') }}"> --}}
+@endsection
+
+// 将以下 @section('headInsert') 第二个参数的内容放进母页面取代 @yield('section'）
+@section('section', 'data-main-nav="2"')
+
+
+{{-- 载入 container schema --}}
+@section('schemaContainer', 'mainContentOfPage')
+
+{{-- keyVisual --}}
+@section('keyVisual')
+
+    @include('layouts.keyvisual', ['DT' => asset('/img/kv-careers.jpg'),'M' => asset('/img/kv-careers-m.jpg'),'ALT' => '加入欣和'])
+  
+@endsection
+
+{{-- 主要内容区域 --}}
+@section('mainContent')
+	<section class="career-about">
+		...内容
+	</section>
+
+@stop
+
+{{-- jsInsert --}}
+@section('jsInsert')
+	<script src="{{ asset('/js/custom/lyt-careers.js') }}"></script>
+@endsection
+```
+
+
+
+说明:
+- `asset` 自根目录开始
+
+
+### contrller
+
+> 文档路径：/app/Http/Controllers
+
+route 后需要执行怎样的动作与送进页面什么参数
+
 
 
 ## 维护
