@@ -24,8 +24,7 @@ Blade 是 Laravel 所提供的簡單且強大的模板引擎，Blade 視圖檔�
   // @yield 在母页面使用,供子页面继承此母页面时，以 @section('headInsert') 区块内容取代此 @yield('headInsert')
   @yield('headInsert')
   
-  // 将 /resources/views/layouts/inserttop.blade.php 的程式码导入（网页 head 第三方 js 部分,
-  如百度,谷歌程式码）
+  // 将 /resources/views/layouts/inserttop.blade.php 的程式码导入（网页 head 第三方 js 部分,如百度,谷歌程式码）
   @include('layouts.inserttop') 
   
   // 载入全站通用的 CSS
@@ -47,10 +46,13 @@ Blade 是 Laravel 所提供的簡單且強大的模板引擎，Blade 視圖檔�
 <body @yield('dataNav') vocab="http://schema.org/" typeof="WebPage">
   <section id="pre-loader"><img src="{{ asset('/img/loading.gif') }}" alt="Loading"></section>
   <div class="wrapper">
+  // 将 /resources/views/layouts/header.blade.php 的程式码导入
   @include('layouts.header')
 
     <main class="container @yield('classContainer')" property="@yield('schemaContainer')">
+      // @yield 在母页面使用,供子页面继承此母页面时，以 @section('keyVisual') 区块内容取代此 @yield('keyVisual')
       @yield('keyVisual')
+      // @yield 在母页面使用,供子页面继承此母页面时，以 @section('mainContent') 区块内容取代此 @yield('mainContent')
       @yield('mainContent')
       <a href="#" class="go-top-btn" title="回顶部"><i class="icon-arrow-light-top"></i><span>回顶部</span></a>
     </main>
@@ -60,14 +62,15 @@ Blade 是 Laravel 所提供的簡單且強大的模板引擎，Blade 視圖檔�
   @include('layouts.footer')
   </div>
 
-
+// 针对 IE9 以下浏览器不支援 ES6 模块系统，提供载入
 <!--[if lt IE 9]> 
 <script src="{{ asset('/js/html5shiv.min.js') }}"></script>
 <script src="{{ asset('/js/jquery.js') }}"></script>
 <script src="{{ asset('/js/jquery.history.js') }}"></script>
 <script src="{{ asset('/js/jquery.cookie.js') }}"></script>
 
-<script>
+//  低阶浏览器使用者提示下载 alert
+ <script>
  $("body").append('<section id="isNSupport">您好，<br/><br/>我们侦测到您目前使用的浏览器版本，可能会有无法执行网站的部分功能，与无法正常浏览内容的情形！<br/>为让您有更好的阅览与使用体验，建议您可以：<br/>1.更新<a href="https://www.microsoft.com/zh-hk/download/Internet-Explorer-11-for-Windows-7-details.aspx" target="_blank">IE</a>浏览器版本 <br/>2.使用 <a href="https://www.google.com/chrome/browser/desktop/" target="_blank">Chrome</a> 或 <a href="https://moztw.org/firefox/download/latest-osx.html" target="_blank">Firefox</a> 浏览器开启网站</section>');        
 </script>
 <![endif]-->
@@ -78,17 +81,18 @@ Blade 是 Laravel 所提供的簡單且強大的模板引擎，Blade 視圖檔�
 <![endif]--> 
 <script src="{{ asset('/js/custom/global.js') }}"></script>
 
+  // 子页面中引入 ＠section("jsInsert") 内容
   @yield('jsInsert')
-// 将 /resources/views/layouts/insertbottom.blade.php 的程式码导入（网页 footer 第三方 js 部分,
-  如百度,谷歌程式码）
+  
+  // 将 /resources/views/layouts/insertbottom.blade.php 的程式码导入（网页 footer 第三方 js 部分,如百度,谷歌程式码）
   @include('layouts.insertbottom')
+  
 </body>
 </html>
 ```
 
 > 表示引用子页面
 > 文档路径：/resources/views/front/careers.blade.php
-
 
 ```
 // 继承 master.blade.php 母页面
@@ -101,29 +105,26 @@ Blade 是 Laravel 所提供的簡單且強大的模板引擎，Blade 視圖檔�
     <link rel="stylesheet" href="{{ asset('/css/vendor/carousel/animate.css') }}"> --}}
 @endsection
 
-// 将以下 @section('headInsert') 第二个参数的内容放进母页面取代 @yield('section'）
+// 将以下 @section('section', 'data-main-nav="2"')第二个参数的内容放进母页面取代 @yield('section'）
 @section('section', 'data-main-nav="2"')
 
-
-{{-- 载入 container schema --}}
+// 将以下 @section('schemaContainer', 'mainContentOfPage')第二个参数的内容放进母页面取代 @yield('schemaContainer'）
 @section('schemaContainer', 'mainContentOfPage')
 
-{{-- keyVisual --}}
+// 将以下 @section('keyVisual')的内容放进母页面取代 @yield('keyVisual'）
 @section('keyVisual')
-
+    // 放进 /resources/views/layouts/keyvisual.blade.php 内容，并传入变数值
     @include('layouts.keyvisual', ['DT' => asset('/img/kv-careers.jpg'),'M' => asset('/img/kv-careers-m.jpg'),'ALT' => '加入欣和'])
-  
 @endsection
 
-{{-- 主要内容区域 --}}
+// 将以下 @section('mainContent')的内容放进母页面取代 @yield('mainContent'）
 @section('mainContent')
 	<section class="career-about">
 		...内容
 	</section>
-
 @stop
 
-{{-- jsInsert --}}
+// 将以下 @section('jsInsert') 夹带的内容,置换继承母页面内 @yield('jsInsert')位置
 @section('jsInsert')
 	<script src="{{ asset('/js/custom/lyt-careers.js') }}"></script>
 @endsection
@@ -132,7 +133,10 @@ Blade 是 Laravel 所提供的簡單且強大的模板引擎，Blade 視圖檔�
 
 
 说明:
-- `asset` 自根目录开始
+- `asset` 自根目录开始找寻路径
+- `@section()` 子页面内使用，替会母页面内的 `@yield`
+- `@yield` 母页面内使用，让子页面内的 `@section()` 可以继承后替换
+
 
 
 ### contrller
