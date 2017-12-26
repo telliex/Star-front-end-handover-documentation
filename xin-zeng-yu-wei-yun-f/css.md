@@ -13,6 +13,8 @@
 5. 元件样式
 6. 页面样式
 7. 套件样式
+<br/>
+<br/>
 
 > 以 `global.scss` 文档为例
 
@@ -85,6 +87,7 @@
 // 套件样式
 @import "vendor/fontello";
 ```
+<br/>
 
 ### base 内文档的运用
 
@@ -179,199 +182,205 @@ $fullscreen-width                  : 1200px;
 $desktop-width                     : 960px;
 $tablet-width                      : 768px;
 ```
+<br/>
 
 ### generic 内文档的运用
 
 #### common.scss
+
+定义全站框架宽度与效果，
+
 ```css
 // 全站容器宽度 container width 94vw
 
 %container-width{
-	width: 94%;
-	width: 94vw;
-	margin: 0 auto;
-	@include box-sizing(border-box);
-	@include breakpoint($tablet-width){
-		width: 90%;
-	}
+    width: 94%;
+    width: 94vw;
+    margin: 0 auto;
+    @include box-sizing(border-box);
+    @include breakpoint($tablet-width){
+        width: 90%;
+    }
 
-	@include breakpoint($desktop-width){
-		width: $desktop-width;
-	}
+    @include breakpoint($desktop-width){
+        width: $desktop-width;
+    }
 
-	@media \0screen\,screen\9{ 
-	    width: $desktop-width;
-	}
+    @media \0screen\,screen\9{ 
+        width: $desktop-width;
+    }
 }
 
 // 全站边距
 
 %container-gutter{
-	padding: 8% 0;
-	padding: 8vw 0;
-	@include breakpoint($tablet-width){
-		padding: 50px 0;
-	}
+    padding: 8% 0;
+    padding: 8vw 0;
+    @include breakpoint($tablet-width){
+        padding: 50px 0;
+    }
 
-	@media \0screen\,screen\9{ 
-	    padding: 50px 0;
-	}
+    @media \0screen\,screen\9{ 
+        padding: 50px 0;
+    }
 }
 
 
 // 全站内容宽度 content width 84vw
 
 %content-width{
-	width: 84%;
-	width: 84vw;
-	margin: 0 auto;
-	@include box-sizing(border-box);
-	@include breakpoint($tablet-width){
-		width: 90%;
+    width: 84%;
+    width: 84vw;
+    margin: 0 auto;
+    @include box-sizing(border-box);
+    @include breakpoint($tablet-width){
+        width: 90%;
 
-	}
+    }
 
-	@include breakpoint($desktop-width){
-		width: $desktop-width;
-	}
+    @include breakpoint($desktop-width){
+        width: $desktop-width;
+    }
 
-	@media \0screen\,screen\9{ 
-	    width: $desktop-width;
-	}
+    @media \0screen\,screen\9{ 
+        width: $desktop-width;
+    }
 }
 
 // 全站模块宽度
 
 %box-width{
-	width: 90%;
-	width: 84vw;
-	margin: 0 auto;
-	@include box-sizing(border-box);
+    width: 90%;
+    width: 84vw;
+    margin: 0 auto;
+    @include box-sizing(border-box);
 
-	@include breakpoint($desktop-width){
-		width: $desktop-width;
-	}
+    @include breakpoint($desktop-width){
+        width: $desktop-width;
+    }
 
-	@media \0screen\,screen\9{ 
-	    width: $desktop-width;
-	}
+    @media \0screen\,screen\9{ 
+        width: $desktop-width;
+    }
 }
 
 
 // 鼠标滑入效果 hover
 
 @mixin hover-opacity{
-	@include opacity(0.8);
+    @include opacity(0.8);
 }
 
 @mixin hover-transition($part:all){
-	@include transition($part .3s ease-in-out);
+    @include transition($part .3s ease-in-out);
 
-	@media \0screen\,screen\9{ 
-	   @include transition-property(none); 
-	}
+    @media \0screen\,screen\9{ 
+       @include transition-property(none); 
+    }
 }
 
 
 // 标题图 title img
 
 %title-brand-topics{ // 代表人物
-	@media \0screen\,screen\9{ 
-	    background-image: url(/img/title/title-brand-topics.png);
-	}
-	background-image: url(/img/title/title-brand-topics.svg);
+    @media \0screen\,screen\9{ 
+        background-image: url(/img/title/title-brand-topics.png);
+    }
+    background-image: url(/img/title/title-brand-topics.svg);
 }
 
 %title-brand-all-recipes{ // 所有菜譜
-	@media \0screen\,screen\9{ 
-	    background-image: url(/img/title/title-brand-all-recipes.png);
-	}
-	background-image: url(/img/title/title-brand-all-recipes.svg);
+    @media \0screen\,screen\9{ 
+        background-image: url(/img/title/title-brand-all-recipes.png);
+    }
+    background-image: url(/img/title/title-brand-all-recipes.svg);
 }
 ...
 
 // 图标 icon
 %icon-map-marker{
-	@media \0screen\,screen\9  { 
-	    background-image: url(/img/icon/map-marker.png);
-	}
-	background-image: url(/img/icon/map-marker.svg);
+    @media \0screen\,screen\9  { 
+        background-image: url(/img/icon/map-marker.png);
+    }
+    background-image: url(/img/icon/map-marker.svg);
 }
 
 %icon-phone{
-	@media \0screen\,screen\9  { 
-	    background-image: url(/img/icon/phone.png);
-	}
-	background-image: url(/img/icon/phone.svg);
+    @media \0screen\,screen\9  { 
+        background-image: url(/img/icon/phone.png);
+    }
+    background-image: url(/img/icon/phone.svg);
 }
 ...
 ```
+
 #### extend.scss
+
 ```
 //清除浮動
 
 %clearfix{
-	zoom:1;
-	overflow:hidden;
+    zoom:1;
+    overflow:hidden;
 }
 
 %clearfix-both{
-	&:after{
-		display: table;
-		content: " ";
-		after: " ";
- 		line-height: 0;
-		clear: both;
-	}
+    &:after{
+        display: table;
+        content: " ";
+        after: " ";
+         line-height: 0;
+        clear: both;
+    }
 }
 
 // 輔助 maxin add-content
 
 %add-content{
-	content:" ";
-	position: absolute;
-	display: block;
-	zoom:1;
-	overflow:hidden;
+    content:" ";
+    position: absolute;
+    display: block;
+    zoom:1;
+    overflow:hidden;
 }
 
 // 將字推出
 
 %text-hidden{
-	white-space: nowrap;
-	text-indent: 200%;
-	overflow: hidden;
+    white-space: nowrap;
+    text-indent: 200%;
+    overflow: hidden;
 }
 
 
 %text-overflow{
-	text-overflow: ellipsis;
-	white-space : nowrap;
-	overflow: hidden;
+    text-overflow: ellipsis;
+    white-space : nowrap;
+    overflow: hidden;
 }
 
 // media query hidden
 
 .mobile-hidden{
-	display: none;
-	@include breakpoint($tablet-width){
-		@include inline-block; 
-	}
+    display: none;
+    @include breakpoint($tablet-width){
+        @include inline-block; 
+    }
 
-	@media \0screen\,screen\9{ 
-	    @include inline-block; 
-	}
+    @media \0screen\,screen\9{ 
+        @include inline-block; 
+    }
 }
 
 .tablet-hidden{
-	display: none;
-	@include breakpoint($desktop-width){
-		@include inline-block;
-	}
+    display: none;
+    @include breakpoint($desktop-width){
+        @include inline-block;
+    }
 
-	@media \0screen\,screen\9{ 
-	    @include inline-block; 
-	}
+    @media \0screen\,screen\9{ 
+        @include inline-block; 
+    }
 }
 ```
 
@@ -379,73 +388,73 @@ $tablet-width                      : 768px;
 
 ```
 @mixin add-content($width:100%,$height:auto){ 
-	@extend %add-content;
-	width:$width;
-	height: $height;
+    @extend %add-content;
+    width:$width;
+    height: $height;
 
-	@media \0screen\,screen\9{ 
-	    content:" ";
-		position: absolute;
-		display: block;
-		zoom:1;
-		overflow:hidden;
-	}
+    @media \0screen\,screen\9{ 
+        content:" ";
+        position: absolute;
+        display: block;
+        zoom:1;
+        overflow:hidden;
+    }
 }
 
 @mixin clearfloat($width:auto){
-	@if $width == auto{
-		width: auto;
-	}@else{
-		width: $width;
-	}
-	
-	float: none;
-	margin: 0;
+    @if $width == auto{
+        width: auto;
+    }@else{
+        width: $width;
+    }
+
+    float: none;
+    margin: 0;
 }
 
 @mixin arrow($direct:down,$arrow-size:8px,$bg-color:$base-bgcolor-lighten,$border-color:$base-border-color-lighten){
-	&:before,&:after{
-		content:" ";
-		position: absolute;
-		display: block;
-		width: 0;
-		height: 0;
-		zoom:1;
-		overflow:hidden;
-		left: 50%;
-		margin-left: $arrow-size * -1;
-	}
+    &:before,&:after{
+        content:" ";
+        position: absolute;
+        display: block;
+        width: 0;
+        height: 0;
+        zoom:1;
+        overflow:hidden;
+        left: 50%;
+        margin-left: $arrow-size * -1;
+    }
 
-	&:before{
-		border: $bg-color $arrow-size solid;
-		z-index: 10;
-		@if $direct == up{
-			top: $arrow-size * -2;
-			border-color: transparent transparent $bg-color transparent;
-		}@else{
-			bottom: $arrow-size * -2;
-			border-color: $bg-color transparent transparent transparent;
-		}
-	}
-	&:after{
-		border: $border-color $arrow-size + 2 solid;
-		margin-left: ($arrow-size + 2) * -1;
-		z-index: 0;
-		@if $direct == up{
-			top: ($arrow-size + 2) * -2;
-			border-color: transparent transparent $border-color transparent;
-		}@else{
-			bottom: ($arrow-size + 2) * -2;
-			border-color: $border-color transparent transparent transparent;
-		}
-	}
+    &:before{
+        border: $bg-color $arrow-size solid;
+        z-index: 10;
+        @if $direct == up{
+            top: $arrow-size * -2;
+            border-color: transparent transparent $bg-color transparent;
+        }@else{
+            bottom: $arrow-size * -2;
+            border-color: $bg-color transparent transparent transparent;
+        }
+    }
+    &:after{
+        border: $border-color $arrow-size + 2 solid;
+        margin-left: ($arrow-size + 2) * -1;
+        z-index: 0;
+        @if $direct == up{
+            top: ($arrow-size + 2) * -2;
+            border-color: transparent transparent $border-color transparent;
+        }@else{
+            bottom: ($arrow-size + 2) * -2;
+            border-color: $border-color transparent transparent transparent;
+        }
+    }
 }
-
 ```
+<br/>
 
 ### modules
 
-#### module-button
+#### module-button.scss
 
 #### module-news-list.scss
 
