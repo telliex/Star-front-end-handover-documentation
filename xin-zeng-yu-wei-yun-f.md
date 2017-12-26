@@ -9,6 +9,15 @@
 1. 新页面的增加
 ![](/images/new-page.jpg)
 
+    说明:
+    - route
+    > 文档路径：/routes/web.php
+    > 功用:由网址的变化启动路
+    
+    - controller
+    > 文档路径：/app/Http/Controllers
+    > 功用:route 后需要执行怎样的动作与送进页面什么参数，可在此资料夹内建立
+
 2. 调整个页面的 Meta 资讯
 > 文档路径：/resources/views/layouts/meta.blade.php
 
@@ -19,7 +28,7 @@
 
     请见[1.5.3 PHP](xin-zeng-yu-wei-yun-f/php.md) # Footer
 
-4. 增加修改或调整 子选单顺序
+4. 增加修改或调整子选单顺序
 > 文档路径：/resources/views/layouts/header.blade.php
     
     请见[1.5.3 PHP](xin-zeng-yu-wei-yun-f/php.md) # Header

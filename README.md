@@ -33,7 +33,7 @@
 
 #### 安装应用程序
 
-- Node.js 
+- Node.js (v8.9.3)
 - Git
 - NPM 
 
