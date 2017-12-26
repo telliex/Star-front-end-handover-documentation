@@ -307,10 +307,153 @@ $tablet-width                      : 768px;
 ...
 ```
 #### extend.scss
+```
+//清除浮動
+
+%clearfix{
+	zoom:1;
+	overflow:hidden;
+}
+
+%clearfix-both{
+	&:after{
+		display: table;
+		content: " ";
+		after: " ";
+ 		line-height: 0;
+		clear: both;
+	}
+}
+
+// 輔助 maxin add-content
+
+%add-content{
+	content:" ";
+	position: absolute;
+	display: block;
+	zoom:1;
+	overflow:hidden;
+}
+
+// 將字推出
+
+%text-hidden{
+	white-space: nowrap;
+	text-indent: 200%;
+	overflow: hidden;
+}
+
+
+%text-overflow{
+	text-overflow: ellipsis;
+	white-space : nowrap;
+	overflow: hidden;
+}
+
+// media query hidden
+
+.mobile-hidden{
+	display: none;
+	@include breakpoint($tablet-width){
+		@include inline-block; 
+	}
+
+	@media \0screen\,screen\9{ 
+	    @include inline-block; 
+	}
+}
+
+.tablet-hidden{
+	display: none;
+	@include breakpoint($desktop-width){
+		@include inline-block;
+	}
+
+	@media \0screen\,screen\9{ 
+	    @include inline-block; 
+	}
+}
+```
 
 #### maxin.scss
 
+```
+@mixin add-content($width:100%,$height:auto){ 
+	@extend %add-content;
+	width:$width;
+	height: $height;
+
+	@media \0screen\,screen\9{ 
+	    content:" ";
+		position: absolute;
+		display: block;
+		zoom:1;
+		overflow:hidden;
+	}
+}
+
+@mixin clearfloat($width:auto){
+	@if $width == auto{
+		width: auto;
+	}@else{
+		width: $width;
+	}
+	
+	float: none;
+	margin: 0;
+}
+
+@mixin arrow($direct:down,$arrow-size:8px,$bg-color:$base-bgcolor-lighten,$border-color:$base-border-color-lighten){
+	&:before,&:after{
+		content:" ";
+		position: absolute;
+		display: block;
+		width: 0;
+		height: 0;
+		zoom:1;
+		overflow:hidden;
+		left: 50%;
+		margin-left: $arrow-size * -1;
+	}
+
+	&:before{
+		border: $bg-color $arrow-size solid;
+		z-index: 10;
+		@if $direct == up{
+			top: $arrow-size * -2;
+			border-color: transparent transparent $bg-color transparent;
+		}@else{
+			bottom: $arrow-size * -2;
+			border-color: $bg-color transparent transparent transparent;
+		}
+	}
+	&:after{
+		border: $border-color $arrow-size + 2 solid;
+		margin-left: ($arrow-size + 2) * -1;
+		z-index: 0;
+		@if $direct == up{
+			top: ($arrow-size + 2) * -2;
+			border-color: transparent transparent $border-color transparent;
+		}@else{
+			bottom: ($arrow-size + 2) * -2;
+			border-color: $border-color transparent transparent transparent;
+		}
+	}
+}
+
+```
+
 ### modules
+
+#### module-button
+
+#### module-news-list.scss
+
+#### module-prod-list.scss
+
+#### module-recipe-list.scss
+
+#### module-topic-info.scss
 
 ## 新增
 
