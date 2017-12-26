@@ -1,6 +1,6 @@
 # PHP 前端文档架构
 
-Laravel 框架里，网页呈现的部份我们称为 view (MVC 里的 V)，所有的页面都是放置在 `/resources/views/`下，
+Laravel 框架里，网页呈现的部份我们称为 view (MVC 里的 V)，所有的页面都是放置在 `/resources/views/`下:
 
 
 ## Front 资料夹

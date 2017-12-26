@@ -398,7 +398,7 @@ $tablet-width                      : 768px;
 ```
 
 #### maxin.scss
-
+将样式经常设定的代码编写为混合指令样式代码，未来在开发新的网站时，也能继续使用此混合指令样式代码。
 
 > 文档路径: `/src/sass/generic/maxin.scss`
 
