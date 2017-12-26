@@ -130,21 +130,10 @@ Blade 是 Laravel 所提供的簡單且強大的模板引擎，Blade 視圖檔�
 @endsection
 ```
 
-
-
 说明:
 - `asset` 自根目录开始找寻路径
 - `@section()` 子页面内使用，替会母页面内的 `@yield`
 - `@yield` 母页面内使用，让子页面内的 `@section()` 可以继承后替换
-
-
-
-### contrller
-
-> 文档路径：/app/Http/Controllers
-
-route 后需要执行怎样的动作与送进页面什么参数
-
 
 
 ## 维护
