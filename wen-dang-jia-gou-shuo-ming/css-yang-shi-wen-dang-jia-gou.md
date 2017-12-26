@@ -24,7 +24,7 @@ sass
 │ └ _variables.scss                         # 全站使用变数设定
 ├ generic                                   # 通用样式资料夹
 │ ├ _common.scss                            # 全站通用样式
-│ ├ _extend.scss                            # 全站继承样式模块代码
+│ ├ _extend.scss                            # 全站继承样式代码
 │ └ _maxin.scss                             # 全站混合指令样式代码
 ├ layout                                    # 页面样式资料夹
 ├ modules                                   # 模组样式资料夹

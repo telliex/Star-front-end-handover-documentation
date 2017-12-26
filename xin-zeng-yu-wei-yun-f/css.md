@@ -104,6 +104,8 @@
 #### variables.scss
 
 依照官网的 Style Guideline 建置全站的变数档案，若非全站统一更动样式需求，请勿修改此档案。之后新增与运维样式，都需要使用 `variables.scss` 内的变数；若有大量重复的参数，可依照分类建立新的变数值。
+<br/>
+> 文档路径: `/src/sass/base/variables.scss`
 
 ```css
 // 字型设定 Font Setting
@@ -112,7 +114,7 @@ $base-highlight-font-family        : "Times New Roman";
 $base-font-size                    : 16px;
 $base-line-height                  : 2em;
 $base-letter-spacing               : 0.05em;
-$base-box-line-height              : $base-line-height * 0.75;
+$base-box-line-height              : $base-line-height * 0.75;    // 专属于模块型样式里的行高
 
 // 字型设定 Font Setting for IE
 $base-px-line-height               : 32px;
@@ -188,7 +190,19 @@ $tablet-width                      : 768px;
 
 #### common.scss
 
-定义全站框架宽度与效果，
+定义全站框架宽度与交互效果。根据欣和官网 Style Guideline 全站框架宽度分别定义为三种维度：
+
+1. 手机 ( < 768px )
+![](/images/grid-01.jpg)
+2. 平板 ( >= 768px & < 960px )
+![](/images/grid-02.jpg)
+3. 桌机 ( >= 960px )
+![](/images/grid-03.jpg)
+
+依照这三个维度，定义出三种全站框架的宽度，分别为 `%container-width`、`%content-width`、`%box-width`；全站在定义平板与桌机宽度一致为平板 90%、桌机 960px，三种全架框架的宽度的差异在手机应用。
+
+<br/>
+> 文档路径: `/src/sass/generic/common.scss`
 
 ```css
 // 全站容器宽度 container width 94vw
@@ -211,21 +225,6 @@ $tablet-width                      : 768px;
     }
 }
 
-// 全站边距
-
-%container-gutter{
-    padding: 8% 0;
-    padding: 8vw 0;
-    @include breakpoint($tablet-width){
-        padding: 50px 0;
-    }
-
-    @media \0screen\,screen\9{ 
-        padding: 50px 0;
-    }
-}
-
-
 // 全站内容宽度 content width 84vw
 
 %content-width{
@@ -235,7 +234,6 @@ $tablet-width                      : 768px;
     @include box-sizing(border-box);
     @include breakpoint($tablet-width){
         width: 90%;
-
     }
 
     @include breakpoint($desktop-width){
@@ -264,6 +262,19 @@ $tablet-width                      : 768px;
     }
 }
 
+// 全站上下边距
+
+%container-gutter{
+    padding: 8% 0;
+    padding: 8vw 0;
+    @include breakpoint($tablet-width){
+        padding: 50px 0;
+    }
+
+    @media \0screen\,screen\9{ 
+        padding: 50px 0;
+    }
+}
 
 // 鼠标滑入效果 hover
 
@@ -278,7 +289,6 @@ $tablet-width                      : 768px;
        @include transition-property(none); 
     }
 }
-
 
 // 标题图 title img
 
@@ -316,10 +326,14 @@ $tablet-width                      : 768px;
 
 #### extend.scss
 
-```
+将样式经常设定的代码编写为继承样式代码，未来在开发新的网站时，也能继续使用此继承样式。
+
+> 文档路径: /src/sass/generic/extend.scss
+
+```css
 //清除浮動
 
-%clearfix{
+%clearfix{    
     zoom:1;
     overflow:hidden;
 }
@@ -351,7 +365,6 @@ $tablet-width                      : 768px;
     text-indent: 200%;
     overflow: hidden;
 }
-
 
 %text-overflow{
     text-overflow: ellipsis;
@@ -386,7 +399,10 @@ $tablet-width                      : 768px;
 
 #### maxin.scss
 
-```
+
+> 文档路径: `/src/sass/generic/maxin.scss`
+
+```css
 @mixin add-content($width:100%,$height:auto){ 
     @extend %add-content;
     width:$width;
@@ -411,44 +427,6 @@ $tablet-width                      : 768px;
     float: none;
     margin: 0;
 }
-
-@mixin arrow($direct:down,$arrow-size:8px,$bg-color:$base-bgcolor-lighten,$border-color:$base-border-color-lighten){
-    &:before,&:after{
-        content:" ";
-        position: absolute;
-        display: block;
-        width: 0;
-        height: 0;
-        zoom:1;
-        overflow:hidden;
-        left: 50%;
-        margin-left: $arrow-size * -1;
-    }
-
-    &:before{
-        border: $bg-color $arrow-size solid;
-        z-index: 10;
-        @if $direct == up{
-            top: $arrow-size * -2;
-            border-color: transparent transparent $bg-color transparent;
-        }@else{
-            bottom: $arrow-size * -2;
-            border-color: $bg-color transparent transparent transparent;
-        }
-    }
-    &:after{
-        border: $border-color $arrow-size + 2 solid;
-        margin-left: ($arrow-size + 2) * -1;
-        z-index: 0;
-        @if $direct == up{
-            top: ($arrow-size + 2) * -2;
-            border-color: transparent transparent $border-color transparent;
-        }@else{
-            bottom: ($arrow-size + 2) * -2;
-            border-color: $border-color transparent transparent transparent;
-        }
-    }
-}
 ```
 <br/>
 
@@ -466,5 +444,5 @@ $tablet-width                      : 768px;
 
 ## 新增
 
-
+1. 新增专属于该页面的 scss 档案至 /src/sass/layouts
 
