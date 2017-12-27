@@ -1,9 +1,11 @@
 # 远端资料串接
 
+需由后端工程师写好对接的 API ，订出呼叫的规则，才能由前端呼叫。
+
 ## 引入 Ajax 模组
 ---
 
-在目标 js 内引入 Ajax API模组
+在目标 JS 内引入 Ajax API 模组
 > import * as share from './share.es6';
 
 ### 使用方法

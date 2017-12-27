@@ -33,7 +33,7 @@ entry: {
         'lyt-news-detail': './src/js/lyt-news-detail.es6',
         'lyt-news-list': './src/js/lyt-news-list.es6',
         'lyt-recipedetail': './src/js/lyt-recipedetail.es6',
-        //加入对应的 js 名称及路径
+        // 以下加入对应的 js 名称及路径
         'new-js-name': './src/js/new-js-name.es6',
     },
 ...
@@ -41,11 +41,10 @@ entry: {
 
 需添加，编译时才能正确过将 ES6 编译。
 
-
-## 新增网页引用 js module
+## 新增网页引用 JS module
 ---
 
-js 内若要引用其他函数库或是插件，需依照 [ES6 modele](http://es6.ruanyifeng.com/#docs/module) 的 import 方式引入，
+JS 内若要引用其他函数库或是插件，需依照 [ES6 modele](http://es6.ruanyifeng.com/#docs/module) 的 import 方式引入，
 若出现已引入，但名称无法在 js module 系統內被识别，可添加以下内容进进行设置。
 
 ```
@@ -63,13 +62,13 @@ resolve: {
     "TweenLite$": node_modules_dir + '/gsap/src/uncompressed/TweenLite.js',
     "TweenMax$": node_modules_dir + '/gsap/src/uncompressed/TweenMax.js',
     "TimelineLite$": node_modules_dir + '/gsap/src/uncompressed/TimelineLite.js',
-            "TimelineMax$": node_modules_dir + '/gsap/src/uncompressed/TimelineMax.js',
-            "ScrollMagic$": node_modules_dir + '/scrollmagic/scrollmagic/uncompressed/ScrollMagic.js',
-            "animation$": node_modules_dir + '/scrollmagic/scrollmagic/uncompressed/plugins/animation.gsap.js',
-            "debug.addIndicators$": node_modules_dir + '/scrollmagic/scrollmagic/uncompressed/plugins/debug.addIndicators.js',
-            //加入对应的 js 名称路径
-            "newJsModuleName":js/module/location/newJs.js
-        }
+    "TimelineMax$": node_modules_dir + '/gsap/src/uncompressed/TimelineMax.js',
+    "ScrollMagic$": node_modules_dir + '/scrollmagic/scrollmagic/uncompressed/ScrollMagic.js',
+    "animation$": node_modules_dir + '/scrollmagic/scrollmagic/uncompressed/plugins/animation.gsap.js',
+    "debug.addIndicators$": node_modules_dir + '/scrollmagic/scrollmagic/uncompressed/plugins/debug.addIndicators.js',
+    // 以下加入对应的 js 名称路径
+    "newJsModuleName":js/module/location/newJs.js
+    }
 },
 ...
 

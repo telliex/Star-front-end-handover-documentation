@@ -1,6 +1,7 @@
 # 效能优化
 
 ## schema.org
+---
 
 标记于 HTML 页面上的 schemas 标记，能帮助搜索引擎理解网页上的信息，从而让搜索结果内容更丰富，用户搜索到的页面也就更精准。
 
@@ -18,6 +19,7 @@
 * [結構化資料測試工具](/https://search.google.com/structured-data/testing-tool/u/0/)
 
 ## 圖片壓縮
+---
 
 为了提升网站效能，在设计提供官网静态图片之后，都需要经过图片压缩程序。请设计提供**无压缩品质的图片**，使用 [compressor.io](https://compressor.io/) 线上图片压缩网站。
 <br/>
@@ -37,11 +39,11 @@
 | SVG | Lossy 失真模式 |
 
 ## Sitemap
+---
 
 Sitemap 可方便网站管理员通知搜索引擎他们网站上有哪些可供抓取的网页。最简单的 Sitemap 形式，就是XML 文件，在其中列出网站中的网址以及关于每个网址的其他元数据（上次更新的时间、更改的频率以及相对于网站上其他网址的重要程度为何等），以便搜索引擎可以更加智能地抓取网站。
 
-在有新的开发程序上正式主机**之后**，使用线上产生 Sitemap 工具产出最新的 Sitemap，并检查档案内时间格式是否有错误，确认无误后，将档案上传至正式主机的 `/public/sitemap.xml`，并提交此档案给产品经理提交给各个搜索引擎。 
-
+在有新的开发程序上正式主机**之后**，使用线上产生 Sitemap 工具产出最新的 Sitemap，并检查档案内时间格式是否有错误，确认无误后，将档案上传至正式主机的 `/public/sitemap.xml`，并提交此档案给产品经理提交给各个搜索引擎。如谷歌、百度。 
 
 > 文档路径: `/public/sitemap.xml`
 > 線上工具連結: [https://freesitemapgenerator.com/](https://freesitemapgenerator.com/)
