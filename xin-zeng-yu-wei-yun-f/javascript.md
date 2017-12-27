@@ -1,16 +1,40 @@
 # Javascript
 
-Javascript 采 ES6 模组，
+## 为什么使用 ES6 
+---
+ES6 模块是**编译时加载**，效率要比 CommonJS 模块的**运行时加载**方式高。将来服务器和浏览器都会支持 ES6 模块格式。
+
+## ES6 使用
+---
+采 ES6 模组方式，通过 export 命令显式指定输出的代码，再通过 import 命令输入。一个模块就是一个独立的文件。该文件内部的所有变量，外部无法获取。
+
+### export
+
+```
+var firstName = 'Michael';
+function multiply(x, y) {
+    return x * y;
+    };
+var year = 1958;
+
+export { firstName, multiply, year };
+```
+
+### import
+
+```
+import { firstName, multiply, year } from './profile';
+```
+
 
 > 功能：各页面通用，主副选单定位、判断浏览器、cookie、
 > 文档路径：/src/js/global.js
-> 载入的模块：/src/js/base.js.js
->           /src/js/browser.js
->           /src/js/generic.js
->           /src/js/maxin.js
->           /src/js/partical.js
-
-
+> 载入的模块：
+> /src/js/base.js.js
+> /src/js/browser.js
+> /src/js/generic.js
+> /src/js/maxin.js
+> /src/js/partical.js
 
 
 ```
@@ -39,3 +63,4 @@ import { globalPartical } from './partical';  // 主副选单定位功能、GoTo
 ## 技术文件参考资料
 ---
 
+- [Module 的语法](http://es6.ruanyifeng.com/#docs/module)
