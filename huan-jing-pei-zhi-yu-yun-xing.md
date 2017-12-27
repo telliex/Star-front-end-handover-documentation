@@ -11,7 +11,7 @@
 
 ### Step1.安装本机开发用架站软体
 
-以下为推荐的架站工具，同性质的其他工具亦可。
+以下为推荐的架站工具，同性质的其他工具可替代。
 
 - Mac OS - [MAMP](https://www.mamp.info/en/)
 
@@ -25,6 +25,9 @@
 
 
 - Windows - [XAMPP](https://www.apachefriends.org/zh_tw/index.html)
+
+  ▼ 预设为 **80 port** ，把 Apache & MySQL 打開，如下圖：
+  [XAMPP](/images/xampp-image.jpg)
 
 安装完后，开启架站软体（MAMP 或 XAMPP），确认工具可正常使用。
 

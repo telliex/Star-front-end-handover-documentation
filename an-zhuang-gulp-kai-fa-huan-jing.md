@@ -4,6 +4,8 @@ Gulp.js 是一个自动化构建工具，开发者可以使用它在项目开发
 Gulp.js 是基于 Node.js 构建的，利用 Node.js 流的威力，可以快速构建项目并减少频繁的IO 操作。
 使用 Gulp.js 来协助 SCSS 编译成 CSS 所需的实时自动化编译。
 
+
+
 ## Gulp 快速入門
 ---
 
@@ -27,6 +29,22 @@ gulp.task('default', function() {  // 'default' 默认任务名，运行命令�
 5. 运行 Gulp
 > \# commandline
 > gulp
+
+## SASS 环境编译
+---
+
+### Step1.使用 homebrew 安裝 ruby
+
+> brew install ruby
+
+### Step2.安裝 sass
+
+> gem install sass
+
+### Step3.安裝 compass
+
+> gem install compass
+
 
 ## 使用 Gulp 進行 scss 的編譯工作
 ---
@@ -58,7 +76,6 @@ var es = require('event-stream');   //測試插件
 var path = require('path');
 
 //scss 编译相关
-var gulpSass = require('gulp-sass');   // 載入 gulp-sass
 var gulpCompass = require('gulp-compass');   //編譯 CSS
 var plumber = require('gulp-plumber');   // 避免出现错误时中断程式
 var cleanCSS = require('gulp-clean-css');   //清除并压缩 css
