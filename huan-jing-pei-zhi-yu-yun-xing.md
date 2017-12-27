@@ -27,7 +27,8 @@
 - Windows - [XAMPP](https://www.apachefriends.org/zh_tw/index.html)
 
   ▼ 预设为 **80 port** ，把 Apache & MySQL 打開，如下圖：
-  [XAMPP](/images/xampp-image.jpg)
+  
+  ![XAMPP](/images/xampp-image.jpg)
 
 安装完后，开启架站软体（MAMP 或 XAMPP），确认工具可正常使用。
 
@@ -41,7 +42,7 @@
 或
 
 > \# commandline
-> git clone https://github.com/shinho-github-name/star-dev-server.git
+> git clone https://github.com/shinho-github-name/star-dev-server.git   # 仅示意，非切确 URL
 
 ### Step3.安装开发时依赖的相关插件
 
@@ -52,7 +53,7 @@ install 指令会参照 `package.json` 罗列的配置，进行安装所需的 p
 
 ### Step4.启动开发架站软体
 
-设置架站软体（MAMP 或 XAMPP），将网站根目录指向 `/public` ， Host 名称设为 laravel http://laravel/ （可自行命名）
+设置架站软体（MAMP 或 XAMPP），将网站根目录指向 `/public` ， Host 名称设为 laravel  `http://laravel/` （可自行命名）
 
 ### Step5.汇入数据库
 
@@ -63,6 +64,9 @@ install 指令会参照 `package.json` 罗列的配置，进行安装所需的 p
 3. 汇入数据库
 
 
+> **[info] For info**
+>
+> 密码洽欣和春涛
 
 ### Step6.汇入图档
 
