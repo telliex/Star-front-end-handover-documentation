@@ -1,15 +1,13 @@
 # Gulp 开发环境参数设置
 
 Gulp.js 是一个自动化构建工具，开发者可以使用它在项目开发过程中自动执行常见任务。
-Gulp.js 是基于 Node.js 构建的，利用 Node.js 流的威力，可以快速构建项目并减少频繁的IO 操作。
-使用 Gulp.js 来协助 SCSS 编译成 CSS 所需的实时自动化编译。
-
-
+Gulp.js 是基于 Node.js 构建的，利用 Node.js 流的威力，可以快速构建项目并减少频繁的 IO 操作。
+这里使用 Gulp.js 来协助 SCSS 编译成 CSS 所需的实时自动化编译。
 
 ## Gulp 快速入門
 ---
 
-如已全局安装过 Gulp `npm install gulp -g`，执行下面步骤前先运行  `npm rm -g gulp`（移除全局 Gulp 模块）。
+如已全局安装过 Gulp `npm install gulp -g`，执行下面步骤前，请先运行  `npm rm -g gulp`（移除全局 Gulp 模块）。
 
 1. 安裝 Gulp command
 > \# commandline
@@ -34,16 +32,28 @@ gulp.task('default', function() {  // 'default' 默认任务名，运行命令�
 ---
 
 ### Step1.使用 homebrew 安裝 ruby
-
+> \# commandline
 > brew install ruby
 
 ### Step2.安裝 sass
 
+> \# commandline
 > gem install sass
 
 ### Step3.安裝 compass
 
+> \# commandline
 > gem install compass
+
+### Step4.安裝 susy
+
+> \# commandline
+> gem install susy
+
+### Step5.安裝 modular-scale
+
+> \# commandline
+> gem install modular-scale
 
 
 ## 使用 Gulp 進行 scss 的編譯工作

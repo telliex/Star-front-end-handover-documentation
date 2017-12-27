@@ -16,8 +16,8 @@
 | resources ![](/images/star.png) | 其中资料夹为 views、lang、assets，分别放了视图档案、语系档案及预先编译才能使用的资源档案。 |
 | routes | Routes 设定档案。 |
 | src ![](/images/star.png) | SCSS、ES6 预先编译才能使用的资源档案。 |
-| storage | ?? |
-| tests | ?? |
+| storage | 目录包含编译后的 Blade 模板、基于文件的 session、文件缓存和其它框架生成的文件。 |
+| tests | 目录包含自动化测试。 |
 | vendor | 此目录由 Composer 建立，所有透过 Composer 安装的元件皆放于此。 |
 
 | 档案 | 功能说明 |
@@ -27,13 +27,13 @@
 | artisan | artisan 的主程式进入点，也因此 artisan 只能在此专案目录下操作。 |
 | composer.json | Composer 档案，描述所使用的 php 套件资讯及版本。 |
 | composer.lock | Composer 档案，描述该专案所下载的 php 套件资讯及版本。 |
-| package.json | ? |
-| .babelrc | Babel? |
-| glupfile.js | Glup? |
-| webpack.config.js | Webpack? |
-| webpack.dev.config.js | Webpack? |
-| webpack.devserver.config.js | Webpack? |
-| webpack.prod.config.js | Webpack? |
+| package.json | npm install 设置档 |
+| .babelrc | Babel 编译时使用的模组设定 |
+| glupfile.js | Glup 自动化设定档 |
+| webpack.config.js | Webpack 设定档 |
+| webpack.dev.config.js | Webpack 开发设定档 |
+| webpack.devserver.config.js | Webpack 开发时加入 devserver 设定档 |
+| webpack.prod.config.js | Webpack 上线前发布设定档 |
 
 <br/>
 ## Public 资料夹文档说明

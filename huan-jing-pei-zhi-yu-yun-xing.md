@@ -63,10 +63,8 @@ install 指令会参照 `package.json` 罗列的配置，进行安装所需的 p
 > scp -r -P 1212 www@116.62.117.96:/dockerfile/shinho/app/sqlbak/  /Users/使用者名称/欲放置的资料夹
 3. 汇入数据库
 
-
-> **[info] For info**
->
-> 密码洽欣和春涛
+  > **[info] For info**
+  > 密码洽欣和春涛
 
 ### Step6.汇入图档
 
@@ -75,13 +73,17 @@ install 指令会参照 `package.json` 罗列的配置，进行安装所需的 p
 > scp -r -P 1212  www@116.62.117.96:/dockerfile/shinho/app/star-dev-server/public/img/up /Users/使用者名称/欲放置的资料夹
 2. 将抓下来的图放进开发环境 '/public/img/up' 内
 
+  > **[info] For info**
+  > 密码洽欣和春涛
+
 ### Step7.建立 .env
 
 > 文档路径：/.env
 
-此檔在本机开发时实为重要，上线版本是不需要的。内容主要针对开发者本机环境的设定。若 clone 回来的档案没有此档，请自行建立。
+此档在本机开发时实为重要，上线版本是不需要的。内容主要针对开发者本机环境的设定。若 clone 回来的档案没有此档，请自行建立。内容如下：
 
 ##### Mac OS - MAMP
+
 ```
 APP_ENV=local
 APP_KEY=base64:C4s5VyTWCyzuZkwgUuh7NUqWNdYmWGj7pnxaxPVj4s4=
@@ -119,6 +121,7 @@ PUSHER_SECRET=
 ```
 
 ##### Windows - XAMPP
+
 ```
 APP_ENV=local
 APP_KEY=base64:C4s5VyTWCyzuZkwgUuh7NUqWNdYmWGj7pnxaxPVj4s4=
@@ -183,10 +186,10 @@ PUSHER_SECRET=
 
 ### 开发说明
 
-- 开发都先会在 develop 分支进行，若有新功能，也会在 develop 分支开始 branch 新的 feature，完成后再 merge 回 develop 分支，develop 分支到一段落（如上线前），会 merge 到 release 分支，进行 QA 工作，验证遇有问题，回到 develop 分支除错，完成后再 merge 到 QA 分支供 QA 再检视。若检视皆通过，即可 merge 到 master 分支等待上线。
+- 开发都先会在 develop 分支进行，若有新功能，也会在 develop 分支开始 branch 新的 feature，完成后再 merge 回 develop 分支，develop 分支开发到一段落（如上线前），会 merge 到 release 分支，进行 QA 工作，验证遇有问题，回到 develop 分支除错，完成后再 merge 到 QA 分支，让 QA team 再检视。若检视皆通过，即可 merge 到 master 分支等待上线。
 - 各分支的修改皆需推至远端 Github 上，进行版本管理。
-- 一般阶段性功能的上机检视工作，登入开发机，从主机将档案从 Github拉回，`git pull`。
-- 上线时先上欣和测试机 `sh1.shinho.com.cn`，确认无误时，再更新正式机`http://shinho.com.cn/`。
+- 一般阶段性功能的上机检视工作，登入开发机，从主机将档案从 Github 拉回，`git pull`。
+- 上线前先上欣和测试机 `sh1.shinho.com.cn`，确认无误时，再更新正式机`http://shinho.com.cn/`。
 - 每个分支都完成阶段工作时皆要推至 github 管理，主机推档也是从 github 拉档方式进行。安全性考量，勿使用 ftp 上传档案。
 - 每日下班时需提交今日的工作至 GitHub 上。
 
