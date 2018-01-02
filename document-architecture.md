@@ -103,5 +103,5 @@ src
 ├ map                                       # JavaScript 转换代码前后位置的信息文件
 └ sass                                      # CSS(SCSS) 档案
 ```
-* 若需新增或运维样式请参考：[1.5.1 新增与运维 - CSS](/xin-zeng-yu-wei-yun-f/css.md)
-* 若需新增或运维交互动效请参考：[1.5.2 新增与运维 - JavaScript](/xin-zeng-yu-wei-yun-f/javascript.md)
+* 若需新增或运维样式请参考：[1.5.1 新增与运维 - CSS](/maintain/maintain-css.md)
+* 若需新增或运维交互动效请参考：[1.5.2 新增与运维 - JavaScript](/maintain/maintain-js.md)
