@@ -1,5 +1,7 @@
 # 文档架构说明
 
+整包程式码采针对 Laravel 框架再加入一些方便开发发布的结构。主要结构说明如下：
+
 ## 根目录资料夹与文档说明
 ---
 ![](/assets/doc.png)
@@ -84,7 +86,7 @@ resources
 ├ lang                                      # Laravel 框架：语系档案，目前尚未使用到此功能
 └ views                                     # Laravel 框架：视图档案，存放 Laravel Blade 样板引擎，前台页面都存放在此
 ```
-* 若需新增或运维网站内容请参考：[1.5.3 新增与运维 - PHP](/xin-zeng-yu-wei-yun-f/php.md) 
+* 若需新增或运维网站内容请参考：[1.5.3 新增与运维 - PHP](/maintain/maintain-php.md) 
 
 
 <br/>
