@@ -1,7 +1,7 @@
 # Summary
 
 * [介绍](README.md)
-* [使用到的技术 F](technology.md)
+* [使用到的技术](technology.md)
 * [开发环境设置](setting.md)
   * [服务器 Laravel 开发环境建置](setting-laravel.md)
   * [本机 gulp 开发环境参数设置](setting-gulp.md)
@@ -10,12 +10,12 @@
   * [CSS 样式文档架构](document-architecture/document-architecture-css.md)
   * [Javascript 代码文档架构](document-architecture/document-architecture-js.md)
   * [PHP 前端文档架构](document-architecture/document-architecture-php.md)
-* [新增与運維 F T](maintain.md)
+* [新增与運維](maintain.md)
   * [CSS](maintain/maintain-css.md)
   * [Javascript](maintain/maintain-js.md)
   * [PHP](maintain/maintain-php.md)
   * [Webpack](maintain/maintain-webpack.md)
-* [远端资料串接 T](data-get.md)
+* [远端资料串接](data-get.md)
 * [发布网站](publish.md)
-* [效能优化 F](optimize.md)
+* [效能优化](optimize.md)
 
