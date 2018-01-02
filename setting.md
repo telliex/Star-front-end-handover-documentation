@@ -34,7 +34,7 @@
 
 ### Step2.从 github 抓取档案
 
-将从 [Star Github]()  fork 回来的 Github Repositories  复制档案到本机
+将从 [Star Github](https://github.com/b-x-b/star-dev-server)  fork 回来的 Github Repositories  复制档案到本机
 
 > \# commandline
 > git clone https://github.com/b-x-b/star-dev-server.git
@@ -57,7 +57,7 @@ install 指令会参照 `package.json` 罗列的配置，进行安装所需的 p
 
 ### Step5.汇入数据库
 
-1. 架站软件中建立数据库，名称为 shinhowebsite 
+1. 架站软件中建立数据库，名称为 **shinhowebsite** 
 2. 抓取当天官网的数据库
 > \# commandline
 > scp -r -P 1212 www@116.62.117.96:/dockerfile/shinho/app/sqlbak/  /Users/使用者名称/欲放置的资料夹
@@ -80,7 +80,7 @@ install 指令会参照 `package.json` 罗列的配置，进行安装所需的 p
 
 > 文档路径：/.env
 
-此档在本机开发时实为重要，上线版本是不需要的。内容主要针对开发者本机环境的设定。若 clone 回来的档案没有此档，请自行建立。内容如下：
+此档在本机开发时实为重要，上线版本是不需要的**(也勿放上)**。`.env` 檔案不應該被提交到應用程式的版本控制系統，因為每個使用應用程式的開發人員或伺服器可能需要不同的環境設定。。若 clone 回来的档案没有此档，请自行建立。内容如下：
 
 ##### Mac OS - MAMP
 
@@ -158,9 +158,14 @@ PUSHER_SECRET=
 
 ```
 
+#### 工作原理
+Laravel 框架的所有設定都存放於 config 目錄中，env() 中第一個參數是 .env 檔案中的設定鍵值名稱，第二個參數是預設值，若讀取不到環境設定鍵值則會使用預設值
+
+> 'debug' => env('APP_DEBUG', false),
+
 ### Step8.启动开发架站软体
 
-打开浏览器连接 `http://laravel/` 出现官网首页表成功。
+▼ 打开浏览器连接 `http://laravel/` 出现官网首页表成功。
 
 ![frontpage](/images/shinho-website-frontpage.png)
 
@@ -179,7 +184,7 @@ PUSHER_SECRET=
 
 ### Git 视觉化管理工具
 
-以图形介面的 Git 管理工具可增加工作效率，推荐
+以图形介面的 Git 管理工具可增加工作效率，推荐使用
 
 - Mac OS - [SourceTree](https://www.sourcetreeapp.com/)
 - Windows - [tortoisegit](https://tortoisegit.org/)
