@@ -41,4 +41,4 @@
     > 文档路径：/resources/views/front/*.blade.php
 
 6. 开发机新建立 
-请见[1.3.1 Laravel 开发环境建置](huan-jing-pei-zhi-yu-yun-xing.md)
+请见[1.3.1 Laravel 开发环境建置](setting-laravel.md)

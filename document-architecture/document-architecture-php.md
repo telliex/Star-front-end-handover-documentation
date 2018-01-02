@@ -81,5 +81,5 @@ master.blade.php - template 主框架
 
 ```
 
-`master.blade.php`详细说明见 [1.5.3 PHP](/xin-zeng-yu-wei-yun-f/php.md)
+`master.blade.php`详细说明见 [1.5.3 PHP](/maintain/maintain-php.md)
 

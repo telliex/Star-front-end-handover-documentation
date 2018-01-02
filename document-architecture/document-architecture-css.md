@@ -64,7 +64,7 @@ sass
 └ global.scss                               # 全站内页的通用主样式
 ```
 ### 相关连结与文档
-* 若需新增或运维样式请参考：[1.5.1 新增与运维 - CSS](/xin-zeng-yu-wei-yun-f/css.md)
+* 若需新增或运维样式请参考：[1.5.1 新增与运维 - CSS](/maintain/maintain-css.md)
 * [SCSS \(Compass\) 官网](http://compass-style.org/)
 * [Susy 2.2 中文文檔](https://www.w3cplus.com/preprocessor/susy-docs.html)
 * [Owl Carousel 2 套件官网](https://owlcarousel2.github.io/OwlCarousel2/)

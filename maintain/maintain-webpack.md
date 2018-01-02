@@ -39,12 +39,12 @@ entry: {
 ...
 ```
 
-需添加，编译时才能正确过将 ES6 编译。
+需添加，编译时才能正确将 ES6 编译。
 
 ## 新增网页引用 JS module
 ---
 
-JS 内若要引用其他函数库或是插件，需依照 [ES6 modele](http://es6.ruanyifeng.com/#docs/module) 的 import 方式引入，
+JS 内若要引用其他函数库或是插件，需依照 [ES6 modele](http://es6.ruanyifeng.com/#docs/module) 的 **import** 方式引入，
 若出现已引入，但名称无法在 js module 系統內被识别，可添加以下内容进进行设置。
 
 ```
