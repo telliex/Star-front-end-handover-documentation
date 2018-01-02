@@ -15,7 +15,7 @@
   * [Javascript](maintain/maintain-js.md)
   * [PHP](maintain/maintain-php.md)
   * [Webpack](maintain/maintain-webpack.md)
-* [远端资料串接 T](yuan-duan-zi-liao-chuan-jie.md)
-* [发布网站](kai-fa-yu-zheng-shi-ban-ben-fa-bu.md)
-* [效能优化 F](xiao-neng-you-hua-f.md)
+* [远端资料串接 T](data-get.md)
+* [发布网站](publish.md)
+* [效能优化 F](optimize.md)
 
