@@ -1,7 +1,7 @@
 # Summary
 
 * [介绍](README.md)
-* [使用到的技术 F](chapter1.md)
+* [使用到的技术 F](technology.md)
 * [开发环境设置](huan-jing-pei-zhi-yu-yun-xing.md)
   * [Laravel 开发环境建置](an-zhuang-laravel-kai-fa-kuang-jia.md)
   * [gulp 开发环境参数设置](an-zhuang-gulp-kai-fa-huan-jing.md)
