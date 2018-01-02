@@ -159,9 +159,12 @@ PUSHER_SECRET=
 ```
 
 #### 工作原理
-Laravel 框架的所有設定都存放於 config 目錄中，env() 中第一個參數是 .env 檔案中的設定鍵值名稱，第二個參數是預設值，若讀取不到環境設定鍵值則會使用預設值
 
-> 'debug' => env('APP_DEBUG', false),
+Laravel 框架的所有設定都存放於 config 目錄中，env() 中第一個參數是 .env 檔案中的設定鍵值名稱，第二個參數是預設值，若讀取不到環境設定鍵值則會使用預設值。
+
+> 'debug' => env('APP_DEBUG', false)
+
+如此可以有 `.env` 档的配置为主，上线时除去 `.env` 档，让框架跑 laravel 预设值。
 
 ### Step8.启动开发架站软体
 
