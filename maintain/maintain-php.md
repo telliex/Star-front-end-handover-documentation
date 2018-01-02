@@ -1,6 +1,6 @@
 # 新增与運維 - PHP
 
-Blade 是 Laravel 所提供的簡單且強大的模板引擎，Blade 視圖檔案使用 .blade.php 做為副檔名，且通常儲存於  resources/views 資料夾。
+**Blade** 是 Laravel 所提供的簡單且強大的模板引擎，Blade 視圖檔案使用 **.blade.php** 做為副檔名，且通常儲存於  `resources/views` 資料夾。
 
 - `/resources/views/layouts` 为网页的 template 模版，
 包含 `master.blade.php`(主要的 template 架构)、`meta.blade.php`（网页 meta 资讯部分）、`header.blade.php`（网页 header 主副选单部分）、`footer.blade.php`（网页 footer 连结）,`keyvisual.blade.php`、`keyVisualCraftSlider.blade.php`、`keyVisualNewsSlider.blade.php`（banner key vision 轮播）

@@ -29,7 +29,7 @@ import { firstName, multiply, year } from './profile';
 ## ES6 使用
 ---
 
-网站页面主要 JS 的编写分两只，一支是所有页面通用的 `global.js`，另一支是针对个页面自己独立的 JS 档 `lyt-xxx.es6`，简单的介绍架构如下：
+网站各页面 JS 汇入有两支，一支是所有页面通用的 `global.js`，另一支是针对个页面自己独立的 JS 档 `lyt-xxx.es6`，简单的介绍架构如下：
 
 ### 通用 JS
 
@@ -60,37 +60,36 @@ import { globalPartical } from './partical';  // 主副选单定位功能、GoTo
 
 ```
 
-Owl Carousel、Slick及ScrollMagic的使用请见下方参考资料。
+**Owl Carousel**、**Slick**及**ScrollMagic**的使用请见下方参考资料。
 
 
 ### 各页面 JS
 
 > 文档路径：
-> /src/js/global.js
-> /src/js/global.es6'
-> /src/js/lyt-about-csv.es6'
-> /src/js/lyt-about-business.es6'
-> /src/js/lyt-about-focus.es6'
-> /src/js/lyt-about-history.es6'
-> /src/js/lyt-about-crafts.es6'
-> /src/js/lyt-about.es6'
-> /src/js/lyt-brand-attitude.es6'
-> /src/js/lyt-brand-group.es6'
-> /src/js/lyt-brand-index.es6'
-> /src/js/lyt-brand-news-list.es6'
-> /src/js/lyt-brand-prod-detail.es6'
-> /src/js/lyt-brand-prod-list.es6'
-> /src/js/lyt-brand-prod-print.es6'
-> /src/js/lyt-brand-recipe-detail.es6'
-> /src/js/lyt-brand-recipe-list.es6'
-> /src/js/lyt-brand-topic.es6'
-> /src/js/lyt-careers-camp-recruiting-list.es6'
-> /src/js/lyt-careers-recruiting-list.es6'
-> /src/js/lyt-careers.es6'
-> /src/js/lyt-itinerary.es6'
-> /src/js/lyt-news-detail.es6'
-> /src/js/lyt-news-list.es6'
-> /src/js/lyt-recipedetail.es6'
+> /src/js/global.es6                              # 各页面通用
+> /src/js/lyt-about-csv.es6                       # 社会责任  
+> /src/js/lyt-about-business.es6                  # 欣和正在做
+> /src/js/lyt-about-focus.es6                     # 欣和关注
+> /src/js/lyt-about-history.es6                   # 欣和历史
+> /src/js/lyt-about-crafts.es6                    # 生产工艺
+> /src/js/lyt-about.es6                           # 关于欣和
+> /src/js/lyt-brand-attitude.es6                  # 饮食态度  
+> /src/js/lyt-brand-group.es6                     # 品牌家族
+> /src/js/lyt-brand-index.es6                     # 品牌页   
+> /src/js/lyt-brand-news-list.es6                 # 品牌新闻
+> /src/js/lyt-brand-prod-detail.es6               # 产品详情
+> /src/js/lyt-brand-prod-list.es6                 # 产品列表    
+> /src/js/lyt-brand-prod-print.es6                # 产品列印
+> /src/js/lyt-brand-recipe-detail.es6             # 菜谱详情   
+> /src/js/lyt-brand-recipe-list.es6               # 菜谱列表 
+> /src/js/lyt-brand-topic.es6                     # 饮食态度详情
+> /src/js/lyt-careers-camp-recruiting-list.es6    # 校园招聘搜寻列表
+> /src/js/lyt-careers-recruiting-list.es6         # 社会招聘搜寻列表
+> /src/js/lyt-careers.es6                         # 欣和招聘  
+> /src/js/lyt-itinerary.es6                       # 校园招聘宣讲会
+> /src/js/lyt-news-detail.es6                     # 新闻动态详情
+> /src/js/lyt-news-list.es6                       # 新闻动态列表
+> /src/js/lyt-recipedetail.es6                    # 菜谱详情
 > 功能：各页面内效果
 
 ```
