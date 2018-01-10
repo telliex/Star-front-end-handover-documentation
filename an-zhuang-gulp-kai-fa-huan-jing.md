@@ -18,7 +18,7 @@ Gulp.js 是基于 Node.js 构建的，利用 Node.js 流的威力，可以快速
 3. 作为项目的开发依赖（devDependencies）
 > \# commandline
 > $ npm install --save-dev gulp
-4. 根目录下创建一个名为 gulpfile.js 的文件。
+4. 根目录下创建一个名为 `gulpfile.js` 的文件。
 ```
 gulp.task('default', function() {  // 'default' 默认任务名，运行命令时可省略，直接 `gulp` 即可，运行其他任务需要 `gulp taskname`
     // place code for your default task here
@@ -28,7 +28,7 @@ gulp.task('default', function() {  // 'default' 默认任务名，运行命令�
 > \# commandline
 > gulp
 
-## 使用 Gulp 進行 scss 的編譯工作
+## 使用 Gulp 進行 SCSS 的編譯工作
 ---
 
 可实时监控 SASS 档案，若档案有异动修改时即可编译出 CSS 档。
