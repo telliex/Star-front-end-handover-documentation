@@ -66,6 +66,7 @@ sass
 ### 相关连结与文档
 * 若需新增或运维样式请参考：[1.5.1 新增与运维 - CSS](/maintain/maintain-css.md)
 * [SCSS \(Compass\) 官网](http://compass-style.org/)
+* 進行 SCSS 的編譯工作请参考：[1.3.2 开发环境设置 - 本机 Gulp 开发环境参数设置](/setting-gulp.md)
 * [Susy 2.2 中文文檔](https://www.w3cplus.com/preprocessor/susy-docs.html)
 * [Owl Carousel 2 套件官网](https://owlcarousel2.github.io/OwlCarousel2/)
 * [Fontello](http://fontello.com/) - 自订 icon font 网站

@@ -27,7 +27,7 @@ gulp.task('default', function() {  // 'default' 默认任务名，运行命令�
 > \# commandline
 > gulp
 
-## SASS 环境编译
+## SASS 环境设定
 ---
 
 ### Step1.使用 homebrew 安裝 ruby
@@ -55,14 +55,14 @@ gulp.task('default', function() {  // 'default' 默认任务名，运行命令�
 > gem install modular-scale
 
 
-## 使用 Gulp 進行 scss 的編譯工作
+## 使用 Gulp 進行 SCSS 的編譯工作
 ---
 
-可实时监控 SASS 档案，若档案有异动修改时即可编译出 CSS 档。
+可实时监控 SCSS 档案，若档案有异动修改时即可编译出 CSS 档。
 > \# commandline
 > gulp watch
 
-### Gulp setting
+### Gulp Setting
 
 > 文档路径：/gulpfile.js
 
