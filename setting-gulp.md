@@ -27,7 +27,7 @@ gulp.task('default', function() {  // 'default' 默认任务名，运行命令�
 > \# commandline
 > gulp
 
-## SASS 环境编译
+## SASS 环境设定
 ---
 
 ### Step1.使用 homebrew 安裝 ruby
