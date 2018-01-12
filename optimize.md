@@ -12,11 +12,11 @@
 * RDFa ![](/images/star.png)
 * JSON LD
 
-欣和官网选用 **RDFa** 格式标记，详细标记方法[请见](http://schema.org/docs/datamodel.html)。
+欣和官网选用 **RDFa** 格式标记，详细标记方法[请见](http://schema.org/docs/datamodel.html)。标注 [schema.org](https://schema.org/docs/full.html) 标签后，需通过[结构化资料测试工具](https://search.google.com/structured-data/testing-tool/u/0/)检测，确认无错误提示，再更新于代码中。
 
 ### 相关连结与文档
 * [schema.org 标记文档](https://schema.org/docs/full.html)
-* [結構化資料測試工具](/https://search.google.com/structured-data/testing-tool/u/0/)
+* [結構化資料測試工具](https://search.google.com/structured-data/testing-tool/u/0/)
 
 ## 圖片壓縮
 ---
