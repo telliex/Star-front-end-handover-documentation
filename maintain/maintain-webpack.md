@@ -3,11 +3,11 @@
 ## 新增网页页面
 ---
 
-新增页面时，需更动 **webpack.dev.config.js**（开发） & **webpack.prod.config.js**（上线）
+新增页面时，需更动 `webpack.dev.config.js`（开发） & `webpack.prod.config.js`（上线）
 
-> 文档路径：/webpack.dev.config.js 、/webpack.prod.config.js
+> 文档路径：`/webpack.dev.config.js`、`/webpack.prod.config.js`
 
-```
+```js
 ...
 entry: {
         // 多頁面入口，针对不同页面 js 进行添加，.es6 转 .js (es6 转码)
@@ -45,10 +45,12 @@ entry: {
 ## 新增网页引用 JS module
 ---
 
-JS 内若要引用其他函数库或是插件，需依照 [ES6 modele](http://es6.ruanyifeng.com/#docs/module) 的 **import** 方式引入，
-若出现已引入，但名称无法在 js module 系統內被识别，可添加以下内容进进行设置。
+JS 内若要引用其他函数库或是插件，需依照 [ES6 module](http://es6.ruanyifeng.com/#docs/module) 的 **import** 方式引入；若出现已引入，但名称无法在 JS module 系統內被识别，可添加以下内容进进行设置。
 
-```
+> 文档路径：`/webpack.dev.config.js`、`/webpack.prod.config.js`
+
+
+```js
 ...
 resolve: {
   // 使用的扩展名

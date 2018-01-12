@@ -49,7 +49,7 @@ Sitemap 可方便网站管理员通知搜索引擎他们网站上有哪些可供
 > 線上工具連結: [https://freesitemapgenerator.com/](https://freesitemapgenerator.com/)
 
 ## robots.txt
-
+---
 Robots 协议 (也称为爬虫协议、机器人协议等) 的全称是**网络爬虫排除标准** (Robots Exclusion Protocol)，网站通过Robots协议告诉搜索引擎哪些页面可以抓取，哪些页面不能抓取。
 
 当一个搜索蜘蛛访问一个站点时，它会首先检查该站点根目录下是否存在 robots.txt，如果存在，搜索机器人就会按照该文件中的内容来确定访问的范围；如果该文件不存在，所有的搜索蜘蛛将能够访问网站上所有没有被口令保护的页面。
