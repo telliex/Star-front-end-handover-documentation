@@ -61,7 +61,7 @@ Star Github: https://github.com/b-x-b/star-dev-server
 
 Star 团队
 - Telliex (telliex.chiu@archex.co) 前端页面制作
-- Fish (bonbonfishs@gmail.com) 前端页面制作
+- Fish (claire.c.fish@gmail.com) 前端页面制作
 
 欣和团队
 - 春涛 (xuchuntao@shinho.net.cn) 欣和主机推档部分
