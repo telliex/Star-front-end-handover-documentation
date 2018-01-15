@@ -5,8 +5,9 @@
 - HTML 加入 Schema、Meta 等资讯，强化 SEO。
 - PHP 套版，也就是将切版后的静态 HTML 套进 Laravel 框架，包含 route 等设定。
 - JS 动效编写与 Ajax 资料的串接。
+- 图片、CSS、JS 档压缩。
 
-## 开发环境
+## 前端开发环境
 ---
 
 进行维护或是二次开发前，开发团队需先建立开发环境，环境包含两部分 **本机端开发环境** 及 **云端开发服务器环境** 两部分。
@@ -53,7 +54,7 @@
 
 ### Github
 
-网站开发及上线档案皆置于 Github 管理，未开源。档案无法抓取时，请 mail 到 telliex@archex.co 请求权限，再将档案 fork 回欣和开发维护团队的 Github ，以利进行维护或二次开发。
+网站档案皆置于 Github 管理，未开源。档案无法抓取时，请 mail 到 telliex@archex.co 请求权限，再将档案 fork 回欣和开发维护团队的 Github ，以利进行维护或二次开发。发信标题：[Star] 请协助加入 欣和官网 github 权限
 
 Star Github: https://github.com/b-x-b/star-dev-server
 
