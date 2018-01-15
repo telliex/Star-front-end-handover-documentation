@@ -1,6 +1,7 @@
 # 开发环境配置
 
 進入開發前，需对本机开发环境做架设，架设如：
+<br/>
 
 ## 本机开发环境
 ---
@@ -65,8 +66,6 @@ install 指令会参照 `package.json` 罗列的配置，进行安装所需的 p
 > scp -r -P 1212 www@116.62.117.96:/dockerfile/shinho/app/sqlbak/  /Users/使用者名称/欲放置的资料夹
 
 3. 汇入数据库
-
-
 > **[info] For info**
 > 密码洽欣和春涛
 
@@ -76,16 +75,15 @@ install 指令会参照 `package.json` 罗列的配置，进行安装所需的 p
 > \# commandline
 > scp -r -P 1212  www@116.62.117.96:/dockerfile/shinho/app/star-dev-server/public/img/up /Users/使用者名称/欲放置的资料夹
 2. 将抓下来的图放进开发环境 '/public/img/up' 内
-
-
 > **[info] For info**
 > 密码洽欣和春涛
 
 ### Step7.建立 .env
 
-> 文档路径：/.env
+
 
 此档在本机开发时实为重要，上线版本是不需要此档**(也勿放上)**。`.env` 檔案不應該被提交到應用程式的版本控制系統，因為每個使用應用程式的開發人員或伺服器可能需要不同的環境設定。。若 clone 回来的档案没有此档，请自行建立。内容如下：
+> 文档路径：`/.env`
 
 ##### Mac OS - MAMP
 
@@ -177,6 +175,7 @@ Laravel 框架的所有設定都存放於 config 目錄中，env() 中第一個�
 
 ![frontpage](/images/shinho-website-frontpage.png)
 
+<br/>
 
 ## 如何进行开发
 ---
@@ -185,10 +184,10 @@ Laravel 框架的所有設定都存放於 config 目錄中，env() 中第一個�
 
 复制回的档案，分支规划如下
 
-- master 推至正式机，发佈上线版本
-- release 上线前的版本，用于 QA 检查
-- **develop 主要开发分支所在**
-- feature 未来新功能的开发，最后併入 develop 分支
+- master：推至正式机，发佈上线版本
+- release：上线前的版本，用于 QA 检查
+- **develop：主要开发分支所在**
+- feature：未来新功能的开发，最后併入 develop 分支
 
 ### Git 视觉化管理工具
 
@@ -210,6 +209,8 @@ Laravel 框架的所有設定都存放於 config 目錄中，env() 中第一個�
 ---
 
 以下是 install 时所依赖的设定。 `scripts` 部分后面章节说明，下面主要提及所安装插件的插件功用`devDependencies`、`dependencies`
+
+> 文档路径：/package.json
 
 ```
 {
