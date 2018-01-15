@@ -334,6 +334,7 @@ $tablet-width                      : 768px;
 #### extend.scss
 
 将样式经常设定的代码编写为继承样式代码，未来在开发新的网站时，也能继续使用此继承样式。
+* extends import 使用方法请参考：[SCSS 中文文档 7.3.6. @extend-Only 选择器 (@extend-Only Selectors)](https://www.sass.hk/docs/)
 
 > 文档路径: /src/sass/generic/extend.scss
 
@@ -406,6 +407,10 @@ $tablet-width                      : 768px;
 
 #### maxin.scss
 将样式经常设定的代码编写为混合指令样式代码，未来在开发新的网站时，也能继续使用此混合指令样式代码。
+
+* maxin import 使用方法请参考：[SCSS 中文文档 9.2. 引用混合样式 @include (Including a Mixin: @include)](https://www.sass.hk/docs/)
+
+
 
 > 文档路径: `/src/sass/generic/maxin.scss`
 
