@@ -615,7 +615,7 @@ $tablet-width                      : 768px;
 ```
 ## 新增与修改
 
-**Step 1.** 新增专属于该页面的 scss 档案至 `/src/sass/layouts`
+**Step 1.** 新增专属于该页面的 scss 档案至 `/src/sass/layouts` 
 **Step 2.** 将该页面的 scss 档案 import 到 `global.scss` 主样式
 
 ```css
