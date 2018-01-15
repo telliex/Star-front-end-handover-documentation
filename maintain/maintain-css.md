@@ -482,3 +482,6 @@ $tablet-width                      : 768px;
 …
 ```
 **Step 3.** 于该页面的 scss 档案内撰写样式
+**Step 4.** 使用 Gulp 套件，将 SCSS 档案编译成 CSS 
+>\# commandline  
+> gulp watch

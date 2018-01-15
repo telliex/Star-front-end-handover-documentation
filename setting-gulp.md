@@ -1,65 +1,67 @@
 # 本机 Gulp 开发环境参数设置
 
-Gulp.js 是一个自动化构建工具，开发者可以使用它在项目开发过程中自动执行常见任务。
+Gulp.js 是一个自动化构建工具，开发者可以使用它在项目开发过程中自动执行常见任务。  
 这里使用 Gulp.js 来协助 SCSS 编译成 CSS 所需的实时自动化编译。
 
 ## Gulp 快速入門
+
 ---
 
 如已全局安装过 Gulp `npm install gulp -g`，执行下面步骤前，请先运行  `npm rm -g gulp`（移除全局 Gulp 模块）。
 
 1. 安裝 Gulp command
-> \# commandline
-> npm install -g gulp-cli
+   > \# commandline  
+   > npm install -g gulp-cli
 2. 全局安装 Gulp
-> \# commandline
-> $ npm install -g gulp
+   > \# commandline  
+   > $ npm install -g gulp
 3. 作为项目的开发依赖（devDependencies）
-> \# commandline
-> $ npm install --save-dev gulp
+   > \# commandline  
+   > $ npm install --save-dev gulp
 4. 根目录下创建一个名为 gulpfile.js 的文件。
-```
-gulp.task('default', function() {  // 'default' 默认任务名，运行命令时可省略，直接 `gulp` 即可，运行其他任务需要 `gulp taskname`
-    // place code for your default task here
-});
-```
+       gulp.task('default', function() {  // 'default' 默认任务名，运行命令时可省略，直接 `gulp` 即可，运行其他任务需要 `gulp taskname`
+        // place code for your default task here
+       });
 5. 运行 Gulp
-> \# commandline
-> gulp
+   > \# commandline  
+   > gulp
 
 ## SASS 环境设定
+
 ---
 
 ### Step1.使用 homebrew 安裝 ruby
-> \# commandline
+
+> \# commandline  
 > brew install ruby
 
 ### Step2.安裝 sass
 
-> \# commandline
+> \# commandline  
 > gem install sass
 
 ### Step3.安裝 compass
 
-> \# commandline
+> \# commandline  
 > gem install compass
 
 ### Step4.安裝 susy
 
-> \# commandline
+> \# commandline  
 > gem install susy
 
 ### Step5.安裝 modular-scale
 
-> \# commandline
+> \# commandline  
 > gem install modular-scale
 
-
 ## 使用 Gulp 進行 SCSS 的編譯工作
+
 ---
 
 可实时监控 SCSS 档案，若档案有异动修改时即可编译出 CSS 档。
-> \# commandline
+
+> \# commandline  
 > gulp watch
 
 ### Gulp Setting
@@ -118,10 +120,13 @@ gulp.task('styles', function() {
         .pipe(cleanCSS())
         .pipe(gulp.dest('./public/css'));   // 輸出位置(非必要)
 });
-
 ```
 
 ## 技术文件参考资料
+
 ---
 
-- [gulp 中文網](https://www.gulpjs.com.cn/docs/getting-started/)
+* [gulp 中文網](https://www.gulpjs.com.cn/docs/getting-started/)
+
+
+
