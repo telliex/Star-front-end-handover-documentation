@@ -460,7 +460,27 @@ $tablet-width                      : 768px;
 #### module-button.scss
 
 #### module-news-list.scss
+新闻列表模组样式有ㄧ个变数：
 
+##### $series
+
+|  | $series:list | $series:box |
+| :--- | :--- | :--- |
+| 说明 | **列表**新闻列表 | **四则直排**新闻列表 |
+| 图片 | 图片空缺 | 图片空缺 |
+| 参考网址 | http://shinho.com.cn/news/1 | http://shinho.com.cn/brandgroup/weidamei |
+
+
+> 文档路径: `/src/modules/_module-news-list.scss`
+
+``` css
+@mixin newslist($series:list){
+	&-list{
+		@extend %clearfix-both;
+	}
+…
+}
+```
 #### module-prod-list.scss
 产品列表模组样式有两个变数：
 
