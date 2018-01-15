@@ -467,9 +467,17 @@ $tablet-width                      : 768px;
 
 #### module-topic-info.scss
 
-## 新增
+## 新增与修改
 
 **Step 1.** 新增专属于该页面的 scss 档案至 `/src/sass/layouts`
 **Step 2.** step 2将该页面的 scss 档案 import 到 `global.scss` 主样式
 
-
+```css
+// 页面样式
+…
+@import "layout/brand-prod-detail";
+@import "layout/brand-index";
+@import "layout/brand-group";
+// 新增于此
+…
+```
