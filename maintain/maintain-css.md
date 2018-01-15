@@ -93,6 +93,7 @@
 // 套件样式
 @import "vendor/fontello";
 ```
+详细档案说明请参考：[1.4.1 文档架构说明 - CSS 样式文档架构](/document-architecture/document-architecture-css.md)
 <br/>
 
 ### base 内文档的运用
