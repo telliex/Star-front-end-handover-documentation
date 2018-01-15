@@ -436,7 +436,16 @@ $tablet-width                      : 768px;
 ```
 <br/>
 
-### modules
+### modules 内文档的运用
+
+将欣和官网经常使用的元件进行样式模组化，一个 .scss 档案分别代表一个模组元件，命名为 `modules-*`，目前有的模组元件如下：
+
+| 档案名称 | 说明 |
+| :--- | :--- |
+| global.scss | 全站样式 |
+| global-org.scss | 首页样式 |
+| errors.scss | 403、404、500、503 错误页面样式 |
+
 
 #### module-button.scss
 
