@@ -31,7 +31,7 @@ gulp.task('default', function() {  // 'default' 默认任务名，运行命令�
 ---
 为在 Gulp 内可进行 SASS 编译，需先安装: 
 
-### Step1.使用 homebrew 安裝 ruby
+### Step1.使用 Homebrew 安裝 Ruby
 
 > \# commandline
 > brew install ruby
@@ -66,7 +66,7 @@ gulp.task('default', function() {  // 'default' 默认任务名，运行命令�
 
 ### Gulp Setting
 
-> 文档路径：/gulpfile.js
+> 文档路径：`/gulpfile.js`
 
 ```
 //gulpfile.js
@@ -126,4 +126,4 @@ gulp.task('styles', function() {
 ## 技术文件参考资料
 ---
 
-- [gulp 中文網](https://www.gulpjs.com.cn/docs/getting-started/)
+- [Gulp 中文網](https://www.gulpjs.com.cn/docs/getting-started/)

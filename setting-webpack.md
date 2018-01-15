@@ -25,12 +25,12 @@ Webpack 是一个现代 JavaScript 应用程序的模块打包器(module bundler
 **ECMAScript 6** (简称 ES6)是新一代 Javascript ，可行模组化管理 JS ，增加效能。但尚有低阶浏览器不支援，所以需要有 **Babel** 这样的转码器进行转码。Webpack 本身不只可以将 Babel 的转码用放进自动化流程，其实还有许多如程序码压缩、SCSS 编译等功能，在开发上缩短了许多时间。使用的设定可透过 `/webpack.config.js` 设置。
 
 
-## Webpack config setting
+## Webpack Config Setting
 ---
 
 ### Webpack 设定档
 
-> 文档路径：/webpack.config.js
+> 文档路径：`/webpack.config.js`
 
 为了更通用，我们将此设定档再分为 **dev(开发)** 和 **prod(上线)** 两版本，应用于开发与上线两种版本输出
 
@@ -42,7 +42,7 @@ module.exports = function(env) {
 
 ### 开发版 Webpack 设定档 
 
-> 文档路径：/webpack.dev.config.js
+> 文档路径：`/webpack.dev.config.js`
 
 ```
 const path = require('path');   //通用 Windows 和 MAC OS 档案系统  
@@ -170,7 +170,7 @@ module.exports = {
 
 ### 上线版 Webpack 设定档 
 
-> 文档路径：/webpack.prod.config.js
+> 文档路径：`/webpack.prod.config.js`
 
 ```
 const path = require('path');   //通用 Windows 和 MAC OS 档案系统 
@@ -309,7 +309,7 @@ module.exports = {
 ---
 刚提到的 ES6 代码转为 ES5 代码，这部份的运作上需要另一支 Babel 设定档进行设定。
 
-> 文档路径: /.babelrc
+> 文档路径: `/.babelrc`
 
 ```
 {
@@ -331,4 +331,4 @@ module.exports = {
 ## 技术文件参考资料
 ---
 
-- [webpack](https://doc.webpack-china.org/concepts/)
+- [Webpack](https://doc.webpack-china.org/concepts/)
