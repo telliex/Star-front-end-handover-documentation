@@ -540,7 +540,7 @@ $tablet-width                      : 768px;
 #### module-topic-info.scss
 主题介绍模组样式有一个变数：
 
-##### list-line
+##### $list-line
 
 |  | $list-line:on | $list-line:off |
 | :--- | :--- | :--- |
