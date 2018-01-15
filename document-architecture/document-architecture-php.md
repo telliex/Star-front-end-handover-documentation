@@ -2,6 +2,8 @@
 
 Laravel 框架里，网页呈现的部份我们称为 view \(可以设想为 MVC 里的 V\)，所有的页面都是放置在 `/resources/views/`下:  
 `/resources/views/` 里，前端的部份如下：
+<br/>
+
 
 ## errors 资料夹
 
@@ -15,6 +17,9 @@ Laravel 框架里，网页呈现的部份我们称为 view \(可以设想为 MVC
 * 404.blade.php - 目标页面不存在
 * 500.blade.php - 伺服器遇到了一個未曾預料的狀況，導致了它無法完成對請求的處理。
 * 503.blade.php - 臨時的伺服器維護或者過載，伺服器當前無法處理請求。
+
+<br/>
+
 
 ## front 资料夹
 
@@ -62,6 +67,8 @@ face.blade.php - 首页
 ├ newslist.blade.php - 欣和动态
 └ contactxinhe.blade.php - 关于欣和
 ```
+<br/>
+
 
 ## layouts 资料夹
 

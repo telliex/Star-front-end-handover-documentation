@@ -3,6 +3,8 @@
 Laravel 是一套富有表达性且具有简洁语法的网页应用程式框架，减少开发过程中的不便，提供了验证(authentication)、路由(routing)、sessions、快取(caching) 等开发过程中经常用到的工具或功能。
 
 服务器若未安装 laravel 可运行的环境，请依下面步骤安装：
+<br/>
+
 
 ## Laravel 开发环境安装
 ---
@@ -64,6 +66,8 @@ Laravel 是一套富有表达性且具有简洁语法的网页应用程式框架
 > cd /var/www/laravel
 > composer install 
 
+<br/>
+
 ## 设定环境
 ---
 
@@ -93,6 +97,8 @@ DocumentRoot /var/www/laravel/publicAllowOverride All
 
 > \# commandline
 > systemctl restart httpd
+
+<br/>
 
 
 ## 技术文件参考资料
