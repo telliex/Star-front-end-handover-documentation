@@ -28,11 +28,9 @@ Laravel 框架里，网页呈现的部份我们称为 view \(可以设想为 MVC
 > 文档路径: `/resources/views/front`
 
 ```
-face.blade.php - 首页
-├ base.js                                   # 侦测各种状态的 JS 代码
-│
+face.blade.php                              # 首页
 ├ brandgroup.blade.php                      # 品牌家族
-├ brand.blade.php - 品牌页
+├ brand.blade.php                           # [品牌家族]品牌页
 ├ attitude.blade.php - 饮食态度
 ├ topic.blade.php - 饮食态度内文    
 ├ recipelist.blade.php - 菜谱列表
@@ -42,28 +40,26 @@ face.blade.php - 首页
 ├ shinhoprod.blade.php - 产品产 PDF
 ├ shinhoprodprint.blade.php - 产品列印
 ├ brandnewslist.blade.php - 品牌动态清单
-├ newsdetail.blade.php - 品牌动态详情
 ├ careers.blade.php - 加入欣和
 ├ recruiting.blade.php - 社会招聘
-│    │    └ recruitingdetail.blade.php - 岗位详情
-│    └ campusrecruiting.blade.php - 校园招聘
-│         │  └ campusrecruitingdetail.blade.php - 岗位详情
-│         ├ campusitinerary.blade.php - 宣讲会
-│         └ campusprocess.blade.php - 招聘流程
-│
+├ recruitingdetail.blade.php - 岗位详情
+├ campusrecruiting.blade.php - 校园招聘
+├ campusrecruitingdetail.blade.php - 岗位详情
+├ campusitinerary.blade.php - 宣讲会
+├ campusprocess.blade.php - 招聘流程
 ├ about.blade.php -  关于欣和
-│    ├ history.blade.php - 欣和历史
-│    ├ business.blade.php -  欣和正在做
-│    ├ focus.blade.php - 欣和关注
-│    ├ crafts.blade.php - 生产工艺
-│    │    ├ miso.blade.php - 味噌生产工艺
-│    │    ├ beanpaste.blade.php - 原酿酱生产工艺
-│    │    ├ soysauce.blade.php - 酱油生产工艺
-│    │    ├ vinegar.blade.php  - 苹果醋生产工艺 
-│    │    └ spicypeanuts.blade.php - 麻辣花生生产工艺
-│    └ csv.blade.php - 社会责任
-│
+├ history.blade.php - 欣和历史
+├ business.blade.php -  欣和正在做
+├ focus.blade.php - 欣和关注
+├ crafts.blade.php - 生产工艺
+├ miso.blade.php - 味噌生产工艺
+├ beanpaste.blade.php - 原酿酱生产工艺
+├ soysauce.blade.php - 酱油生产工艺
+├ vinegar.blade.php  - 苹果醋生产工艺 
+├ spicypeanuts.blade.php - 麻辣花生生产工艺
+├ csv.blade.php - 社会责任
 ├ newslist.blade.php - 欣和动态
+├ newsdetail.blade.php - 品牌动态详情
 └ contactxinhe.blade.php - 关于欣和
 ```
 <br/>
@@ -92,3 +88,4 @@ master.blade.php - template 主框架
 
 `master.blade.php`详细说明见 [1.5.3 PHP](/maintain/maintain-php.md)
 
+ㄎ
