@@ -12,11 +12,11 @@
 * RDFa ![](/images/star.png)
 * JSON LD
 
-欣和官网选用 **RDFa** 格式标记，详细标记方法[请见](http://schema.org/docs/datamodel.html)。
+欣和官网选用 **RDFa** 格式标记，详细标记方法[请见](http://schema.org/docs/datamodel.html)。标注 [schema.org](https://schema.org/docs/full.html) 标签后，需通过[结构化资料测试工具](https://search.google.com/structured-data/testing-tool/u/0/)检测，确认无错误提示，再更新于代码中。
 
 ### 相关连结与文档
 * [schema.org 标记文档](https://schema.org/docs/full.html)
-* [結構化資料測試工具](/https://search.google.com/structured-data/testing-tool/u/0/)
+* [結構化資料測試工具](https://search.google.com/structured-data/testing-tool/u/0/)
 
 ## 圖片壓縮
 ---
@@ -43,13 +43,13 @@
 
 Sitemap 可方便网站管理员通知搜索引擎他们网站上有哪些可供抓取的网页。最简单的 Sitemap 形式，就是XML 文件，在其中列出网站中的网址以及关于每个网址的其他元数据（上次更新的时间、更改的频率以及相对于网站上其他网址的重要程度为何等），以便搜索引擎可以更加智能地抓取网站。
 
-在有新的开发程序上正式主机**之后**，使用线上产生 Sitemap 工具产出最新的 Sitemap，并检查档案内时间格式是否有错误，确认无误后，将档案上传至正式主机的 `/public/sitemap.xml`，并提交此档案给产品经理提交给各个搜索引擎。如谷歌、百度。 
+在有新的开发程序上正式主机**之后**，使用线上产生 Sitemap 工具产出最新的 Sitemap，并检查档案内**时间格式**是否有错误，确认无误后，将档案上传至正式主机的 `/public/sitemap.xml`，并提交此档案给产品经理提交给各个搜索引擎。如谷歌、百度。 
 
 > 文档路径: `/public/sitemap.xml`
 > 線上工具連結: [https://freesitemapgenerator.com/](https://freesitemapgenerator.com/)
 
 ## robots.txt
-
+---
 Robots 协议 (也称为爬虫协议、机器人协议等) 的全称是**网络爬虫排除标准** (Robots Exclusion Protocol)，网站通过Robots协议告诉搜索引擎哪些页面可以抓取，哪些页面不能抓取。
 
 当一个搜索蜘蛛访问一个站点时，它会首先检查该站点根目录下是否存在 robots.txt，如果存在，搜索机器人就会按照该文件中的内容来确定访问的范围；如果该文件不存在，所有的搜索蜘蛛将能够访问网站上所有没有被口令保护的页面。

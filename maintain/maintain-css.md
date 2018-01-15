@@ -4,6 +4,12 @@
 
 ---
 
+| 档案名称 | 说明 |
+| :--- | :--- |
+| global.scss | 全站样式 |
+| global-org.scss | 首页样式 |
+| errors.scss | 403、404、500、503 错误页面样式 |
+
 在欣和官网上目前使用到的三个主样式，分别为 `global.scss`、`global-org.scss`、`errors.scss`，各个主样式依照需求 `@import` 所需的文档与套件；而在 `@import` 的顺序上与转译后的代码顺序有关，依序如下：
 
 1. 样式框架、各浏览器样式重置 \(使用 compass 预设版本\)
@@ -87,6 +93,7 @@
 // 套件样式
 @import "vendor/fontello";
 ```
+详细档案说明请参考：[1.4.1 文档架构说明 - CSS 样式文档架构](/document-architecture/document-architecture-css.md)
 <br/>
 
 ### base 内文档的运用
@@ -327,6 +334,7 @@ $tablet-width                      : 768px;
 #### extend.scss
 
 将样式经常设定的代码编写为继承样式代码，未来在开发新的网站时，也能继续使用此继承样式。
+* extends import 使用方法请参考：[SCSS 中文文档 7.3.6. @extend-Only 选择器 (@extend-Only Selectors)](https://www.sass.hk/docs/)
 
 > 文档路径: /src/sass/generic/extend.scss
 
@@ -400,6 +408,10 @@ $tablet-width                      : 768px;
 #### maxin.scss
 将样式经常设定的代码编写为混合指令样式代码，未来在开发新的网站时，也能继续使用此混合指令样式代码。
 
+* maxin import 使用方法请参考：[SCSS 中文文档 9.2. 引用混合样式 @include (Including a Mixin: @include)](https://www.sass.hk/docs/)
+
+
+
 > 文档路径: `/src/sass/generic/maxin.scss`
 
 ```css
@@ -430,19 +442,194 @@ $tablet-width                      : 768px;
 ```
 <br/>
 
-### modules
+### modules 内文档的运用
+
+将欣和官网经常使用的元件进行样式模组化，一个 .scss 档案分别代表一个模组元件，命名为 `modules-*`，目前有的模组元件如下：
+
+| 档案名称 | 说明 |
+| :--- | :--- |
+| _module-anchor.scss | 作者模组样式 |
+| _module-article.scss | 文章模组样式 |
+| _module-button.scss | 按钮模组样式 |
+| _module-checkbox.scss | 多选模组样式 |
+| _module-news-list.scss | 新闻列表模组样式 |
+| _module-prod-list.scss | 产品列表模组样式 |
+| _module-recipe-list.scss | 菜谱列表模组样式 |
+| _module-search-bar.scss | 搜寻模组样式 |
+| _module-selectbox.scss | 下拉选单模组样式 |
+| _module-subtitle.scss | 主标题模组样式 |
+| _module-tab.scss | 页签模组样式 |
+| _module-topic-info.scss | 主题介绍模组样式 |
+
 
 #### module-button.scss
+按钮模组样式有多个变数：
 
+| 变数名称  | 说明 | 值 |
+| :--- | :--- | :--- |
+| $displayStatus | 元件状态 | inline-block / block |
+| $mobileWidth | 手机载具元件宽度 | auto / 数值 |
+| $tabletWidth | 平板载具元件宽度 | auto / 数值 |
+| $desktopWidth | 桌机载具元件宽度 |  auto / 数值 |
+| $mobile | 手机载具元件样式  | redRadius / redlineRadius / sRedRadius / brightWhite / toggleFolder / disabled  |
+| $tablet | 手机载具元件样式 |  auto / redRadius / toggleFolder |
+| $desktop | 手机载具元件样式 | auto / redRadius |
+
+> 文档路径: `/src/modules/_module-news-list.scss`
+
+``` css
+@mixin btn($displayStatus:inline-block,$mobileWidth:auto,$tabletWidth:auto,$desktopWidth:auto,$mobile:redRadius,$tablet:none,$desktop:none){
+
+	width: $mobileWidth;
+	font-weight: normal;
+	
+	&:focus{
+		outline: none;
+	}
+…
+}
+```
 #### module-news-list.scss
+新闻列表模组样式有ㄧ个变数：
 
+##### $series
+
+|  | $series:list | $series:box |
+| :--- | :--- | :--- |
+| 说明 | **列表**新闻列表 | **四则直排**新闻列表 |
+| 图片 | 图片空缺 | 图片空缺 |
+| 参考网址 | http://shinho.com.cn/news/1 | http://shinho.com.cn/brandgroup/weidamei |
+
+
+> 文档路径: `/src/modules/_module-news-list.scss`
+
+``` css
+@mixin newslist($series:list){
+	&-list{
+		@extend %clearfix-both;
+	}
+…
+}
+```
 #### module-prod-list.scss
+产品列表模组样式有两个变数：
 
+##### $status
+
+|  | $status:series | $status:no-series |
+| :--- | :--- | :--- |
+| 说明 | **系列**产品列表 | **非系列**产品列表 |
+| 图片 | 图片空缺 | 图片空缺 |
+| 参考网址 | - | http://shinho.com.cn/brandgroup/weidamei |
+
+##### $series
+
+|  | $series:list | $series:box |
+| :--- | :--- | :--- |
+| 说明 | **列表**产品列表 | **四则直排**产品列表 |
+| 图片 | 图片空缺 | 图片空缺 |
+| 参考网址 | http://shinho.com.cn/brandgroup/weidamei/prodlist | http://shinho.com.cn/brandgroup/weidamei |
+
+
+> 文档路径: `/src/modules/_module-prod-list.scss`
+
+``` css
+@mixin prodlist($status:no-series,$series:list){
+	&-list{
+		@extend %container-width;
+		@extend %clearfix-both;
+		display: block;
+		margin-bottom: 1rem;
+		position: relative;
+
+		@media \0screen\,screen\9{
+			margin-bottom: 16px;
+		}
+	}
+…
+}
+```
 #### module-recipe-list.scss
+菜谱列表模组样式有两个变数：
+
+##### $gridnum
+
+|  | $gridnum:3 | $gridnum:4 |
+| :--- | :--- | :--- |
+| 说明 | **三栏**菜谱列表 | **四栏**菜谱列表 |
+| 图片 | 图片空缺 | 图片空缺 |
+| 参考网址 | http://shinho.com.cn/brandgroup/liuyuexian/topic-3 | http://shinho.com.cn/brandgroup/liuyuexian/recipedetail-17 |
+
+##### $style
+
+|  | $style:radius | $style:basic |
+| :--- | :--- | :--- |
+| 说明 | **圆角设计**菜谱列表 | **预设**菜谱列表 |
+| 图片 | 图片空缺 | 图片空缺 |
+| 参考网址 | http://shinho.com.cn/brandgroup/liuyuexian/topic-3 | http://shinho.com.cn/brandgroup/liuyuexian/recipedetail-17 |
+
+
+> 文档路径: `/src/modules/_module-recipe-list.scss`
+
+``` css
+@mixin recipelist($gridnum:4,$style:basic){
+	&-list{
+		@extend %container-width; 
+		@extend %clearfix-both;
+		display: block;
+		margin-bottom: 1rem;
+
+		@media \0screen\,screen\9{
+			margin-bottom: 16px;
+		}
+	}
+…
+}
+```
 
 #### module-topic-info.scss
+主题介绍模组样式有一个变数：
 
-## 新增
+##### $list-line
 
-1. 新增专属于该页面的 scss 档案至 /src/sass/layouts
+|  | $list-line:on | $list-line:off |
+| :--- | :--- | :--- |
+| 说明 | **直式列表多则**主题介绍 | **单则**主题介绍 |
+| 图片 | 图片空缺 | 图片空缺 |
+| 参考网址 | http://shinho.com.cn/brandgroup/liuyuexian/attitude | http://shinho.com.cn/brandgroup/liuyuexian/recipedetail-17 |
 
+> 文档路径: `/src/modules/_module-topic-info.scss`
+
+``` css
+@mixin topic-info($list-line:off){
+	&-list, &-box{
+		background: $base-bgcolor-lighten;
+	}
+
+	&-box{
+		margin-bottom: 50px;
+		@extend %container-width;
+	}
+…
+}
+```
+## 新增与修改
+
+**Step 1.** 新增专属于该页面的 scss 档案至 `/src/sass/layouts` 
+**Step 2.** 将该页面的 scss 档案 import 到 `global.scss` 主样式
+
+```css
+// 页面样式
+…
+@import "layout/brand-prod-detail";
+@import "layout/brand-index";
+@import "layout/brand-group";
+// 新增于此
+…
+```
+**Step 3.** 于该页面的 scss 档案内撰写样式
+**Step 4.** 使用 Gulp 套件，将 SCSS 档案编译成 CSS 
+>\# commandline  
+> gulp watch
+
+若尚未安装 Gulp 套件请参考：[1.3.2 开发环境设置 - 本机 Gulp 开发环境参数设置](/setting-gulp.md)
