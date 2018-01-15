@@ -29,8 +29,10 @@ gulp.task('default', function() {  // 'default' 默认任务名，运行命令�
 
 ## SASS 环境设定
 ---
+为在 Gulp 内可进行 SASS 编译，需先安装: 
 
 ### Step1.使用 homebrew 安裝 ruby
+
 > \# commandline
 > brew install ruby
 

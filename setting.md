@@ -1,5 +1,7 @@
 # 开发环境配置
 
+進入開發前，需对本机开发环境做架设，架设如：
+
 ## 本机开发环境
 ---
 
@@ -15,7 +17,7 @@
 
 - Mac OS - [MAMP](https://www.mamp.info/en/)
 
-  ▼ 留意 **PHP version 5.6** 及 Root 的路径需指向 `/public` ，如下圖：
+  ▼ 留意 **PHP version 5.6** 及 Root 的路径需指向根目录下的 `/public` ，如下圖：
 
   ![MAMP](/images/MAMP-image.jpg)
   
@@ -61,10 +63,12 @@ install 指令会参照 `package.json` 罗列的配置，进行安装所需的 p
 2. 抓取当天官网的数据库
 > \# commandline
 > scp -r -P 1212 www@116.62.117.96:/dockerfile/shinho/app/sqlbak/  /Users/使用者名称/欲放置的资料夹
+
 3. 汇入数据库
 
-  > **[info] For info**
-  > 密码洽欣和春涛
+
+> **[info] For info**
+> 密码洽欣和春涛
 
 ### Step6.汇入图档
 
@@ -73,14 +77,15 @@ install 指令会参照 `package.json` 罗列的配置，进行安装所需的 p
 > scp -r -P 1212  www@116.62.117.96:/dockerfile/shinho/app/star-dev-server/public/img/up /Users/使用者名称/欲放置的资料夹
 2. 将抓下来的图放进开发环境 '/public/img/up' 内
 
-  > **[info] For info**
-  > 密码洽欣和春涛
+
+> **[info] For info**
+> 密码洽欣和春涛
 
 ### Step7.建立 .env
 
 > 文档路径：/.env
 
-此档在本机开发时实为重要，上线版本是不需要的**(也勿放上)**。`.env` 檔案不應該被提交到應用程式的版本控制系統，因為每個使用應用程式的開發人員或伺服器可能需要不同的環境設定。。若 clone 回来的档案没有此档，请自行建立。内容如下：
+此档在本机开发时实为重要，上线版本是不需要此档**(也勿放上)**。`.env` 檔案不應該被提交到應用程式的版本控制系統，因為每個使用應用程式的開發人員或伺服器可能需要不同的環境設定。。若 clone 回来的档案没有此档，请自行建立。内容如下：
 
 ##### Mac OS - MAMP
 
