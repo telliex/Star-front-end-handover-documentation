@@ -464,18 +464,55 @@ $tablet-width                      : 768px;
 #### module-prod-list.scss
 
 #### module-recipe-list.scss
+菜谱列表模组样式有两个变数：
+
+##### $gridnum
+
+|  | $gridnum:3 | $gridnum:4 |
+| :--- | :--- | :--- |
+| 说明 | **三栏**菜谱列表 | **四栏**菜谱列表 |
+| 图片 | 图片空缺 | 图片空缺 |
+| 参考网址 | http://shinho.com.cn/brandgroup/liuyuexian/topic-3 | http://shinho.com.cn/brandgroup/liuyuexian/recipedetail-17 |
+
+##### $style
+
+|  | $style:radius | $style:basic |
+| :--- | :--- | :--- |
+| 说明 | **圆角设计**菜谱列表 | **预设**菜谱列表 |
+| 图片 | 图片空缺 | 图片空缺 |
+| 参考网址 | http://shinho.com.cn/brandgroup/liuyuexian/topic-3 | http://shinho.com.cn/brandgroup/liuyuexian/recipedetail-17 |
+
+
+> 文党路径: `/src/modules/_module-recipe-list.scss`
+
+``` css
+@mixin recipelist($gridnum:4,$style:basic){
+	&-list{
+		@extend %container-width; 
+		@extend %clearfix-both;
+		display: block;
+		margin-bottom: 1rem;
+
+		@media \0screen\,screen\9{
+			margin-bottom: 16px;
+		}
+	}
+…
+}
+```
 
 #### module-topic-info.scss
-主题介绍模组样式有一個 **list-line** 變數：
+主题介绍模组样式有一个变数：
 
-| list-line:on | list-line:off |
-| :--- | :--- |
-| **直式列表多則**主題介紹 | **單則**主題介紹 |
-| 图片空缺 | 图片空缺 |
+##### list-line
 
-> 文黨路徑: `/src/modules/_module-topic-info.scss`
-> list-line:on 參考網址: http://shinho.com.cn/brandgroup/liuyuexian/attitude
-> list-line:off 參考網址:http://shinho.com.cn/brandgroup/liuyuexian/recipedetail-17
+|  | $list-line:on | $list-line:off |
+| :--- | :--- | :--- |
+| 说明 | **直式列表多则**主题介绍 | **单则**主题介绍 |
+| 图片 | 图片空缺 | 图片空缺 |
+| 参考网址 | http://shinho.com.cn/brandgroup/liuyuexian/attitude | http://shinho.com.cn/brandgroup/liuyuexian/recipedetail-17 |
+
+> 文党路径: `/src/modules/_module-topic-info.scss`
 
 ``` css
 @mixin topic-info($list-line:off){
