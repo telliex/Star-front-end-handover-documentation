@@ -466,7 +466,30 @@ $tablet-width                      : 768px;
 #### module-recipe-list.scss
 
 #### module-topic-info.scss
+主题介绍模组样式有一個 list-line 變數 ( on / off )：
 
+| list-line:on | list-line:off |
+| :--- | :--- |
+| **直式列表多則**主題介紹 | **單則**主題介紹 |
+|  |  |
+
+> 文黨路徑: `/src/modules/_module-topic-info.scss`
+> list-line:on 參考網址: http://shinho.com.cn/brandgroup/liuyuexian/attitude
+> list-line:off 參考網址:http://shinho.com.cn/brandgroup/liuyuexian/recipedetail-17
+
+``` css
+@mixin topic-info($list-line:off){
+	&-list, &-box{
+		background: $base-bgcolor-lighten;
+	}
+
+	&-box{
+		margin-bottom: 50px;
+		@extend %container-width;
+	}
+…
+}
+```
 ## 新增与修改
 
 **Step 1.** 新增专属于该页面的 scss 档案至 `/src/sass/layouts`
