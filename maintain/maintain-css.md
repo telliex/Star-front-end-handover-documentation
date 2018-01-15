@@ -458,7 +458,32 @@ $tablet-width                      : 768px;
 
 
 #### module-button.scss
+按钮模组样式有多个变数：
 
+| 变数名称  | 说明 | 值 |
+| :--- | :--- | :--- |
+| $displayStatus | 元件状态 | inline-block / block |
+| $mobileWidth | 手机载具元件宽度 | auto / 数值 |
+| $tabletWidth | 平板载具元件宽度 | auto / 数值 |
+| $desktopWidth | 桌机载具元件宽度 |  auto / 数值 |
+| $mobile | 手机载具元件样式  | redRadius / redlineRadius / sRedRadius / brightWhite / toggleFolder / disabled  |
+| $tablet | 手机载具元件样式 |  auto / redRadius / toggleFolder |
+| $desktop | 手机载具元件样式 | auto / redRadius |
+
+> 文档路径: `/src/modules/_module-news-list.scss`
+
+``` css
+@mixin btn($displayStatus:inline-block,$mobileWidth:auto,$tabletWidth:auto,$desktopWidth:auto,$mobile:redRadius,$tablet:none,$desktop:none){
+
+	width: $mobileWidth;
+	font-weight: normal;
+	
+	&:focus{
+		outline: none;
+	}
+…
+}
+```
 #### module-news-list.scss
 新闻列表模组样式有ㄧ个变数：
 
