@@ -31,13 +31,13 @@ Laravel 框架里，网页呈现的部份我们称为 view \(可以设想为 MVC
 face.blade.php                              # 首页
 ├ brandgroup.blade.php                      # 品牌家族
 ├ brand.blade.php                           # [品牌家族]品牌页
-├ attitude.blade.php - 饮食态度
-├ topic.blade.php - 饮食态度内文    
-├ recipelist.blade.php - 菜谱列表
-├ recipedetail.blade.php - 菜谱详情            
-├ prodlist.blade.php - 产品列表
-├ proddetail.blade.php - 产品详情
-├ shinhoprod.blade.php - 产品产 PDF
+├ attitude.blade.php                        # [品牌家族]饮食态度
+├ topic.blade.php                           # [品牌家族]饮食态度主题文章    
+├ recipelist.blade.php                      # 菜谱列表
+├ recipedetail.blade.php                    # 菜谱详情            
+├ prodlist.blade.php                        # 产品列表
+├ proddetail.blade.php                      # 产品详情
+├ shinhoprod.blade.php                      # 产品产 PDF
 ├ shinhoprodprint.blade.php - 产品列印
 ├ brandnewslist.blade.php - 品牌动态清单
 ├ careers.blade.php - 加入欣和
