@@ -1,23 +1,26 @@
 # PHP 前端文档架构
 
-Laravel 框架里，网页呈现的部份我们称为 view (可以设想为 MVC 里的 V)，所有的页面都是放置在 `/resources/views/`下:
+Laravel 框架里，网页呈现的部份我们称为 view \(可以设想为 MVC 里的 V\)，所有的页面都是放置在 `/resources/views/`下:  
 `/resources/views/` 里，前端的部份如下：
 
 ## errors 资料夹
+
 ---
 
 > 文档路径: `/resources/views/errors/*.blade.php`
 
 针对下面的 HTTP 状态有对应页面
-- 403.blade.php - 没有权限访问此站，服务器收到请求但拒绝提供服务。
-- 404.blade.php - 目标页面不存在
-- 500.blade.php - 伺服器遇到了一個未曾預料的狀況，導致了它無法完成對請求的處理。
-- 503.blade.php - 臨時的伺服器維護或者過載，伺服器當前無法處理請求。
+
+* 403.blade.php - 没有权限访问此站，服务器收到请求但拒绝提供服务。
+* 404.blade.php - 目标页面不存在
+* 500.blade.php - 伺服器遇到了一個未曾預料的狀況，導致了它無法完成對請求的處理。
+* 503.blade.php - 臨時的伺服器維護或者過載，伺服器當前無法處理請求。
 
 ## front 资料夹
+
 ---
 
-> 主为构成网站各页面主要内容
+> 主为构成网站各页面主要内容  
 > 文档路径: `/resources/views/front`
 
 ```
@@ -58,12 +61,13 @@ face.blade.php - 首页
 │
 ├ newslist.blade.php - 欣和动态
 └ contactxinhe.blade.php - 关于欣和
-
 ```
 
 ## layouts 资料夹
+
 ---
-> 主为为构成 template 的区块
+
+> 主为为构成 template 的区块  
 > 文档路径: `/resources/views/layouts`
 
 ```
@@ -74,11 +78,10 @@ master.blade.php - template 主框架
 ├ keyvisualcraftslider.blade.php - KV 轮播样式2 （生产工艺页面使用）
 ├ keyvisualnewsslider.blade.php - KV 轮播样式3 （新闻页面使用）
 ├ functions.blade.php - 针对部分功能所写 function 
-│    └ isIE() - IE & HAUWEI 手机 不支援 <picture> 标签 ，吐可支援的 tag
+│ └ isIE() - IE & HAUWEI 手机 不支援 <picture> 标签 ，吐可支援的 tag
 ├ inserttop.blade.php -  网页 header 可插入 js 区块
 ├ insertbottom.blade.php -  网页 footer 可插入 js 区块
 └ footer.blade.php - footer 连结
-
 ```
 
 `master.blade.php`详细说明见 [1.5.3 PHP](/maintain/maintain-php.md)
