@@ -4,6 +4,11 @@
 
 ---
 
+| 档案名称 | 说明 |
+| :--- | :--- |
+| global.scss | 全站样式 |
+| global-org.scss | 首页样式 |
+| errors.scss | 403、404、500、503 错误页面样式 |
 
 在欣和官网上目前使用到的三个主样式，分别为 `global.scss`、`global-org.scss`、`errors.scss`，各个主样式依照需求 `@import` 所需的文档与套件；而在 `@import` 的顺序上与转译后的代码顺序有关，依序如下：
 

@@ -7,8 +7,8 @@
 
 ```markdown
 js                                        
-├ base.js                                   # 
-├ browser.js                                #
+├ base.js                                   # 侦测浏览器状态的 JS 代码
+├ browser.js                                # 判断浏览器类型
 ├ generic.js                                #
 ├ maxin.js                                  #
 ├ partical.js                               # 
