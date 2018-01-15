@@ -462,7 +462,43 @@ $tablet-width                      : 768px;
 #### module-news-list.scss
 
 #### module-prod-list.scss
+产品列表模组样式有两个变数：
 
+##### $status
+
+|  | $status:series | $status:no-series |
+| :--- | :--- | :--- |
+| 说明 | **系列**产品列表 | **非系列**产品列表 |
+| 图片 | 图片空缺 | 图片空缺 |
+| 参考网址 | - | http://shinho.com.cn/brandgroup/weidamei |
+
+##### $series
+
+|  | $series:list | $series:box |
+| :--- | :--- | :--- |
+| 说明 | **列表**产品列表 | **四则直排**产品列表 |
+| 图片 | 图片空缺 | 图片空缺 |
+| 参考网址 | http://shinho.com.cn/brandgroup/weidamei/prodlist | http://shinho.com.cn/brandgroup/weidamei |
+
+
+> 文档路径: `/src/modules/_module-prod-list.scss`
+
+``` css
+@mixin prodlist($status:no-series,$series:list){
+	&-list{
+		@extend %container-width;
+		@extend %clearfix-both;
+		display: block;
+		margin-bottom: 1rem;
+		position: relative;
+
+		@media \0screen\,screen\9{
+			margin-bottom: 16px;
+		}
+	}
+…
+}
+```
 #### module-recipe-list.scss
 菜谱列表模组样式有两个变数：
 
@@ -483,7 +519,7 @@ $tablet-width                      : 768px;
 | 参考网址 | http://shinho.com.cn/brandgroup/liuyuexian/topic-3 | http://shinho.com.cn/brandgroup/liuyuexian/recipedetail-17 |
 
 
-> 文党路径: `/src/modules/_module-recipe-list.scss`
+> 文档路径: `/src/modules/_module-recipe-list.scss`
 
 ``` css
 @mixin recipelist($gridnum:4,$style:basic){
@@ -512,7 +548,7 @@ $tablet-width                      : 768px;
 | 图片 | 图片空缺 | 图片空缺 |
 | 参考网址 | http://shinho.com.cn/brandgroup/liuyuexian/attitude | http://shinho.com.cn/brandgroup/liuyuexian/recipedetail-17 |
 
-> 文党路径: `/src/modules/_module-topic-info.scss`
+> 文档路径: `/src/modules/_module-topic-info.scss`
 
 ``` css
 @mixin topic-info($list-line:off){
