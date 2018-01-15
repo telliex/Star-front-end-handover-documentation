@@ -485,4 +485,5 @@ $tablet-width                      : 768px;
 **Step 4.** 使用 Gulp 套件，将 SCSS 档案编译成 CSS 
 >\# commandline  
 > gulp watch
+
 若尚未安装 Gulp 套件请参考：[1.3.2 开发环境设置 - 本机 Gulp 开发环境参数设置](/setting-gulp.md)
