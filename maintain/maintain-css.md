@@ -466,7 +466,7 @@ $tablet-width                      : 768px;
 #### module-recipe-list.scss
 
 #### module-topic-info.scss
-主题介绍模组样式有一個 list-line 變數 ( on / off )：
+主题介绍模组样式有一個 **list-line** 變數：
 
 | list-line:on | list-line:off |
 | :--- | :--- |
