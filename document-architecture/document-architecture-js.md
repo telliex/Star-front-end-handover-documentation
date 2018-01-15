@@ -7,11 +7,11 @@
 
 ```markdown
 js                                        
-├ base.js                                   # 侦测浏览器状态的 JS 代码
-├ browser.js                                # 判断浏览器类型
-├ generic.js                                #
-├ maxin.js                                  #
-├ partical.js                               # 
+├ base.js                                   # 侦测各种状态的 JS 代码
+├ browser.js                                # 判断浏览器类型的 JS 代码
+├ generic.js                                # 站内组件的 JS 代码
+├ maxin.js                                  # 模组的 JS 代码
+├ partical.js                               # 元件的 JS 代码
 ├ global.es6                                # 全站共同版型的 JS 代码，每个页面都有使用
 ├ ie-debug.es6                              # 适配 IE 的修正代码
 ├ lyt-about-business.es6                    #「关于欣和我们正在做」business.blade.php 的 ES6 代码
