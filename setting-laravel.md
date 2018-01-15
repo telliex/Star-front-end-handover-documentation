@@ -1,6 +1,6 @@
 # 服务器 Laravel 开发环境参数设置
 
-Laravel 是一套富有表达性且具有简洁语法的网页应用程式框架，减少开发过程中的不便，提供了验证(authentication)、路由(routing)、sessions、快取(caching) 等开发过程中经常用到的工具或功能。
+Laravel 是一套富有表达性且具有简洁语法的网页应用程式框架，减少开发过程中的不便，提供了验证(Authentication)、路由(Routing)、Sessions、快取(Caching) 等开发过程中经常用到的工具或功能。
 
 服务器若未安装 laravel 可运行的环境，请依下面步骤安装：
 <br/>
@@ -53,7 +53,7 @@ Laravel 是一套富有表达性且具有简洁语法的网页应用程式框架
 > mv composer.phar /usr/bin/composer
 > chmod +x /usr/bin/composer
 
-### Step6.安裝 git 並取回 Laravel 框架
+### Step6.安裝 Git 並取回 Laravel 框架
 
 > \# commandline
 > yum -y install git

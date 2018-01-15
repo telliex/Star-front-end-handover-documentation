@@ -1,11 +1,10 @@
 # PHP 前端文档架构
 
-Laravel 框架里，网页呈现的部份我们称为 view \(可以设想为 MVC 里的 V\)，所有的页面都是放置在 `/resources/views/`下:  
-`/resources/views/` 里，前端的部份如下：
+Laravel 框架里，网页呈现的部份我们称为 view \(可以设想为 MVC 里的 V\)，所有的页面都是放置在 `/resources/views/` 里，前端的部份如下：
 <br/>
 
 
-## errors 资料夹
+## Errors 资料夹
 
 ---
 
@@ -21,7 +20,7 @@ Laravel 框架里，网页呈现的部份我们称为 view \(可以设想为 MVC
 <br/>
 
 
-## front 资料夹
+## Front 资料夹
 
 ---
 
@@ -70,7 +69,7 @@ face.blade.php - 首页
 <br/>
 
 
-## layouts 资料夹
+## Layouts 资料夹
 
 ---
 
