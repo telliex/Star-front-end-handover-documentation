@@ -471,7 +471,7 @@ $tablet-width                      : 768px;
 | list-line:on | list-line:off |
 | :--- | :--- |
 | **直式列表多則**主題介紹 | **單則**主題介紹 |
-|  |  |
+| 图片空缺 | 图片空缺 |
 
 > 文黨路徑: `/src/modules/_module-topic-info.scss`
 > list-line:on 參考網址: http://shinho.com.cn/brandgroup/liuyuexian/attitude
