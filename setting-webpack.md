@@ -72,6 +72,7 @@ module.exports = {
     entry: {
         // 多頁面入口，针对不同页面 js 进行添加，.es6 转 .js (es6 转码)
         'global': './src/js/global.es6',
+        'face': './src/js/face.es6',
         'lyt-about-csv': './src/js/lyt-about-csv.es6',
         'lyt-about-business': './src/js/lyt-about-business.es6',
         'lyt-about-focus': './src/js/lyt-about-focus.es6',
@@ -197,6 +198,7 @@ module.exports = {
     entry: {
         // 多頁面入口，针对不同页面 js 进行添加，.es6 转 .js (es6 转码)
         'global': './src/js/global.es6',
+        'face': './src/js/face.es6',
         'lyt-about-csv': './src/js/lyt-about-csv.es6',
         'lyt-about-business': './src/js/lyt-about-business.es6',
         'lyt-about-focus': './src/js/lyt-about-focus.es6',

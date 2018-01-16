@@ -15,6 +15,7 @@ js
 ├ partical.js                               # 元件的 JS 代码
 ├ global.es6                                # 全站共同版型的 JS 代码，每个页面都有使用
 ├ ie-debug.es6                              # 适配 IE 的修正代码
+├ face.es6                                  # 首页 face.blade.php 的 ES6 代码
 ├ lyt-about-business.es6                    #「关于欣和我们正在做」business.blade.php 的 ES6 代码
 ├ lyt-about-crafts.es6                      #「关于欣和生产工艺」crafts.blade.php 的 ES6 代码
 ├ lyt-about-csv.es6                         #「关于欣和社会责任」csv.blade.php 的 ES6 代码
