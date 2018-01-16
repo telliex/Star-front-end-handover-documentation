@@ -2,7 +2,7 @@
 
 Webpack 是一个现代 JavaScript 应用程序的模块打包器(Module bundler)。当 Webpack 处理应用程序时，它会递归地构建一个依赖关系图(Dependency graph)，其中包含应用程序需要的每个模块，然后将所有这些模块打包成一个或多个 bundle。
 
-使用 Webpack 来协助 ES6 模块的管理，管理开发与发布两套版本的输出
+这里使用 Webpack 来协助 ES6 模块的管理，管理**开发**与**发布**两套版本的输出
 - 开发：JS 程序码未压缩（方便开发时除错） 
 - 发布：JS 程序码优化压缩，去除 consol ,进行 ES6 转 ES5 的编码（适应不支援 ES6 语法的低阶浏览器，如 IE） 
 
@@ -19,14 +19,14 @@ Webpack 是一个现代 JavaScript 应用程序的模块打包器(Module bundler
 2. 进入项目目录，用 npm 安装目录 Webpack
 > \# commandline
 > npm install webpack --save-dev
-3. Webpack 在执行的时候，默认情况下，会搜索当前目录的`webpack.config.js`文件，文件设定下面说明
+3. Webpack 在执行的时候，默认情况下，会搜索当前目录的`webpack.config.js`文件，文件设定后面说明
 
 <br/>
 
 ## Webpack 工作原理
 ---
 
-**ECMAScript 6** (简称 ES6)是新一代 Javascript ，可行模组化管理 JS ，增加效能。但尚有低阶浏览器不支援，所以需要有 **Babel** 这样的转码器进行转码。Webpack 本身不只可以将 Babel 的转码用放进自动化流程，其实还有许多如程序码压缩、SCSS 编译等功能，在开发上缩短了许多时间。使用的设定可透过 `/webpack.config.js` 设置。
+**ECMAScript 6** (简称 ES6)是新一代 Javascript ，可行模组化管理 JS ，增加效能。但尚有低阶浏览器不支援，所以需要有 **Babel** 这样的转码器进行转码。Webpack 本身不止可以将 Babel 的转码用放进自动化流程，其实还有许多如程序码压缩、SCSS 编译等功能，在开发上缩短了许多时间。使用的设定可透过 `/webpack.config.js` 设置。
 
 <br/>
 
@@ -37,7 +37,7 @@ Webpack 是一个现代 JavaScript 应用程序的模块打包器(Module bundler
 
 > 文档路径：`/webpack.config.js`
 
-为了更通用，我们将此设定档再分为 **dev(开发)** 和 **prod(上线)** 两版本，应用于开发与上线两种版本输出
+为了更通用，我们将此设定档再分为 **dev(开发)** 和 **prod(上线)** 两版本引用，应用于**开发**与**上线**两种版本输出
 
 ```
 module.exports = function(env) {
