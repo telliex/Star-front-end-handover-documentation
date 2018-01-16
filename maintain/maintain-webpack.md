@@ -8,6 +8,7 @@
 > 文档路径：`/webpack.dev.config.js`、`/webpack.prod.config.js`
 
 ```js
+
 ...
 entry: {
         // 多頁面入口，针对不同页面 js 进行添加，.es6 转 .js (es6 转码)
@@ -38,6 +39,7 @@ entry: {
         'new-js-name': './src/js/new-js-name.es6',
     },
 ...
+
 ```
 
 需添加，编译时才能正确将 ES6 编译。
@@ -52,6 +54,7 @@ JS 内若要引用其他函数库或是插件，需依照 [ES6 module](http://es
 
 
 ```js
+
 ...
 resolve: {
   // 使用的扩展名

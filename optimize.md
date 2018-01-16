@@ -67,6 +67,7 @@ Robots 协议 (也称为爬虫协议、机器人协议等) 的全称是**网络�
 > 正式主机文档路径: `/public/robots.txt`
 
 ```
+
 User-agent: *
 Disallow: /event2016/
 Disallow: /adm
@@ -75,16 +76,19 @@ User-agent: AdsBot-Google
 
 Disallow: /event2016/
 Disallow: /adm
+
 ```
 
 > 测试主机文档路径: `/public/robots-develop.txt`
 
 ```
+
 User-agent: *
 Disallow: /
 
 User-agent: AdsBot-Google
 Disallow: /
+
 ```
 
 **网站被搜索引擎屏蔽对网站排名影响很大，请再三确认是否屏蔽该网址。**

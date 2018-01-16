@@ -40,9 +40,11 @@ Webpack 是一个现代 JavaScript 应用程序的模块打包器(Module bundler
 为了更通用，我们将此设定档再分为 **dev(开发)** 和 **prod(上线)** 两版本引用，应用于**开发**与**上线**两种版本输出
 
 ```
+
 module.exports = function(env) {
   return require(`./webpack.${env}.config.js`)
 }
+
 ```
 
 ### 开发版 Webpack 设定档 
@@ -50,6 +52,7 @@ module.exports = function(env) {
 > 文档路径：`/webpack.dev.config.js`
 
 ```
+
 const path = require('path');   //通用 Windows 和 MAC OS 档案系统  
 const webpack = require('webpack'); 
 const node_modules_dir = path.resolve(__dirname, 'node_modules');   //webpack 插件放置路径(透过 npm 安装)
@@ -178,6 +181,7 @@ module.exports = {
 > 文档路径：`/webpack.prod.config.js`
 
 ```
+
 const path = require('path');   //通用 Windows 和 MAC OS 档案系统 
 const webpack = require('webpack');
 const node_modules_dir = path.resolve(__dirname, 'node_modules');   //webpack 插件放置路径(透过 npm 安装)
@@ -308,6 +312,7 @@ module.exports = {
         new es3ifyPlugin()
     ]
 }
+
 ```
 <br/>
 
@@ -319,6 +324,7 @@ module.exports = {
 > 文档路径: `/.babelrc`
 
 ```
+
 {
     "presets": [
     	["env",
@@ -332,6 +338,7 @@ module.exports = {
     ],
     "plugins": ["transform-es3-member-expression-literals","transform-es3-property-literals"]    //针对低阶浏览器通用
 } 
+
 ```
 
 <br/>

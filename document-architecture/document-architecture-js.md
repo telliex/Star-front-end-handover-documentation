@@ -7,6 +7,7 @@
 > 转译后路径: `/pubic/js`
 
 ```markdown
+
 js                                        
 ├ base.js                                   # 侦测各种状态的 JS 代码
 ├ browser.js                                # 判断浏览器类型的 JS 代码
@@ -37,6 +38,7 @@ js
 ├ lyt-news-detail.es6                       #「欣和动态详情」newsdetail.blade.php 的 ES6 代码
 ├ lyt-news-list.es6                         #「欣和动态列表」newslist.blade.php 的 ES6 代码
 └ share.es6                                 # Ajax 动态资料串接档案
+
 ```
 ### 相关连结与文档
 * 若需新增或运维交互动效请参考：[1.5.2 新增与运维 - JavaScript](/xin-zeng-yu-wei-yun-f/javascript.md)
@@ -48,6 +50,7 @@ js
 > 文档路径: `/src/lib`
 
 ```markdown
+
 lib
 ├ owlcarousel                               # JavaScript 轮拨套件
 ├ slick                                     # JavaScript 轮拨套件
@@ -56,9 +59,10 @@ lib
 ├ jquery.cookie.js                          # cookie 读取、写入、删除插件
 ├ jquery.history.js                         # JavaScript 新增浏览记录套件
 ├ jquery.js                                 # JavaScript 框架
-├ jquery.mobile.min.js                      # JavaScript 框架 for Mobile                        # 
+├ jquery.mobile.min.js                      # JavaScript 框架 for Mobile 
 ├ ScrollMagic.min.js                        # JS 动画库，與 ScrollMagic 一起使用
 └ TweenMax.min.js                           # JS 动画库，與 ScrollMagic 一起使用
+
 ```
 ### 相关连结与文档
 

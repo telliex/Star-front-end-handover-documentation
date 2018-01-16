@@ -28,6 +28,7 @@ Laravel 框架里，网页呈现的部份我们称为 view \(可以设想为 MVC
 > 文档路径: `/resources/views/front`
 
 ```
+
 Front
 ├ face.blade.php                            # 首页
 ├ brandgroup.blade.php                      # 品牌家族
@@ -62,6 +63,7 @@ Front
 ├ newslist.blade.php                        # 欣和动态
 ├ newsdetail.blade.php                      # [欣和动态]动态详情
 └ contactxinhe.blade.php                    # 关于欣和
+
 ```
 <br/>
 
@@ -74,6 +76,7 @@ Front
 > 文档路径: `/resources/views/layouts`
 
 ```
+
 layouts
 ├ master.blade.php                          # Template 主框架
 ├ meta.blade.php                            # Meta 区块内容
@@ -86,6 +89,7 @@ layouts
 ├ inserttop.blade.php                       # 网页顶部可插入 JS 区块
 ├ insertbottom.blade.php                    # 网页底部可插入 JS 区块
 └ footer.blade.php                          # Footer 区块
+
 ```
 
 `master.blade.php`详细说明见 [1.5.3 新增与运维 - PHP](/maintain/maintain-php.md)

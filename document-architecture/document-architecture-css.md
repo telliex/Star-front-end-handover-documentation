@@ -17,6 +17,7 @@
 > 转译后路径: `/pubic/css`
 
 ```markdown
+
 sass
 ├ base                                      # 基础样式设定资料夹
 │ ├ _base-style-setting.scss                # 全站 reset css 设定   
@@ -62,6 +63,7 @@ sass
 ├ global-org.scss                           # 配适首页客制的通用主样式
 ├ errors.scss                               # 错误页面主样式
 └ global.scss                               # 全站内页的通用主样式
+
 ```
 ### 相关连结与文档
 * 若需新增或运维样式请参考：[1.5.1 新增与运维 - CSS](/maintain/maintain-css.md)

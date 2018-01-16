@@ -11,6 +11,7 @@
 ### 使用方法
 
 ```
+
    let tempvals = Array(page, dutyid);
    let result; // 结果
    let tempitem = share.ajaxarr("dutynews", tempvals, "/ajax");
@@ -34,6 +35,7 @@
           // 完成读取完成时，执行
        }
    });
+   
 ```
 说明：
 - API 名称对照请参阅 [Star API](/file/star-api-setting.xlsx)

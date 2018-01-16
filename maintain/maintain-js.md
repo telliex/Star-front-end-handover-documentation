@@ -2,6 +2,7 @@
 
 ## 使用 ES6 编写 Javascript 
 ---
+
 为什么使用 ES6? Javascript ES6 模块系统是采**编译时加载**，效率要比 CommonJS 模块的**运行时加载**方式高。将来服务器和浏览器都会支持 ES6 模块格式。
 <br/>
 
@@ -13,6 +14,7 @@
 ### export
 
 ```
+
 var firstName = 'Michael';
 function multiply(x, y) {
     return x * y;
@@ -20,12 +22,15 @@ function multiply(x, y) {
 var year = 1958;
 
 export { firstName, multiply, year };
+
 ```
 
 ### import
 
 ```
+
 import { firstName, multiply, year } from './profile';
+
 ```
 <br/>
 
@@ -49,6 +54,7 @@ import { firstName, multiply, year } from './profile';
 > /src/js/partical.js
 
 ```markdown
+
 import 'jquery';                                # 载入 jQuery 模块
 import 'jquery.history';                        # 载入 jquery.history 模块
 import 'jquery.cookie';                         # 载入 jquery.cookie 模块，用於提示使用者更新浏览器版本

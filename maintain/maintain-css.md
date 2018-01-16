@@ -25,6 +25,7 @@
 > 以 `global.scss` 文档为例
 
 ```css
+
 // 样式框架、各浏览器样式重置 (使用 compass 预设版本)
 @import "compass";
 @import "compass/reset";
@@ -92,6 +93,7 @@
 
 // 套件样式
 @import "vendor/fontello";
+
 ```
 * 详细档案说明请参考：[1.4.1 文档架构说明 - CSS 样式文档架构](/document-architecture/document-architecture-css.md)
 <br/>
@@ -115,6 +117,7 @@
 > 文档路径: `/src/sass/base/variables.scss`
 
 ```css
+
 // 字型设定 Font Setting
 $base-font-family                  : "Hiragino Sans GB","Microsoft YaHei","WenQuanYi Micro Hei",sans-serif;
 $base-highlight-font-family        : "Times New Roman";
@@ -190,6 +193,7 @@ $anchor-width                      : 1360px;
 $fullscreen-width                  : 1200px;
 $desktop-width                     : 960px;
 $tablet-width                      : 768px;
+
 ```
 <br/>
 
@@ -212,6 +216,7 @@ $tablet-width                      : 768px;
 > 文档路径: `/src/sass/generic/common.scss`
 
 ```css
+
 // 全站容器宽度 container width 94vw
 
 %container-width{
@@ -329,6 +334,7 @@ $tablet-width                      : 768px;
     background-image: url(/img/icon/phone.svg);
 }
 ...
+
 ```
 
 #### extend.scss
@@ -339,6 +345,7 @@ $tablet-width                      : 768px;
 > 文档路径: /src/sass/generic/extend.scss
 
 ```css
+
 //清除浮動
 
 %clearfix{    
@@ -403,6 +410,7 @@ $tablet-width                      : 768px;
         @include inline-block; 
     }
 }
+
 ```
 
 #### maxin.scss
@@ -415,6 +423,7 @@ $tablet-width                      : 768px;
 > 文档路径: `/src/sass/generic/maxin.scss`
 
 ```css
+
 @mixin add-content($width:100%,$height:auto){ 
     @extend %add-content;
     width:$width;
@@ -439,6 +448,7 @@ $tablet-width                      : 768px;
     float: none;
     margin: 0;
 }
+
 ```
 <br/>
 
@@ -478,6 +488,7 @@ $tablet-width                      : 768px;
 > 文档路径: `/src/modules/_module-news-list.scss`
 
 ``` css
+
 @mixin btn($displayStatus:inline-block,$mobileWidth:auto,$tabletWidth:auto,$desktopWidth:auto,$mobile:redRadius,$tablet:none,$desktop:none){
 
 	width: $mobileWidth;
@@ -488,6 +499,7 @@ $tablet-width                      : 768px;
 	}
 …
 }
+
 ```
 #### module-news-list.scss
 新闻列表模组样式有ㄧ个变数：
@@ -504,12 +516,14 @@ $tablet-width                      : 768px;
 > 文档路径: `/src/modules/_module-news-list.scss`
 
 ``` css
+
 @mixin newslist($series:list){
 	&-list{
 		@extend %clearfix-both;
 	}
 …
 }
+
 ```
 #### module-prod-list.scss
 产品列表模组样式有两个变数：
@@ -534,6 +548,7 @@ $tablet-width                      : 768px;
 > 文档路径: `/src/modules/_module-prod-list.scss`
 
 ``` css
+
 @mixin prodlist($status:no-series,$series:list){
 	&-list{
 		@extend %container-width;
@@ -548,6 +563,7 @@ $tablet-width                      : 768px;
 	}
 …
 }
+
 ```
 #### module-recipe-list.scss
 菜谱列表模组样式有两个变数：
@@ -572,6 +588,7 @@ $tablet-width                      : 768px;
 > 文档路径: `/src/modules/_module-recipe-list.scss`
 
 ``` css
+
 @mixin recipelist($gridnum:4,$style:basic){
 	&-list{
 		@extend %container-width; 
@@ -585,6 +602,7 @@ $tablet-width                      : 768px;
 	}
 …
 }
+
 ```
 
 #### module-topic-info.scss
@@ -601,6 +619,7 @@ $tablet-width                      : 768px;
 > 文档路径: `/src/modules/_module-topic-info.scss`
 
 ``` css
+
 @mixin topic-info($list-line:off){
 	&-list, &-box{
 		background: $base-bgcolor-lighten;
@@ -612,6 +631,7 @@ $tablet-width                      : 768px;
 	}
 …
 }
+
 ```
 <br/>
 
@@ -623,6 +643,7 @@ $tablet-width                      : 768px;
 **Step 2.** 将该页面的 scss 档案 import 到 `global.scss` 主样式
 
 ```css
+
 // 页面样式
 …
 @import "layout/brand-prod-detail";
@@ -630,6 +651,7 @@ $tablet-width                      : 768px;
 @import "layout/brand-group";
 // 新增于此
 …
+
 ```
 **Step 3.** 于该页面的 scss 档案内撰写样式
 **Step 4.** 使用 Gulp 套件，将 SCSS 档案编译成 CSS 
