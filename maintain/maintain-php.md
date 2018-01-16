@@ -8,6 +8,7 @@
 
 
 详细档案说明请参考：[1.4.3 文档架构说明 - PHP 前端文档架构](/document-architecture/document-architecture-php.md)
+<br/>
 
 
 ## Template
@@ -139,6 +140,7 @@
 - `@section()` 子页面内使用，替会母页面内的 `@yield`
 - `@yield` 母页面内使用，让子页面内的 `@section()` 可以继承后替换
 
+<br/>
 
 ## 维护
 ---
@@ -174,6 +176,7 @@ else if($job=="your-new-page-name"){
 
 修改或新增 Footer 区块上连结与名称
 > 文档路径：`/resources/views/layouts/footer.blade.php`
+
 <br/>
 ## 技术文件参考资料
 ---
