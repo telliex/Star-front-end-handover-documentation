@@ -18,6 +18,8 @@
 * [schema.org 标记文档](https://schema.org/docs/full.html)
 * [結構化資料測試工具](https://search.google.com/structured-data/testing-tool/u/0/)
 
+<br/>
+
 ## 圖片壓縮
 ---
 
@@ -38,6 +40,8 @@
 | PNG | 优先选用 Lossless 模式；比对 Lossless 模式与 Lossy 模式的档案大小，若差异很大，且图片品质在设计可接受的范围，选用相对应压缩模式。 |
 | SVG | Lossy 失真模式 |
 
+<br/>
+
 ## Sitemap
 ---
 
@@ -47,6 +51,8 @@ Sitemap 可方便网站管理员通知搜索引擎他们网站上有哪些可供
 
 > 文档路径: `/public/sitemap.xml`
 > 線上工具連結: [https://freesitemapgenerator.com/](https://freesitemapgenerator.com/)
+
+<br/>
 
 ## robots.txt
 ---
