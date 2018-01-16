@@ -1,15 +1,17 @@
 # 本机 Webpack 开发环境参数设置
 
-Webpack 是一个现代 JavaScript 应用程序的模块打包器(module bundler)。当 Webpack 处理应用程序时，它会递归地构建一个依赖关系图(dependency graph)，其中包含应用程序需要的每个模块，然后将所有这些模块打包成一个或多个 bundle。
+Webpack 是一个现代 JavaScript 应用程序的模块打包器(Module bundler)。当 Webpack 处理应用程序时，它会递归地构建一个依赖关系图(Dependency graph)，其中包含应用程序需要的每个模块，然后将所有这些模块打包成一个或多个 bundle。
 
 使用 Webpack 来协助 ES6 模块的管理，管理开发与发布两套版本的输出
-- 开发：js 程序码未压缩（方便开发时除错） 
-- 发布：js 程序码优化压缩，去除 consol ,进行 ES6 转 ES5 的编码（适应不支援 ES6 语法的低阶浏览器，如 IE） 
+- 开发：JS 程序码未压缩（方便开发时除错） 
+- 发布：JS 程序码优化压缩，去除 consol ,进行 ES6 转 ES5 的编码（适应不支援 ES6 语法的低阶浏览器，如 IE） 
+
+<br/>
 
 ## Webpack 快速入門
 ---
 
-首先要安装 Node.js， Node.js 自带了软件包管理器 npm，Webpack 需要 Node.js v0.6 以上支持，建议使用最新版 Node.js。
+首先要安装 Node.js， Node.js 自带了软件包管理器 NPM，Webpack 需要 Node.js v0.6 以上支持，建议使用最新版 Node.js。
 
 1. 用 NPM 安装全局 Webpack
 > \# commandline
@@ -19,18 +21,21 @@ Webpack 是一个现代 JavaScript 应用程序的模块打包器(module bundler
 > npm install webpack --save-dev
 3. Webpack 在执行的时候，默认情况下，会搜索当前目录的`webpack.config.js`文件，文件设定下面说明
 
+<br/>
+
 ## Webpack 工作原理
 ---
 
 **ECMAScript 6** (简称 ES6)是新一代 Javascript ，可行模组化管理 JS ，增加效能。但尚有低阶浏览器不支援，所以需要有 **Babel** 这样的转码器进行转码。Webpack 本身不只可以将 Babel 的转码用放进自动化流程，其实还有许多如程序码压缩、SCSS 编译等功能，在开发上缩短了许多时间。使用的设定可透过 `/webpack.config.js` 设置。
 
+<br/>
 
-## Webpack config setting
+## Webpack Config Setting
 ---
 
 ### Webpack 设定档
 
-> 文档路径：/webpack.config.js
+> 文档路径：`/webpack.config.js`
 
 为了更通用，我们将此设定档再分为 **dev(开发)** 和 **prod(上线)** 两版本，应用于开发与上线两种版本输出
 
@@ -42,7 +47,7 @@ module.exports = function(env) {
 
 ### 开发版 Webpack 设定档 
 
-> 文档路径：/webpack.dev.config.js
+> 文档路径：`/webpack.dev.config.js`
 
 ```
 const path = require('path');   //通用 Windows 和 MAC OS 档案系统  
@@ -170,7 +175,7 @@ module.exports = {
 
 ### 上线版 Webpack 设定档 
 
-> 文档路径：/webpack.prod.config.js
+> 文档路径：`/webpack.prod.config.js`
 
 ```
 const path = require('path');   //通用 Windows 和 MAC OS 档案系统 
@@ -304,12 +309,14 @@ module.exports = {
     ]
 }
 ```
+<br/>
+
 
 ## Babel
 ---
 刚提到的 ES6 代码转为 ES5 代码，这部份的运作上需要另一支 Babel 设定档进行设定。
 
-> 文档路径: /.babelrc
+> 文档路径: `/.babelrc`
 
 ```
 {
@@ -327,8 +334,10 @@ module.exports = {
 } 
 ```
 
+<br/>
+
 
 ## 技术文件参考资料
 ---
 
-- [webpack](https://doc.webpack-china.org/concepts/)
+- [Webpack](https://doc.webpack-china.org/concepts/)

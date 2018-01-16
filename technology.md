@@ -6,6 +6,8 @@
 * [CSS](https://www.w3.org/Style/CSS/) - CSS 是 Cascading Style Sheets（级联样式表）的缩写。階層式樣式表，用來為結構化文件添加樣式的電腦語言，用于为HTML文档定义布局。涉及字体、颜色、边距、高度、宽度、背景图像、定位等。
 * [JavaScript \(ES6\)](http://es6.ruanyifeng.com/) - ECMAScript 6.0（简称 ES6）是 JavaScript 语言的下一代标准。它的目标，是使得 JavaScript 语言可以用来编写复杂的大型应用程序，具模块管理等功能。
 * [PHP](https://secure.php.net/) - 最通用的一种开源计算机脚本语言，尤其适用于网络开发并可嵌入 HTML 中使用。
+<br/>
+<br/>
 
 ## 使用的框架
 ---
@@ -17,6 +19,8 @@
   * [JQuery Mobile](https://jquerymobile.com/) - 用于创建移动 Web 应用的前端开发框架
 * [Webpack](https://webpack.github.io/) - 前端开发打包工具
 * [Laravel 5](https://d.laravel-china.org/) - Laravel 是基於 MVC 架構模式來打造的 PHP 框架，管理日漸增多的程式碼檔案
+<br/>
+<br/>
 
 ## 使用的套件
 ---
@@ -32,6 +36,8 @@
 
 * Webpack 擴充套件
   * [Babel Loader](https://babeljs.io/) - ES6 转码器，可以将 ES6 代码转为 ES5 代码，从而通用在各浏览器下执行。
+<br/>
+<br/>
 
 ## 技術參考資料
 ---

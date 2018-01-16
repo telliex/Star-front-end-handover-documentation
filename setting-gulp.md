@@ -2,6 +2,8 @@
 
 Gulp.js 是一个自动化构建工具，开发者可以使用它在项目开发过程中自动执行常见任务。
 这里使用 Gulp.js 来协助 SCSS 编译成 CSS 所需的实时自动化编译。
+<br/>
+
 
 ## Gulp 快速入門
 ---
@@ -27,11 +29,13 @@ gulp.task('default', function() {  // 'default' 默认任务名，运行命令�
 > \# commandline
 > gulp
 
+<br/>
+
 ## SASS 环境设定
 ---
 为在 Gulp 内可进行 SASS 编译，需先安装: 
 
-### Step1.使用 homebrew 安裝 ruby
+### Step1.使用 Homebrew 安裝 Ruby
 
 > \# commandline
 > brew install ruby
@@ -56,6 +60,7 @@ gulp.task('default', function() {  // 'default' 默认任务名，运行命令�
 > \# commandline
 > gem install modular-scale
 
+<br/>
 
 ## 使用 Gulp 進行 SCSS 的編譯工作
 ---
@@ -66,7 +71,7 @@ gulp.task('default', function() {  // 'default' 默认任务名，运行命令�
 
 ### Gulp Setting
 
-> 文档路径：/gulpfile.js
+> 文档路径：`/gulpfile.js`
 
 ```
 //gulpfile.js
@@ -122,8 +127,9 @@ gulp.task('styles', function() {
 });
 
 ```
+<br/>
 
 ## 技术文件参考资料
 ---
 
-- [gulp 中文網](https://www.gulpjs.com.cn/docs/getting-started/)
+- [Gulp 中文網](https://www.gulpjs.com.cn/docs/getting-started/)
