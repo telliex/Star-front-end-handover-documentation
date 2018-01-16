@@ -56,6 +56,7 @@ import { firstName, multiply, year } from './profile';
 import 'jquery';                                # 载入 jQuery 模块
 import 'jquery.history';                        # 载入 jquery.history 模块
 import 'jquery.cookie';                         # 载入 jquery.cookie 模块，用於提示使用者更新浏览器版本
+import 'jqWheel';                               # 载入 jquery Wheel 滑鼠滚动
 import  {browserType} from './browser';         # 判断 IE 浏览器版本
 import 'ScrollMagic';                           # ScrollMagic 视窗卷动互动插件
 import 'animation';                             # 辅助 ScrollMagic 视窗卷动互动插件。用于动画呈现
