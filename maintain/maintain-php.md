@@ -20,7 +20,6 @@
 > 文档路径：`/resources/views/layouts/master.blade.php`
 
 ```php
-
 <!DOCTYPE html>
 <html lang="cmn-Hans">
 <head>
@@ -102,7 +101,6 @@
 > 文档路径：/resources/views/front/careers.blade.php
 
 ``` php
-
 // 继承 master.blade.php 母页面
 @extends('layouts.master')
 
@@ -160,7 +158,6 @@
 > 文档路径：`/resources/views/layouts/meta.blade.php`
 
 ```php
-
 // 在 if 判断是后面追加上新页面名称与相关 meta 讯息
 
 else if($job=="your-new-page-name"){

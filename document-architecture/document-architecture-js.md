@@ -7,7 +7,6 @@
 > 转译后路径: `/pubic/js`
 
 ```markdown
-
 js                                        
 ├ base.js                                   # 侦测各种状态的 JS 代码
 ├ browser.js                                # 判断浏览器类型的 JS 代码
@@ -50,7 +49,6 @@ js
 > 文档路径: `/src/lib`
 
 ```markdown
-
 lib
 ├ owlcarousel                               # JavaScript 轮拨套件
 ├ slick                                     # JavaScript 轮拨套件

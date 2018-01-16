@@ -89,7 +89,6 @@ Laravel 是一套富有表达性且具有简洁语法的网页应用程式框架
 > 文档路径：`/etc/httpd/conf/httpd.conf`
 
 ```
-
 ServerName test.myproject.com
 DocumentRoot /var/www/laravel/publicAllowOverride All
 

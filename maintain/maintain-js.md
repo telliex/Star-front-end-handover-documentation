@@ -14,7 +14,6 @@
 ### export
 
 ```
-
 var firstName = 'Michael';
 function multiply(x, y) {
     return x * y;
@@ -28,7 +27,6 @@ export { firstName, multiply, year };
 ### import
 
 ```
-
 import { firstName, multiply, year } from './profile';
 
 ```
@@ -106,7 +104,6 @@ import { globalPartical } from './partical';    # 主副选单定位功能、GoT
 
 
 ```
-
 import '../lib/owlcarousel/assets/owl.carousel.min.css';           # 载入 owl carousel 模块 CSS 样式
 import '../lib/owlcarousel/assets/owl.theme.default.min.css';      # owl carousel 模块 CSS 样式
 import '../lib/owlcarousel/assets/animate.css';                    # owl carousel 模块 animate CSS 样式
@@ -119,7 +116,6 @@ import 'debug.addIndicators';                                      # 辅助 Scro
 import 'TweenMax';                                                 # 辅助 ScrollMagic 视窗卷动互动插件。
 import 'TimelineMax';                                              # 辅助 ScrollMagic 视窗卷动互动插件。
 import * as share from './share.es6';                              # 载入 Ajax 模块
-
 
 ```
 

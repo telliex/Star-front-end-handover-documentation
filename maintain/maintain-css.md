@@ -25,7 +25,6 @@
 > 以 `global.scss` 文档为例
 
 ```css
-
 // 样式框架、各浏览器样式重置 (使用 compass 预设版本)
 @import "compass";
 @import "compass/reset";
@@ -117,7 +116,6 @@
 > 文档路径: `/src/sass/base/variables.scss`
 
 ```css
-
 // 字型设定 Font Setting
 $base-font-family                  : "Hiragino Sans GB","Microsoft YaHei","WenQuanYi Micro Hei",sans-serif;
 $base-highlight-font-family        : "Times New Roman";
@@ -216,7 +214,6 @@ $tablet-width                      : 768px;
 > 文档路径: `/src/sass/generic/common.scss`
 
 ```css
-
 // 全站容器宽度 container width 94vw
 
 %container-width{
@@ -345,7 +342,6 @@ $tablet-width                      : 768px;
 > 文档路径: /src/sass/generic/extend.scss
 
 ```css
-
 //清除浮動
 
 %clearfix{    
@@ -423,7 +419,6 @@ $tablet-width                      : 768px;
 > 文档路径: `/src/sass/generic/maxin.scss`
 
 ```css
-
 @mixin add-content($width:100%,$height:auto){ 
     @extend %add-content;
     width:$width;
@@ -516,7 +511,6 @@ $tablet-width                      : 768px;
 > 文档路径: `/src/modules/_module-news-list.scss`
 
 ``` css
-
 @mixin newslist($series:list){
 	&-list{
 		@extend %clearfix-both;
@@ -548,7 +542,6 @@ $tablet-width                      : 768px;
 > 文档路径: `/src/modules/_module-prod-list.scss`
 
 ``` css
-
 @mixin prodlist($status:no-series,$series:list){
 	&-list{
 		@extend %container-width;
@@ -588,7 +581,6 @@ $tablet-width                      : 768px;
 > 文档路径: `/src/modules/_module-recipe-list.scss`
 
 ``` css
-
 @mixin recipelist($gridnum:4,$style:basic){
 	&-list{
 		@extend %container-width; 
@@ -619,7 +611,6 @@ $tablet-width                      : 768px;
 > 文档路径: `/src/modules/_module-topic-info.scss`
 
 ``` css
-
 @mixin topic-info($list-line:off){
 	&-list, &-box{
 		background: $base-bgcolor-lighten;
@@ -643,7 +634,6 @@ $tablet-width                      : 768px;
 **Step 2.** 将该页面的 scss 档案 import 到 `global.scss` 主样式
 
 ```css
-
 // 页面样式
 …
 @import "layout/brand-prod-detail";

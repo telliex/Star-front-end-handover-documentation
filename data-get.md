@@ -11,7 +11,6 @@
 ### 使用方法
 
 ```
-
    let tempvals = Array(page, dutyid);
    let result; // 结果
    let tempitem = share.ajaxarr("dutynews", tempvals, "/ajax");

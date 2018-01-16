@@ -17,7 +17,6 @@
 > 转译后路径: `/pubic/css`
 
 ```markdown
-
 sass
 ├ base                                      # 基础样式设定资料夹
 │ ├ _base-style-setting.scss                # 全站 reset css 设定   

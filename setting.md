@@ -88,7 +88,6 @@ install 指令会参照 `package.json` 罗列的配置，进行安装所需的 p
 ##### Mac OS - MAMP
 
 ```
-
 APP_ENV=local
 APP_KEY=base64:C4s5VyTWCyzuZkwgUuh7NUqWNdYmWGj7pnxaxPVj4s4=
 APP_DEBUG=true
@@ -128,7 +127,6 @@ PUSHER_SECRET=
 ##### Windows - XAMPP
 
 ```
-
 APP_ENV=local
 APP_KEY=base64:C4s5VyTWCyzuZkwgUuh7NUqWNdYmWGj7pnxaxPVj4s4=
 APP_DEBUG=true
@@ -218,7 +216,6 @@ Laravel 框架的所有設定都存放於 config 目錄中，env() 中第一個�
 > 文档路径：/package.json
 
 ```
-
 {
     "private": true,
     "scripts": {

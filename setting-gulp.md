@@ -21,7 +21,6 @@ Gulp.js 是一个自动化构建工具，开发者可以使用它在项目开发
 > $ npm install --save-dev gulp
 4. 根目录下创建一个名为 gulpfile.js 的文件。
 ```
-
 gulp.task('default', function() {  // 'default' 默认任务名，运行命令时可省略，直接 `gulp` 即可，运行其他任务需要 `gulp taskname`
     // place code for your default task here
 });
@@ -76,7 +75,6 @@ gulp.task('default', function() {  // 'default' 默认任务名，运行命令�
 > 文档路径：`/gulpfile.js`
 
 ```
-
 //gulpfile.js
 
 var gulp = require('gulp');

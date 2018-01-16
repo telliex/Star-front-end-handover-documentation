@@ -28,7 +28,6 @@ Laravel 框架里，网页呈现的部份我们称为 view \(可以设想为 MVC
 > 文档路径: `/resources/views/front`
 
 ```
-
 Front
 ├ face.blade.php                            # 首页
 ├ brandgroup.blade.php                      # 品牌家族
@@ -76,7 +75,6 @@ Front
 > 文档路径: `/resources/views/layouts`
 
 ```
-
 layouts
 ├ master.blade.php                          # Template 主框架
 ├ meta.blade.php                            # Meta 区块内容
