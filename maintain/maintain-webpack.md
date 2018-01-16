@@ -43,7 +43,7 @@ entry: {
 需添加，编译时才能正确将 ES6 编译。
 <br/>
 
-## 新增网页引用 JS module
+## 新增网页引用 JS Module
 ---
 
 JS 内若要引用其他函数库或是插件，需依照 [ES6 module](http://es6.ruanyifeng.com/#docs/module) 的 **import** 方式引入；若出现已引入，但名称无法在 JS module 系統內被识别，可添加以下内容进进行设置。
