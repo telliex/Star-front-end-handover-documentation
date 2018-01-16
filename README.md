@@ -36,7 +36,7 @@
 - Nginx: 1.10.2
 - Laravel: 5.4
 
-> 云端测试服务器安装方式可参考：[**1.3.1 Laravel 开发环境设置**](/setting-laravel.md)
+> 云端测试服务器安装方式可参考：[**1.3.1 开发环境配置 - Laravel 开发环境设置**](/setting-laravel.md)
 
 
 #### 安装应用程序

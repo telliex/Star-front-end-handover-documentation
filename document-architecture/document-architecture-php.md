@@ -88,4 +88,4 @@ layouts
 └ footer.blade.php                          # Footer 区块
 ```
 
-`master.blade.php`详细说明见 [1.5.3 新增与運維 - PHP](/maintain/maintain-php.md)
+`master.blade.php`详细说明见 [1.5.3 新增与运维 - PHP](/maintain/maintain-php.md)
