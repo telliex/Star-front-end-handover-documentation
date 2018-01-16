@@ -143,6 +143,7 @@ module.exports = {
             "carousel$": js_dir + "/owlcarousel/owl.carousel.js",
             "jqRotate$": js_dir + "/jQueryRotate.js",
             "jqMobile$": js_dir + "/jquery.mobile.min.js",
+            "jqWheel$": node_modules_dir + '/jquery-mousewheel/jquery.mousewheel.js',
             "TweenLite$": node_modules_dir + '/gsap/src/uncompressed/TweenLite.js',
             "TweenMax$": node_modules_dir + '/gsap/src/uncompressed/TweenMax.js',
             "TimelineLite$": node_modules_dir + '/gsap/src/uncompressed/TimelineLite.js',
