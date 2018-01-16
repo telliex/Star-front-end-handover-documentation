@@ -93,7 +93,7 @@
 // 套件样式
 @import "vendor/fontello";
 ```
-详细档案说明请参考：[1.4.1 文档架构说明 - CSS 样式文档架构](/document-architecture/document-architecture-css.md)
+* 详细档案说明请参考：[1.4.1 文档架构说明 - CSS 样式文档架构](/document-architecture/document-architecture-css.md)
 <br/>
 
 ### base 内文档的运用
@@ -613,6 +613,10 @@ $tablet-width                      : 768px;
 …
 }
 ```
+<br/>
+
+
+
 ## 新增与修改
 
 **Step 1.** 新增专属于该页面的 scss 档案至 `/src/sass/layouts` 
