@@ -6,13 +6,17 @@
 包含 `master.blade.php`(主要的 template 架构)、`meta.blade.php`（网页 meta 资讯部分）、`header.blade.php`（网页 header 主副选单部分）、`footer.blade.php`（网页 footer 连结）,`keyvisual.blade.php`、`keyVisualCraftSlider.blade.php`、`keyVisualNewsSlider.blade.php`（banner key vision 轮播）
 - `/resources/views/front` 放置各子网页
 
+
+详细档案说明请参考：[1.4.3 文档架构说明 - PHP 前端文档架构](/document-architecture/document-architecture-php.md)
+
+
 ## Template
 ---
 
-以下可以由两个 .blade.php 档说明 laravel 里 template 的用法
+以下可以由两个 .blade.php 档说明 Laravel 里 Template 的用法
 
 > 表示引用母页面
-> 文档路径：/resources/views/layouts/master.blade.php
+> 文档路径：`/resources/views/layouts/master.blade.php`
 
 ```php
 <!DOCTYPE html>
@@ -141,13 +145,13 @@
 
 #### 全站 template
 
-新增或修改全站通用的线上 CDN url
-> 文档路径：/resources/views/layouts/master.blade.php
+新增或修改全站通用的线上 CDN URL
+> 文档路径：`/resources/views/layouts/master.blade.php`
 
 #### Meta
 
-新增或修改页面 meta 资讯
-> 文档路径：/resources/views/layouts/meta.blade.php
+新增或修改页面 Meta 资讯
+> 文档路径：`/resources/views/layouts/meta.blade.php`
 
 ```php
 // 在 if 判断是后面追加上新页面名称与相关 meta 讯息
@@ -163,18 +167,18 @@ else if($job=="your-new-page-name"){
 
 #### Header
 
-修改或新增 header 区块上次选单顺序与名称连结
-> 文档路径：/resources/views/layouts/header.blade.php
+修改或新增 Header 区块上次选单顺序与名称连结
+> 文档路径：`/resources/views/layouts/header.blade.php`
 
 #### Footer
 
-修改或新增 footer 区块上连结与名称
-> 文档路径：/resources/views/layouts/footer.blade.php
-
+修改或新增 Footer 区块上连结与名称
+> 文档路径：`/resources/views/layouts/footer.blade.php`
+<br/>
 ## 技术文件参考资料
 ---
 
-- [meta 资讯](/file/meta-setting.xlsx)
+- [Meta 资讯](/file/meta-setting.xlsx)
 - [API 规划](/file/star-api-setting.xlsx)
 
 

@@ -3,6 +3,9 @@
 ## 为什么使用 ES6 
 ---
 ES6 模块是**编译时加载**，效率要比 CommonJS 模块的**运行时加载**方式高。将来服务器和浏览器都会支持 ES6 模块格式。
+<br/>
+
+
 
 ## ES6 语法
 ---
@@ -25,6 +28,9 @@ export { firstName, multiply, year };
 ```
 import { firstName, multiply, year } from './profile';
 ```
+<br/>
+
+
 
 ## ES6 使用
 ---
@@ -33,15 +39,15 @@ import { firstName, multiply, year } from './profile';
 
 ### 通用 JS
 
-> 文档路径：/src/js/global.js
+> 文档路径：`/src/js/global.js`
 > 属性：各页面通用
 > 功能：如下方注解
 > 载入的模块：
-> /src/js/base.js.js
-> /src/js/browser.js
-> /src/js/generic.js
-> /src/js/maxin.js
-> /src/js/partical.js
+> `/src/js/base.js.js`
+> `/src/js/browser.js`
+> `/src/js/generic.js`
+> `/src/js/maxin.js`
+> `/src/js/partical.js`
 
 ```
 import 'jquery';                          // 载入 jQuery 模块
@@ -60,37 +66,38 @@ import { globalPartical } from './partical';  // 主副选单定位功能、GoTo
 
 ```
 
-**Owl Carousel**、**Slick**及**ScrollMagic**的使用请见下方参考资料。
+**Owl Carousel**、**Slick** 及 **ScrollMagic** 的使用请见下方参考资料。
 
 
 ### 各页面 JS
 
-> 文档路径：
-> /src/js/global.es6                              # 各页面通用
-> /src/js/lyt-about-csv.es6                       # 社会责任  
-> /src/js/lyt-about-business.es6                  # 欣和正在做
-> /src/js/lyt-about-focus.es6                     # 欣和关注
-> /src/js/lyt-about-history.es6                   # 欣和历史
-> /src/js/lyt-about-crafts.es6                    # 生产工艺
-> /src/js/lyt-about.es6                           # 关于欣和
-> /src/js/lyt-brand-attitude.es6                  # 饮食态度  
-> /src/js/lyt-brand-group.es6                     # 品牌家族
-> /src/js/lyt-brand-index.es6                     # 品牌页   
-> /src/js/lyt-brand-news-list.es6                 # 品牌新闻
-> /src/js/lyt-brand-prod-detail.es6               # 产品详情
-> /src/js/lyt-brand-prod-list.es6                 # 产品列表    
-> /src/js/lyt-brand-prod-print.es6                # 产品列印
-> /src/js/lyt-brand-recipe-detail.es6             # 菜谱详情   
-> /src/js/lyt-brand-recipe-list.es6               # 菜谱列表 
-> /src/js/lyt-brand-topic.es6                     # 饮食态度详情
-> /src/js/lyt-careers-camp-recruiting-list.es6    # 校园招聘搜寻列表
-> /src/js/lyt-careers-recruiting-list.es6         # 社会招聘搜寻列表
-> /src/js/lyt-careers.es6                         # 欣和招聘  
-> /src/js/lyt-itinerary.es6                       # 校园招聘宣讲会
-> /src/js/lyt-news-detail.es6                     # 新闻动态详情
-> /src/js/lyt-news-list.es6                       # 新闻动态列表
-> /src/js/lyt-recipedetail.es6                    # 菜谱详情
 > 功能：各页面内效果
+> 文档路径：
+> `/src/js/global.es6`                             
+> `/src/js/lyt-about-csv.es6`                     
+> `/src/js/lyt-about-business.es6`               
+> `/src/js/lyt-about-focus.es6`                  
+> `/src/js/lyt-about-history.es6`                 
+> `/src/js/lyt-about-crafts.es6`                 
+> `/src/js/lyt-about.es6`                         
+> `/src/js/lyt-brand-attitude.es6`                
+> `/src/js/lyt-brand-group.es6`                    
+> `/src/js/lyt-brand-index.es6`                      
+> `/src/js/lyt-brand-news-list.es6`                 
+> `/src/js/lyt-brand-prod-detail.es6`              
+> `/src/js/lyt-brand-prod-list.es6`                 
+> `/src/js/lyt-brand-prod-print.es6`              
+> `/src/js/lyt-brand-recipe-detail.es6`               
+> `/src/js/lyt-brand-recipe-list.es6`              
+> `/src/js/lyt-brand-topic.es6`                    
+> `/src/js/lyt-careers-camp-recruiting-list.es6`   
+> `/src/js/lyt-careers-recruiting-list.es6`         
+> `/src/js/lyt-careers.es6`                           
+> `/src/js/lyt-itinerary.es6`                       
+> `/src/js/lyt-news-detail.es6`                     
+> `/src/js/lyt-news-list.es6`                       
+> `/src/js/lyt-recipedetail.es6`                    
+
 
 ```
 import '../lib/owlcarousel/assets/owl.carousel.min.css';   // 载入 owl carousel 模块 CSS 样式
@@ -108,8 +115,10 @@ import 'TimelineMax';                     // 辅助 ScrollMagic 视窗卷动互�
 import * as share from './share.es6';   // 载入 Ajax 模块
 
 ```
-Owl Carousel、Slick及ScrollMagic的使用请见下方参考资料。
+* 详细档案说明请参考：[1.4.2 文档架构说明 - Javascript 代码文档架构](/document-architecture/document-architecture-js.md)
 
+Owl Carousel、Slick 及 ScrollMagic 的使用请见下方参考资料。
+<br/>
 
 ## 技术文件参考资料
 ---
