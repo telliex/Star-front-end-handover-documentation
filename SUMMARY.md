@@ -18,5 +18,6 @@
 * [远端资料串接](data-get.md)
 * [发布网站](publish.md)
 * [效能优化](optimize.md)
-* [持续集成](19-chi-xu-ji-cheng.md)
+* [持续集成](jenkins.md)
+  * [jenkins credentials & git ssh 认证](jenkins-ssh.md)
 
