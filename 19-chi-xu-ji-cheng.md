@@ -39,10 +39,44 @@ $ yum install jenkins #安装jenkins
 yum update jenkins
 ```
 
+5. 启动服务
+```
+service jenkins start
+```
+
+6. 浏览器访问
+```
+IP地址:8080
+```
+
+更多安装过程细节：[传送门](https://segmentfault.com/a/1190000007086764)
+
+7. 卸载jenkins
+使用过程中若出现问题，删了重装是最快的方法
+    1. rpm -e jenkins
+    2. 会有一些残留的文件分散在各地
+    ```
+    find / -iname jenkins | xargs -n 1000 rm -rf
+    ```
+
+
+
+
 ### Jenkins 配置
 
 #### 系统配置文件
 > cat /etc/sysconfig/jenkins | more
 
-* `JENKINS_HOME="/var/lib/jenkins"` ,存放jenkins 配置及工作文件
-* `JENKINS_PORT="8080"`,jenkins默认8080端口
+* `JENKINS_HOME="/var/lib/jenkins"` ,存放 Jenkins 配置及工作文件
+* `JENKINS_PORT="8080"`,Jenkins 默认 8080 端口
+
+#### 配置文件夹
+> ls /var/lib/jenkins
+
+plugins 文件夹，所有插件都在里面，如插件 ssh-slaves ,会有一个 ssh-slaves 文件夹及 ssh-slaves.jpi。
+当某个插件未安装成功时，会有一个以 .tmp 结尾的文件
+
+#### 日志
+> /var/log/jenkins/jenkins.log
+
+记录了插件安装等日志，失败信息原因等很清晰，重要
