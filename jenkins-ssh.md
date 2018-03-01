@@ -11,7 +11,6 @@
 
 作法： jenkins 上设置 Credentials，然后再新建job的时候使用设置的 Credentials 即可
 
-
 1. 在jenkins界面，依次点击： Credentials -> System -> Add domain： 
 2. Domain Name: 填写你git服务器的地址，如 github.xxx.com 
 3. Description: 随便写一点描述，如 This is the Credential for github
