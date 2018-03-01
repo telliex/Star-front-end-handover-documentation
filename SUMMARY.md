@@ -20,6 +20,6 @@
 * [效能优化](optimize.md)
 * [持续集成](jenkins.md)
   * [jenkins credentials & git ssh 认证](jenkins-ssh.md)
+  * [unit test](unit-test.md)
   * [jenkins reference](jenkins-reference.md)
-  * unit test
 
