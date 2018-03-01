@@ -1,4 +1,13 @@
-### 建立 Jenkins 与 github 通道
+# 建立 Jenkins 与 github 通道
+
+## 创建SSH证书
+
+* 终端执行：`ssh-keygen -t rsa -C "xxx@xxx.com"`(邮箱)
+* 按回车保存到默认位置，再稍等出来提示输入 passphrase 密码短语，输完按回车要输两遍（它是用来加密私钥，也就是以后使用私钥的时候要输这个密码，或者直接置空）
+* 创建成功的SSH 默认路径为 ~/.ssh 目录
+* id_rsa 文件存储密钥 ，id_rsa.pub存储公钥
+
+## 添加SSH证书
 
 作法： jenkins 上设置 Credentials，然后再新建job的时候使用设置的 Credentials 即可
 
@@ -21,7 +30,7 @@
 
 
 
-### github配置
+## github 配置
 
 系统管理 >> 系统设置 >> GitHub Plugin Configuration
 
@@ -37,7 +46,7 @@
 
 4. 点击Verify credentials测试token，显示Credentials verified for user xxx, rate limit: xxxx，说明配置完成了，这样你的Jenkins就具有访问你的github的权限了。
 
-### GitHub webhooks 设置
+## GitHub webhooks 设置
 
 1. 进入GitHub上指定的项目 --> setting --> WebHooks&Services --> add webhook --> 输入刚刚部署jenkins的服务器的IP
 ![](/images/jenkin04.png)
