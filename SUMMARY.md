@@ -20,5 +20,5 @@
 * [效能优化](optimize.md)
 * [持续集成](jenkins.md)
   * [jenkins credentials & git ssh 认证](jenkins-ssh.md)
-  * jenkins reference
+  * [jenkins reference](jenkins-reference.md)
 
