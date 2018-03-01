@@ -37,16 +37,19 @@
    ![](/images/jenkin02.png)
 3. 勾选后，点击Generate token创建一个token。复制这个token。
    ![](/images/jenkin05.png)
+   
    自己先保存此token，如果丢失，之后再也无法找到这个token。
 4. 回到Jenkins点击Add按钮。贴上 token 。
+
    ![](/images/jenkin03.png)
 5. 点击Verify credentials测试token，显示Credentials verified for user xxx, rate limit: xxxx，说明配置完成了，这样你的Jenkins就具有访问你的github的权限了。
-6.  
+6. 系统管理 --> 系统设置 --> GitHub --> Add GitHub Sever
+   ![](/images/jenkin06.png)
+
 ## GitHub webhooks 设置
 
 1. 进入GitHub上指定的项目 --> setting --> WebHooks&Services --> add webhook --> 输入刚刚部署jenkins的服务器的IP
 ![](/images/jenkin04.png)
 
-
-
+## mail 通知寄送
 [通知信寄送设定](https://medium.com/@kuanweilin/%E8%87%AA%E5%8B%95%E5%8C%96%E5%B7%A5%E7%A8%8B%E5%B8%AB%E4%B9%8B%E8%B7%AF-jenkins%E7%9A%84%E8%A8%AD%E5%AE%9A%E8%88%87%E5%AF%A6%E4%BD%9C-9708fe664d08)
