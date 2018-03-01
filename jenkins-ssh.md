@@ -38,10 +38,12 @@
 
 ![](/images/jenkin02.png)
 2. 勾选后，点击Generate token创建一个token。复制这个token。
+![](/images/jenkin05.png)
+自己先保存此token，如果丢失，之后再也无法找到这个token。
 
 3. 回到Jenkins点击Add按钮。贴上 token 。
 ![](/images/jenkin03.png)
-![](/images/jenkin05.png)
+
 
 4. 点击Verify credentials测试token，显示Credentials verified for user xxx, rate limit: xxxx，说明配置完成了，这样你的Jenkins就具有访问你的github的权限了。
 
