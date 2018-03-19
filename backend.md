@@ -41,10 +41,9 @@ app
 ```markdown
 resources
  ├ views
- │  ├ adm          # 后台档案
- │  ├ front        # 前台档案
- │  ├ layouts      # 框架档案
- │  └ errors       # 错误档案
- │  
+ │  ├ adm                 # 后台档案 
+ │  ├ front               # 前台档案  
+ │  ├ layouts             # 框架档案
+ │  └ errors              # 错误档案 
 ```
 
