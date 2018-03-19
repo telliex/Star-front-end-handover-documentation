@@ -19,12 +19,13 @@
 主控檔案
 
 ```markdown
-app
-/Http/Controllers/
-├ font.php                                  # 前台檔案
-├ ajax.php                                  # 前台ajax
-├ adm.php                                   # 後台檔案
-└ admajax.php                               # 後台ajax
+app 
+├ Http
+│  ├ Controllers
+│  │  ├ font.php          # 前台檔案
+│  │  ├ ajax.php          # 前台ajax
+│  │  ├ adm.php           # 後台檔案
+│  │  └ admajax.php       # 後台ajax
 ```
 
 
