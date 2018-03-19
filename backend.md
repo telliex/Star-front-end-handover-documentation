@@ -3,25 +3,17 @@
 
 確認 mysql 之使用者須有新增/更新/寫入資料表之權限
 
+## 環境設定
 
-
-環境設定
+### 数据库
+* 修改数据库设定 `/config/database.php` 
+* 請開啟資料夾 `/public/img/` 寫入權限
 
 数据库栏位 [DB](file/shinho_db.xlsx)
 
-.env
 
-(或直接修改 /config/database.php)
-
-資料夾設定
-
-/public/img/ 請開啟寫入權限
-
-
-
-Routing 設定
-
-/routes/web.php
+## Routing 設定
+> 文档路径：/routes/web.php
 
 
 主控檔案

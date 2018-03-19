@@ -29,6 +29,8 @@
 
 ![](/images/compressor.png)
 
+
+
 ### 注意事項
 
 1. 请设计提供**无压缩品质的图片**
@@ -39,6 +41,11 @@
 | JPG | 优先选用 Lossless 模式；比对 Lossless 模式与 Lossy 模式的档案大小，若差异很大，且图片品质在设计可接受的范围，选用相对应压缩模式。 |
 | PNG | 优先选用 Lossless 模式；比对 Lossless 模式与 Lossy 模式的档案大小，若差异很大，且图片品质在设计可接受的范围，选用相对应压缩模式。 |
 | SVG | Lossy 失真模式 |
+
+
+> 線上工具連結：[https://tinypng.com/)
+![](/images/tinypng.png)
+
 
 <br/>
 
