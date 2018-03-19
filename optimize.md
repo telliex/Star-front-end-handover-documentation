@@ -43,9 +43,12 @@
 | SVG | Lossy 失真模式 |
 
 
-> 線上工具連結：[https://tinypng.com/)
+> 备用線上工具連結：[https://tinypng.com/)
 ![](/images/tinypng.png)
 
+### 注意事項
+
+1.将欲压缩档案拖曳至网页画面中
 
 <br/>
 
