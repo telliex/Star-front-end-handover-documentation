@@ -18,6 +18,17 @@
 
 主控檔案
 
+```markdown
+app
+/Http/Controllers/
+├ font.php                                  # 前台檔案
+├ ajax.php                                  # 前台ajax
+├ adm.php                                   # 後台檔案
+└ admajax.php                               # 後台ajax
+```
+
+
+
 /app/Http/Controllers/
 
 -前台檔案 font.php
@@ -58,8 +69,3 @@
 
 -錯誤檔案 /errors
 
-
-
-靜態檔案所在位置
-
-/public
