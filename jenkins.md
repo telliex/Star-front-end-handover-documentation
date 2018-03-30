@@ -16,7 +16,7 @@ Jenkins 可自由部署在各平台：Windows， Linux， Mac
 
 3. 安装 [Jenkins](https://jenkins.io/index.html)
 
-4. 启动Jenkins，打开浏览器，进入网页 localhost:8080
+4. 启动 Jenkins，打开浏览器，进入网页 localhost:8080
 
 ```
 //command line 
