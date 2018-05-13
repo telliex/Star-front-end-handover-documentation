@@ -134,6 +134,25 @@ plugins 文件夹，所有插件都在里面，如插件 ssh-slaves ,会有一�
 6. 用之前备份的 config.xml.bak 文件覆盖 config.xml 配置文件。
 7. 再次重启 Jenkins，终于发现管理员又可以正常登录了。
 
+### Jenkins 使用root权限执行脚本
+1. 将jenkins账号分别加入到root组中
+```
+gpasswd -a root jenkins
+```
+
+2. 修改/etc/sysconfig/jenkins文件中，
+```
+# user id to be invoked as (otherwise will run as root; not wise!)
+JENKINS_USER=root
+JENKINS_GROUP=root
+```
+
+可以修改为root权限运行
+
+3.重启Jenkins
+```
+service jenkins restart
+```
 
 
 
