@@ -19,6 +19,50 @@ Laravel 框架里，网页呈现的部份我们称为 view \(可以设想为 MVC
 
 <br/>
 
+## en 资料夹
+
+---
+
+> 主为构成网站英文版各页面主要内容  
+> 文档路径: `/resources/views/en/front`
+
+```
+en
+└ Front
+  ├ face.blade.php                            # [英文版]首页
+  ├ brandgroup.blade.php                      # [英文版]品牌家族
+  ├ brand.blade.php                           # [英文版][品牌家族]品牌页
+  ├ attitude.blade.php                        # [英文版][品牌家族]饮食态度
+  ├ topic.blade.php                           # [英文版][品牌家族]饮食态度主题文章    
+  ├ recipelist.blade.php                      # [英文版][品牌家族]菜谱列表
+  ├ recipedetail.blade.php                    # [英文版][品牌家族]菜谱详情            
+  ├ prodlist.blade.php                        # [英文版][品牌家族]产品列表
+  ├ proddetail.blade.php                      # [英文版][品牌家族]产品详情
+  ├ shinhoprod.blade.php                      # [英文版][品牌家族]产品 PDF Download
+  ├ shinhoprodprint.blade.php                 # [英文版][品牌家族]产品列印
+  ├ brandnewslist.blade.php                   # [英文版][品牌家族]品牌动态列表
+  ├ careers.blade.php                         # [英文版]加入欣和
+  ├ recruiting.blade.php                      # [英文版][加入欣和]社会招聘
+  ├ recruitingdetail.blade.php                # [英文版][加入欣和]社会招聘 - 岗位详情
+  ├ campusrecruiting.blade.php                # [英文版][加入欣和]校园招聘
+  ├ campusrecruitingdetail.blade.php          # [英文版][加入欣和]校园招聘 - 岗位详情
+  ├ campusitinerary.blade.php                 # [英文版][加入欣和]校园招聘 - 宣讲会
+  ├ campusprocess.blade.php                   # [英文版][加入欣和]校园招聘 - 招聘流程
+  ├ about.blade.php                           # [英文版]关于欣和
+  ├ csv.blade.php                             # [英文版][关于欣和]社会责任
+  ├ history.blade.php                         # [英文版][关于欣和]欣和历史
+  ├ business.blade.php                        # [英文版][关于欣和]欣和正在做
+  ├ focus.blade.php                           # [英文版][关于欣和]欣和关注
+  ├ crafts.blade.php                          # [英文版][关于欣和]生产工艺
+  ├ miso.blade.php                            # [英文版][关于欣和]味噌生产工艺
+  ├ beanpaste.blade.php                       # [英文版][关于欣和]原酿酱生产工艺
+  ├ soysauce.blade.php                        # [英文版][关于欣和]酱油生产工艺
+  ├ vinegar.blade.php                         # [英文版][关于欣和]苹果醋生产工艺 
+  ├ spicypeanuts.blade.php                    # [英文版][关于欣和]麻辣花生生产工艺
+  ├ newslist.blade.php                        # [英文版]欣和动态
+  ├ newsdetail.blade.php                      # [英文版][欣和动态]动态详情
+  └ contactxinhe.blade.php                    # [英文版]关于欣和
+```
 
 ## Front 资料夹
 
