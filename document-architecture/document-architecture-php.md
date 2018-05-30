@@ -115,7 +115,7 @@ Front
 
 ---
 
-> 主为为构成 Template 的区块  
+> 主为为构成 Template 的区块（中英文版共用） 
 > 文档路径: `/resources/views/layouts`
 
 ```
