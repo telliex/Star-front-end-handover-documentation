@@ -31,34 +31,36 @@ js
 ├ lyt-en-brand-recipe-detail.es6               #[英文版]「品牌菜谱详情」recipedetail.blade.php 的 ES6 代码
 ├ lyt-cn-brand-recipe-list.es6                 #[英文版]「品牌菜谱列表」recipelist.blade.php 的 ES6 代码
 ├ lyt-en-brand-topic.es6                       #[英文版]「品牌主题」topic.blade.php 的 ES6 代码
-├ lyt-en-careers-camp-recruiting-list.es6      #[英文版]「加入欣和校园招聘模版」campusitinerary.blade.php、campusprocess.blade.php、campusrecruiting.blade.php 的 ES6 代码
+├ lyt-en-careers-camp-recruiting-list.es6      #[英文版]「加入欣和校园招聘模版」campusitinerary.blade.php、
+├                                                       campusprocess.blade.php、campusrecruiting.blade.php 的 ES6 代码
 ├ lyt-en-careers-recruiting-detail.es6         #[英文版]「加入欣和招聘详情」recruitingdetail.blade.php、campusrecruitingdetail.blade.php 的 ES6 代码
 ├ lyt-en-careers-recruiting-list.es6           #[英文版]「加入欣和招聘列表」campusrecruiting.blade.php、recruiting.blade.php 的 ES6 代码
 ├ lyt-en-careers.es6                           #[英文版]「加入欣和首页」careers.blade.php 的 ES6 代码
 ├ lyt-en-news-detail.es6                       #[英文版]「欣和动态详情」newsdetail.blade.php 的 ES6 代码
 ├ lyt-en-news-list.es6                         #[英文版]「欣和动态列表」newslist.blade.php 的 ES6 代码
-├ lyt-cn-face.es6                              # 首页 face.blade.php 的 ES6 代码
-├ lyt-cn-about-business.es6                    #「关于欣和我们正在做」business.blade.php 的 ES6 代码
-├ lyt-cn-about-crafts.es6                      #「关于欣和生产工艺」crafts.blade.php 的 ES6 代码
-├ lyt-cn-about-csv.es6                         #「关于欣和社会责任」csv.blade.php 的 ES6 代码
-├ lyt-cn-about-focus.es6                       #「关于欣和欣和关注」focus.blade.php 的 ES6 代码
-├ lyt-cn-about-history.es6                     #「关于欣和欣和历史」history.blade.php 的 ES6 代码
-├ lyt-cn-about.es6                             #「关于欣和首页」about.blade.php 的 ES6 代码
-├ lyt-cn-brand-attitude.es6                    #「品牌饮食态度」attitude.blade.php 的 ES6 代码
-├ lyt-cn-brand-group.es6                       #「品牌家族」brandgroup.blade.php 的 ES6 代码
-├ lyt-cn-brand-index.es6                       #「品牌首页」brand.blade.php 的 ES6 代码
-├ lyt-cn-brand-news-list.es6                   #「品牌动态列表」brandnewslist.blade.php 的 ES6 代码
-├ lyt-cn-brand-prod-detail.es6                 #「品牌产品详情」proddetail.blade.php 的 ES6 代码
-├ lyt-cn-brand-prod-list.es6                   #「品牌产品列表」prodlist.blade.php 的 ES6 代码
-├ lyt-cn-brand-recipe-detail.es6               #「品牌菜谱详情」recipedetail.blade.php 的 ES6 代码
-├ lyt-cn-brand-recipe-list.es6                 #「品牌菜谱列表」recipelist.blade.php 的 ES6 代码
-├ lyt-cn-brand-topic.es6                       #「品牌主题」topic.blade.php 的 ES6 代码
-├ lyt-cn-careers-camp-recruiting-list.es6      #「加入欣和校园招聘模版」campusitinerary.blade.php、campusprocess.blade.php、campusrecruiting.blade.php 的 ES6 代码
-├ lyt-cn-careers-recruiting-detail.es6         #「加入欣和招聘详情」recruitingdetail.blade.php、campusrecruitingdetail.blade.php 的 ES6 代码
-├ lyt-cn-careers-recruiting-list.es6           #「加入欣和招聘列表」campusrecruiting.blade.php、recruiting.blade.php 的 ES6 代码
-├ lyt-cn-careers.es6                           #「加入欣和首页」careers.blade.php 的 ES6 代码
-├ lyt-cn-news-detail.es6                       #「欣和动态详情」newsdetail.blade.php 的 ES6 代码
-├ lyt-cn-news-list.es6                         #「欣和动态列表」newslist.blade.php 的 ES6 代码
+├ lyt-cn-face.es6                              #[中文版]首页 face.blade.php 的 ES6 代码
+├ lyt-cn-about-business.es6                    #[中文版]「关于欣和我们正在做」business.blade.php 的 ES6 代码
+├ lyt-cn-about-crafts.es6                      #[中文版]「关于欣和生产工艺」crafts.blade.php 的 ES6 代码
+├ lyt-cn-about-csv.es6                         #[中文版]「关于欣和社会责任」csv.blade.php 的 ES6 代码
+├ lyt-cn-about-focus.es6                       #[中文版]「关于欣和欣和关注」focus.blade.php 的 ES6 代码
+├ lyt-cn-about-history.es6                     #[中文版]「关于欣和欣和历史」history.blade.php 的 ES6 代码
+├ lyt-cn-about.es6                             #[中文版]「关于欣和首页」about.blade.php 的 ES6 代码
+├ lyt-cn-brand-attitude.es6                    #[中文版]「品牌饮食态度」attitude.blade.php 的 ES6 代码
+├ lyt-cn-brand-group.es6                       #[中文版]「品牌家族」brandgroup.blade.php 的 ES6 代码
+├ lyt-cn-brand-index.es6                       #[中文版]「品牌首页」brand.blade.php 的 ES6 代码
+├ lyt-cn-brand-news-list.es6                   #[中文版]「品牌动态列表」brandnewslist.blade.php 的 ES6 代码
+├ lyt-cn-brand-prod-detail.es6                 #[中文版]「品牌产品详情」proddetail.blade.php 的 ES6 代码
+├ lyt-cn-brand-prod-list.es6                   #[中文版]「品牌产品列表」prodlist.blade.php 的 ES6 代码
+├ lyt-cn-brand-recipe-detail.es6               #[中文版]「品牌菜谱详情」recipedetail.blade.php 的 ES6 代码
+├ lyt-cn-brand-recipe-list.es6                 #[中文版]「品牌菜谱列表」recipelist.blade.php 的 ES6 代码
+├ lyt-cn-brand-topic.es6                       #[中文版]「品牌主题」topic.blade.php 的 ES6 代码
+├ lyt-cn-careers-camp-recruiting-list.es6      #[中文版]「加入欣和校园招聘模版」campusitinerary.blade.php、
+├                                                       campusprocess.blade.php、campusrecruiting.blade.php 的 ES6 代码
+├ lyt-cn-careers-recruiting-detail.es6         #[中文版]「加入欣和招聘详情」recruitingdetail.blade.php、campusrecruitingdetail.blade.php 的 ES6 代码
+├ lyt-cn-careers-recruiting-list.es6           #[中文版]「加入欣和招聘列表」campusrecruiting.blade.php、recruiting.blade.php 的 ES6 代码
+├ lyt-cn-careers.es6                           #[中文版]「加入欣和首页」careers.blade.php 的 ES6 代码
+├ lyt-cn-news-detail.es6                       #[中文版]「欣和动态详情」newsdetail.blade.php 的 ES6 代码
+├ lyt-cn-news-list.es6                         #[中文版]「欣和动态列表」newslist.blade.php 的 ES6 代码
 └ share.es6                                 # Ajax 动态资料串接档案
 
 ```
