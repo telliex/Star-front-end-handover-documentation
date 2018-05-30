@@ -86,6 +86,8 @@ Resources 资料夹内为 `views`、`lang`、`assets`，分别放了视图档案
 resources
 ├ assets                                # Laravel 框架：预先转译才能使用的资源档案，目前不使用
 ├ lang                                  # Laravel 框架：语系档案，放置中英文页面内容
+│  ├ en                                 # Laravel 框架：语系档案，英文语系内容
+│  └ zh_cn                              # Laravel 框架：语系档案，中文语系内容
 └ views                                 # Laravel 框架：视图档案，存放 Laravel Blade 样板引擎，前台页面都存放在此
 
 ```
