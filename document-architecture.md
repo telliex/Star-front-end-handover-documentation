@@ -54,8 +54,8 @@ app 资料夹下的 `/Helpers` 与 `Http/Controllers`,放置。
 
 ```markdown
 app
-├ Helpers                                 # 数据处理
-│ ├ admgroup.php                          # 后台资料捞取
+├ Helpers                                 # 数据处理相关
+│ ├ admgroup.php                          # 后台资料数据处理
 │ ├ brandgroup_en.php                     # 英文版 品牌相关数据处理
 │ ├ brandgroup.php                        # 中文版 品牌相关数据处理
 │ ├ careergroup_en.php                    # 英文版 招聘相关数据处理
