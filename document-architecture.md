@@ -132,7 +132,7 @@ routes
 ```
 
 说明：
-- `routes/web.php` 中英文版的 router 皆会在此设定
+- `routes/web.php` 中英文版的 router 皆会在此设定。
 
 ## 延伸参考
 ---
