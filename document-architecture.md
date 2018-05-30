@@ -41,6 +41,44 @@
 | webpack.prod.config.js | Webpack 上线前发布设定档 |
 
 <br/>
+
+
+## Public 资料夹文档说明
+---
+
+Public 资料夹为网站根目录指向位置，网站内静态档案及所嵌入的档案均放置于此。
+
+> 文档路径: `/public`
+
+```markdown
+public
+├ robots-develop.txt                    # 禁止搜索引擎爬虫收录测试机的 robots.txt 档案
+├ robots.txt                            # 搜索引擎爬虫收录正式机的 robots.txt 档案
+├ admfile                               # 后台所使用的静态档案均放置于此
+├ capw                                  # 后台登入验证所使用的数字图片
+├ css                                   # 转译后的 CSS 样式表
+│ └ vendor                              # 转译后的套件样式，所需页面再将样式嵌入
+├ font                                  # 自订的 icon font 样式
+├ fontawesome                           # 首页使用的 fontawesome icon font
+├ img                                   # 网站所使用的静态图片
+│ ├ about                               # 选单「关于欣和」所使用的静态图片
+│ ├ brandgroup                          # 选单「品牌家族」所使用的静态图片
+│ ├ careers                             # 选单「加入欣和」所使用的静态图片
+│ ├ contact                             # 选单「联系欣和」所使用的静态图片
+│ ├ error                               # 「错误页面」所使用的静态图片
+│ ├ icon                                # 「全站 icon 图示」所使用的静态图片
+│ └ title                               # 「全站标题」所使用的静态图片
+├ js                                    # 转译后的 JS 档案
+├ pdf                                   # 网站所使用的 PDF 档案
+├ favicon.ico                           # 网站或网页相关联的图标
+├ index.php                             # Laravel 应用程式的进入点，非普遍定义的首页
+├ sitemap.xml                           # 提供给搜索引擎收录页面的档案
+└ web.config                            # 设定 Laravel rewrite rule
+
+```
+<br/>
+
+
 ## Public 资料夹文档说明
 ---
 
