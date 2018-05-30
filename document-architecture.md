@@ -125,9 +125,9 @@ routes 资料夹为 laravel router 设定
 
 ```markdown
 routes
-├ api.php                                    # JavaScript(ES6) 档案
-├ console.php                                   # JavaScript 套件档案
-└ web.php                                   # JavaScript 转换代码前后位置的信息文件
+├ api.php                                   # app 路由，应用 api 中间件组
+├ console.php                               
+└ web.php                                   # 网页路由，应用 web 中间件组
 
 ```
 
