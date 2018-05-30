@@ -73,39 +73,39 @@ en
 
 ```
 Front
-├ face.blade.php                            # 首页
-├ brandgroup.blade.php                      # 品牌家族
-├ brand.blade.php                           # [品牌家族]品牌页
-├ attitude.blade.php                        # [品牌家族]饮食态度
-├ topic.blade.php                           # [品牌家族]饮食态度主题文章    
-├ recipelist.blade.php                      # [品牌家族]菜谱列表
-├ recipedetail.blade.php                    # [品牌家族]菜谱详情            
-├ prodlist.blade.php                        # [品牌家族]产品列表
-├ proddetail.blade.php                      # [品牌家族]产品详情
-├ shinhoprod.blade.php                      # [品牌家族]产品 PDF Download
-├ shinhoprodprint.blade.php                 # [品牌家族]产品列印
-├ brandnewslist.blade.php                   # [品牌家族]品牌动态列表
-├ careers.blade.php                         # 加入欣和
-├ recruiting.blade.php                      # [加入欣和]社会招聘
-├ recruitingdetail.blade.php                # [加入欣和]社会招聘 - 岗位详情
-├ campusrecruiting.blade.php                # [加入欣和]校园招聘
-├ campusrecruitingdetail.blade.php          # [加入欣和]校园招聘 - 岗位详情
-├ campusitinerary.blade.php                 # [加入欣和]校园招聘 - 宣讲会
-├ campusprocess.blade.php                   # [加入欣和]校园招聘 - 招聘流程
-├ about.blade.php                           # 关于欣和
-├ csv.blade.php                             # [关于欣和]社会责任
-├ history.blade.php                         # [关于欣和]欣和历史
-├ business.blade.php                        # [关于欣和]欣和正在做
-├ focus.blade.php                           # [关于欣和]欣和关注
-├ crafts.blade.php                          # [关于欣和]生产工艺
-├ miso.blade.php                            # [关于欣和]味噌生产工艺
-├ beanpaste.blade.php                       # [关于欣和]原酿酱生产工艺
-├ soysauce.blade.php                        # [关于欣和]酱油生产工艺
-├ vinegar.blade.php                         # [关于欣和]苹果醋生产工艺 
-├ spicypeanuts.blade.php                    # [关于欣和]麻辣花生生产工艺
-├ newslist.blade.php                        # 欣和动态
-├ newsdetail.blade.php                      # [欣和动态]动态详情
-└ contactxinhe.blade.php                    # 关于欣和
+├ face.blade.php                            # [中文版]首页
+├ brandgroup.blade.php                      # [中文版]品牌家族
+├ brand.blade.php                           # [中文版][品牌家族]品牌页
+├ attitude.blade.php                        # [中文版][品牌家族]饮食态度
+├ topic.blade.php                           # [中文版][品牌家族]饮食态度主题文章    
+├ recipelist.blade.php                      # [中文版][品牌家族]菜谱列表
+├ recipedetail.blade.php                    # [中文版][品牌家族]菜谱详情            
+├ prodlist.blade.php                        # [中文版][品牌家族]产品列表
+├ proddetail.blade.php                      # [中文版][品牌家族]产品详情
+├ shinhoprod.blade.php                      # [中文版][品牌家族]产品 PDF Download
+├ shinhoprodprint.blade.php                 # [中文版][品牌家族]产品列印
+├ brandnewslist.blade.php                   # [中文版][品牌家族]品牌动态列表
+├ careers.blade.php                         # [中文版]加入欣和
+├ recruiting.blade.php                      # [中文版][加入欣和]社会招聘
+├ recruitingdetail.blade.php                # [中文版][加入欣和]社会招聘 - 岗位详情
+├ campusrecruiting.blade.php                # [中文版][加入欣和]校园招聘
+├ campusrecruitingdetail.blade.php          # [中文版][加入欣和]校园招聘 - 岗位详情
+├ campusitinerary.blade.php                 # [中文版][加入欣和]校园招聘 - 宣讲会
+├ campusprocess.blade.php                   # [中文版][加入欣和]校园招聘 - 招聘流程
+├ about.blade.php                           # [中文版]关于欣和
+├ csv.blade.php                             # [中文版][关于欣和]社会责任
+├ history.blade.php                         # [中文版][关于欣和]欣和历史
+├ business.blade.php                        # [中文版][关于欣和]欣和正在做
+├ focus.blade.php                           # [中文版][关于欣和]欣和关注
+├ crafts.blade.php                          # [中文版][关于欣和]生产工艺
+├ miso.blade.php                            # [中文版][关于欣和]味噌生产工艺
+├ beanpaste.blade.php                       # [中文版][关于欣和]原酿酱生产工艺
+├ soysauce.blade.php                        # [中文版][关于欣和]酱油生产工艺
+├ vinegar.blade.php                         # [中文版][关于欣和]苹果醋生产工艺 
+├ spicypeanuts.blade.php                    # [中文版][关于欣和]麻辣花生生产工艺
+├ newslist.blade.php                        # [中文版]欣和动态
+├ newsdetail.blade.php                      # [中文版][欣和动态]动态详情
+└ contactxinhe.blade.php                    # [中文版]关于欣和
 
 ```
 <br/>
@@ -120,17 +120,17 @@ Front
 
 ```
 layouts
-├ master.blade.php                          # Template 主框架
-├ meta.blade.php                            # Meta 区块内容
-├ header.blade.php                          # Header 主选单子选单区块
-├ keyvisual.blade.php                       # KeyVisual 轮播样式1 （基本款）
-├ keyvisualcraftslider.blade.php            # KeyVisual 轮播样式2 （生产工艺页面使用）
-├ keyvisualnewsslider.blade.php             # KeyVisual 轮播样式3 （新闻页面使用）
-├ functions.blade.php                       # 针对部分功能所写 function 
-│ └ isIE()                                  # IE & HAUWEI 手机 不支援 <picture> 标签 ，吐可支援的 tag
-├ inserttop.blade.php                       # 网页顶部可插入 JS 区块
-├ insertbottom.blade.php                    # 网页底部可插入 JS 区块
-└ footer.blade.php                          # Footer 区块
+├ master.blade.php                          # [中英文版]Template 主框架
+├ meta.blade.php                            # [中英文版]Meta 区块内容
+├ header.blade.php                          # [中英文版]Header 主选单子选单区块
+├ keyvisual.blade.php                       # [中英文版]KeyVisual 轮播样式1 （基本款）
+├ keyvisualcraftslider.blade.php            # [中英文版]KeyVisual 轮播样式2 （生产工艺页面使用）
+├ keyvisualnewsslider.blade.php             # [中英文版]KeyVisual 轮播样式3 （新闻页面使用）
+├ functions.blade.php                       # [中英文版]针对部分功能所写 function 
+│ └ isIE()                                  # [中英文版]IE & HAUWEI 手机 不支援 <picture> 标签 ，吐可支援的 tag
+├ inserttop.blade.php                       # [中英文版]网页顶部可插入 JS 区块
+├ insertbottom.blade.php                    # [中英文版]网页底部可插入 JS 区块
+└ footer.blade.php                          # [中英文版]Footer 区块
 
 ```
 
