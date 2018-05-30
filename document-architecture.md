@@ -95,25 +95,44 @@ resources
 
 
 <br/>
-## Src 资料夹文档说明
+## Resources 资料夹文档说明
 ---
 
-Src 资料夹存放预先转译才能使用的资源档案，例如：SCSS、ES6。无论样式或交互动效，转译前档案都在此。
+Resources 资料夹内为 `views`、`lang`、`assets`，分别放了视图档案、语系档案及预先转译才能使用的资源档案。目前仅使用 views 资料夹存放 Laravel Blade 样板引擎，前台页面都存放在此。
 
-> 文档路径: `/src`
+> 文档路径: `/resources`
 
 ```markdown
-src
-├ js                                    # JavaScript(ES6) 档案
-├ lib                                   # JavaScript 套件档案
-├ map                                   # JavaScript 转换代码前后位置的信息文件
-└ sass                                  # CSS(SCSS) 档案
+resources
+├ assets                                # Laravel 框架：预先转译才能使用的资源档案，目前不使用
+├ lang                                  # Laravel 框架：语系档案，放置多语系内容
+│  ├ en                                 # Laravel 框架：语系档案，英文语系内容
+│  └ zh_cn                              # Laravel 框架：语系档案，中文语系内容
+└ views                                 # Laravel 框架：视图档案，存放 Laravel Blade 样板引擎，前台页面都存放在此
+
+```
+* 若需新增或运维网站内容请参考：[1.5.3 新增与运维 - PHP](/maintain/maintain-php.md) 
+
+
+<br/>
+
+## routes 资料夹文档说明
+---
+
+routes 资料夹为 laravel router 设定
+
+> 文档路径: `/routes`
+
+```markdown
+routes
+├ api.php                                    # JavaScript(ES6) 档案
+├ console.php                                   # JavaScript 套件档案
+└ web.php                                   # JavaScript 转换代码前后位置的信息文件
 
 ```
 
 说明：
-- `/src/js` 内的 es6 档会编译至`/public/js/custom/`
-- `/src/sass` 内的 scss 档会编译至`/public/css/`
+- `routes/web.php` 中英文版的 router 皆会在此设定
 
 ## 延伸参考
 ---
