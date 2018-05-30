@@ -172,35 +172,5 @@ Route::get('about/process/spicypeanuts','front_en@spicypeanuts');
 
 });
 ```
-#### 主控档案
-```markdown
-app 
-├ Http
-│  ├ Controllers
-│  │  ├ font.php          # 前台档案
-│  │  ├ ajax.php          # 前台 ajax
-│  │  ├ adm.php           # 后台档案
-│  │  └ admajax.php       # 后台 ajax
-```
 
-#### 主控档案运用模组
-```markdown
-app
- ├ Helpers
- │  ├ Helper.php          # 共用模组
- │  ├ admgroup.php        # 后台模组
- │  ├ brandgroup.php      # 品牌产品模組
- │  ├ careergroup.php     # 招聘模組
- │  └ newsgroup.php       # 新闻模组
-```
-
-#### 显示档案(view)
-```markdown
-resources
- ├ views
- │  ├ adm                 # 后台档案 
- │  ├ front               # 前台档案  
- │  ├ layouts             # 框架档案
- │  └ errors              # 错误档案 
-```
 
