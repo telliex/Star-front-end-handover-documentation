@@ -16,6 +16,8 @@
 
 ```
 // 中文版
+Route::group(['domain' => 'cn.shinhoglobal.com'], function () {
+
 Route::get('/','front@index');
 
 //后台
@@ -90,8 +92,11 @@ Route::get('about/process/miso','front@miso');
 //生产工艺 - spicypeanuts
 Route::get('about/process/spicypeanuts','front@spicypeanuts');
 
+});
+
 // 英文版
-Route::get('/','front@index');
+Route::group(['domain' => 'en.shinhoglobal.com'], function () {
+Route::get('/','front_en@index');
 
 //后台
 Route::get('adm','adm@index');
@@ -165,6 +170,7 @@ Route::get('about/process/miso','front_en@miso');
 //生产工艺 - spicypeanuts
 Route::get('about/process/spicypeanuts','front_en@spicypeanuts');
 
+});
 ```
 #### 主控档案
 ```markdown
