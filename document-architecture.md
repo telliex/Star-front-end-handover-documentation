@@ -50,32 +50,28 @@ Public 资料夹为网站根目录指向位置，网站内静态档案及所嵌�
 
 ```markdown
 public
-├ robots-develop.txt                        # 禁止搜索引擎爬虫收录测试机的 robots.txt 档案
-├ robots.txt                                # 搜索引擎爬虫收录正式机的 robots.txt 档案
-├ admfile                                   # 后台所使用的静态档案均放置于此
-├ capw                                      # 后台登入验证所使用的数字图片
-├ css                                       # 转译后的 CSS 样式表
-│ └ vendor                                  # 转译后的套件样式，所需页面再将样式嵌入
-├ font                                      # 自订的 icon font 样式
-├ fontawesome                               # 首页使用的 fontawesome icon font
-├ img                                       # 网站所使用的静态图片
-│ ├ about                                   # 选单「关于欣和」所使用的静态图片
-│ ├ brandgroup                              # 选单「品牌家族」所使用的静态图片
-│ ├ careers                                 # 选单「加入欣和」所使用的静态图片
-│ ├ contact                                 # 选单「联系欣和」所使用的静态图片
-│ ├ error                                   # 「错误页面」所使用的静态图片
-│ ├ icon                                    # 「全站 icon 图示」所使用的静态图片
-│ └ title                                   # 「全站标题」所使用的静态图片
-├ js                                        # 转译后的 JS 档案
-├ pdf                                       # 网站所使用的 PDF 档案
-├ favicon.ico                               # 网站或网页相关联的图标
-├ error-403.html                            # 403 错误页面
-├ error-404.html                            # 404 错误页面
-├ error-500.html                            # 500 错误页面
-├ error-503.html                            # 503 错误页面
-├ index.php                                 # Laravel 应用程式的进入点，非普遍定义的首页
-├ sitemap.xml                               # 提供给搜索引擎收录页面的档案
-└ web.config                                # 设定 Laravel rewrite rule
+├ robots-develop.txt                    # 禁止搜索引擎爬虫收录测试机的 robots.txt 档案
+├ robots.txt                            # 搜索引擎爬虫收录正式机的 robots.txt 档案
+├ admfile                               # 后台所使用的静态档案均放置于此
+├ capw                                  # 后台登入验证所使用的数字图片
+├ css                                   # 转译后的 CSS 样式表
+│ └ vendor                              # 转译后的套件样式，所需页面再将样式嵌入
+├ font                                  # 自订的 icon font 样式
+├ fontawesome                           # 首页使用的 fontawesome icon font
+├ img                                   # 网站所使用的静态图片
+│ ├ about                               # 选单「关于欣和」所使用的静态图片
+│ ├ brandgroup                          # 选单「品牌家族」所使用的静态图片
+│ ├ careers                             # 选单「加入欣和」所使用的静态图片
+│ ├ contact                             # 选单「联系欣和」所使用的静态图片
+│ ├ error                               # 「错误页面」所使用的静态图片
+│ ├ icon                                # 「全站 icon 图示」所使用的静态图片
+│ └ title                               # 「全站标题」所使用的静态图片
+├ js                                    # 转译后的 JS 档案
+├ pdf                                   # 网站所使用的 PDF 档案
+├ favicon.ico                           # 网站或网页相关联的图标
+├ index.php                             # Laravel 应用程式的进入点，非普遍定义的首页
+├ sitemap.xml                           # 提供给搜索引擎收录页面的档案
+└ web.config                            # 设定 Laravel rewrite rule
 
 ```
 <br/>
@@ -88,9 +84,9 @@ Resources 资料夹内为 `views`、`lang`、`assets`，分别放了视图档案
 
 ```markdown
 resources
-├ assets                                    # Laravel 框架：预先转译才能使用的资源档案，目前不使用
-├ lang                                      # Laravel 框架：语系档案，目前尚未使用到此功能
-└ views                                     # Laravel 框架：视图档案，存放 Laravel Blade 样板引擎，前台页面都存放在此
+├ assets                                # Laravel 框架：预先转译才能使用的资源档案，目前不使用
+├ lang                                  # Laravel 框架：语系档案，放置中英文页面内容
+└ views                                 # Laravel 框架：视图档案，存放 Laravel Blade 样板引擎，前台页面都存放在此
 
 ```
 * 若需新增或运维网站内容请参考：[1.5.3 新增与运维 - PHP](/maintain/maintain-php.md) 
@@ -106,10 +102,10 @@ Src 资料夹存放预先转译才能使用的资源档案，例如：SCSS、ES6
 
 ```markdown
 src
-├ js                                        # JavaScript(ES6) 档案
-├ lib                                       # JavaScript 套件档案
-├ map                                       # JavaScript 转换代码前后位置的信息文件
-└ sass                                      # CSS(SCSS) 档案
+├ js                                    # JavaScript(ES6) 档案
+├ lib                                   # JavaScript 套件档案
+├ map                                   # JavaScript 转换代码前后位置的信息文件
+└ sass                                  # CSS(SCSS) 档案
 
 ```
 
