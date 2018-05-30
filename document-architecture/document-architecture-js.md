@@ -75,16 +75,14 @@ js
 
 ```markdown
 lib
-├ owlcarousel                               # JavaScript 轮拨套件
-├ slick                                     # JavaScript 轮拨套件
-├ animation.gsap.min.js                     # JavaScript 动画库，與 ScrollMagic 一起使用
-├ debug.addIndicators.min.js                # ScrollMagic Debug 套件
+├ owlcarousel /*                            # JavaScript 轮拨套件
+├ slick /*                                  # JavaScript 轮拨套件
 ├ jquery.cookie.js                          # cookie 读取、写入、删除插件
-├ jquery.history.js                         # JavaScript 新增浏览记录套件
-├ jquery.js                                 # JavaScript 框架
-├ jquery.mobile.min.js                      # JavaScript 框架 for Mobile 
-├ ScrollMagic.min.js                        # JS 动画库，與 ScrollMagic 一起使用
-└ TweenMax.min.js                           # JS 动画库，與 ScrollMagic 一起使用
+├ jquery.history.js                         # jQuery 框架 新增浏览记录套件
+├ jquery.js                                 # jQuery 框架
+├ jquery.mobile.min.js                      # jQuery 框架 for Mobile 
+├ jquery.mousewheel.min.js                  # jQuery 框架 滑鼠卷动事件 
+└ jquery.rotate.js                          # jQuery 框架 对元素进行任意角度的旋转动画。 
 
 ```
 ### 相关连结与文档
