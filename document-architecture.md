@@ -56,14 +56,14 @@ app 资料夹下的 `/Helpers` 与 `Http/Controllers`,放置。
 app
 ├ Helpers                                 # 数据处理相关
 │ ├ admgroup.php                          # 后台资料数据处理
-│ ├ brandgroup_en.php                     # 英文版 品牌相关数据处理
-│ ├ brandgroup.php                        # 中文版 品牌相关数据处理
-│ ├ careergroup_en.php                    # 英文版 招聘相关数据处理
-│ ├ careergroup.php                       # 中文版 招聘相关数据处理
-│ ├ Helper_en.php                         # 英文版 不分类功能处理
-│ ├ Helper.php                            # 中文版 不分类功能处理
-│ ├ newsgroup_en.php                      # 英文版 欣和动态＆品牌动态 资料捞取
-│ └ newsgroup.php                         # 中文版 欣和动态＆品牌动态 资料捞取
+│ ├ brandgroup_en.php                     # 英文版 品牌内页相关数据处理
+│ ├ brandgroup.php                        # 中文版 品牌内页相关数据处理
+│ ├ careergroup_en.php                    # 英文版 招聘内页相关数据处理
+│ ├ careergroup.php                       # 中文版 招聘内页相关数据处理
+│ ├ Helper_en.php                         # 英文版 不分类内页功能处理
+│ ├ Helper.php                            # 中文版 不分类内页功能处理
+│ ├ newsgroup_en.php                      # 英文版 欣和动态＆品牌动态内页数据处理
+│ └ newsgroup.php                         # 中文版 欣和动态＆品牌动态内页数据处理
 └ Http                            
   └ Controllers                           # 页面 router 后，对应处理动作 
     ├ adm.php                             # 后台页面 controller
