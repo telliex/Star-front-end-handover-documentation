@@ -8,13 +8,13 @@
 
 ```markdown
 js                                        
-├ base.js                                   # 侦测各种状态的 JS 代码
-├ browser.js                                # 判断浏览器类型的 JS 代码
-├ generic.js                                # 站内组件的 JS 代码
-├ maxin.js                                  # 模组的 JS 代码
-├ partical.js                               # 元件的 JS 代码
-├ global.es6                                # 全站共同版型的 JS 代码，每个页面都有使用
-├ ie-debug.es6                              # 适配 IE 的修正代码
+├ base.js                                      # [中英文版共用]侦测各种状态的 JS 代码
+├ browser.js                                   # [中英文版共用]判断浏览器类型的 JS 代码
+├ generic.js                                   # [中英文版共用]站内组件的 JS 代码
+├ maxin.js                                     # [中英文版共用]模组的 JS 代码
+├ partical.js                                  # [中英文版共用]元件的 JS 代码
+├ global.es6                                   # [中英文版共用]全站共同版型的 JS 代码，每个页面都有使用
+├ ie-debug.es6                                 # [中英文版共用]适配 IE 的修正代码
 ├ lyt-en-face.es6                              #[英文版]首页 face.blade.php 的 ES6 代码
 ├ lyt-en-about-business.es6                    #[英文版]「关于欣和我们正在做」business.blade.php 的 ES6 代码
 ├ lyt-en-about-crafts.es6                      #[英文版]「关于欣和生产工艺」crafts.blade.php 的 ES6 代码
@@ -32,7 +32,7 @@ js
 ├ lyt-cn-brand-recipe-list.es6                 #[英文版]「品牌菜谱列表」recipelist.blade.php 的 ES6 代码
 ├ lyt-en-brand-topic.es6                       #[英文版]「品牌主题」topic.blade.php 的 ES6 代码
 ├ lyt-en-careers-camp-recruiting-list.es6      #[英文版]「加入欣和校园招聘模版」campusitinerary.blade.php、
-├                                                       campusprocess.blade.php、campusrecruiting.blade.php 的 ES6 代码
+│                                                       campusprocess.blade.php、campusrecruiting.blade.php 的 ES6 代码
 ├ lyt-en-careers-recruiting-detail.es6         #[英文版]「加入欣和招聘详情」recruitingdetail.blade.php、campusrecruitingdetail.blade.php 的 ES6 代码
 ├ lyt-en-careers-recruiting-list.es6           #[英文版]「加入欣和招聘列表」campusrecruiting.blade.php、recruiting.blade.php 的 ES6 代码
 ├ lyt-en-careers.es6                           #[英文版]「加入欣和首页」careers.blade.php 的 ES6 代码
@@ -55,13 +55,13 @@ js
 ├ lyt-cn-brand-recipe-list.es6                 #[中文版]「品牌菜谱列表」recipelist.blade.php 的 ES6 代码
 ├ lyt-cn-brand-topic.es6                       #[中文版]「品牌主题」topic.blade.php 的 ES6 代码
 ├ lyt-cn-careers-camp-recruiting-list.es6      #[中文版]「加入欣和校园招聘模版」campusitinerary.blade.php、
-├                                                       campusprocess.blade.php、campusrecruiting.blade.php 的 ES6 代码
+│                                                       campusprocess.blade.php、campusrecruiting.blade.php 的 ES6 代码
 ├ lyt-cn-careers-recruiting-detail.es6         #[中文版]「加入欣和招聘详情」recruitingdetail.blade.php、campusrecruitingdetail.blade.php 的 ES6 代码
 ├ lyt-cn-careers-recruiting-list.es6           #[中文版]「加入欣和招聘列表」campusrecruiting.blade.php、recruiting.blade.php 的 ES6 代码
 ├ lyt-cn-careers.es6                           #[中文版]「加入欣和首页」careers.blade.php 的 ES6 代码
 ├ lyt-cn-news-detail.es6                       #[中文版]「欣和动态详情」newsdetail.blade.php 的 ES6 代码
 ├ lyt-cn-news-list.es6                         #[中文版]「欣和动态列表」newslist.blade.php 的 ES6 代码
-└ share.es6                                 # Ajax 动态资料串接档案
+└ share.es6                                    #[中英文版共用]Ajax 动态资料串接档案
 
 ```
 ### 相关连结与文档
