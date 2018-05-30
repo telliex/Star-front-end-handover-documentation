@@ -65,7 +65,7 @@ app
 │ ├ newsgroup_en.php                      # 英文版 欣和动态＆品牌动态 资料捞取
 │ └ newsgroup.php                         # 中文版 欣和动态＆品牌动态 资料捞取
 └ Http                            
-  └ Controllers                           # router 后，所做的处理 
+  └ Controllers                           # 页面 router 后，对应处理动作 
     ├ adm.php                             # 后台页面 controller
     ├ admajax.php                         # 后台页面 ajax 呼叫
     ├ ajax_en.php                         # 英文版 ajax 呼叫 
